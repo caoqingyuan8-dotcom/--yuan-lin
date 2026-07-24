@@ -1,0 +1,55 @@
+/* 园林全景 - 统一样式 */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:#f5f3ef;color:#1e1e1e;line-height:1.8}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* Header */
+.site-header{background:#2d4a2d;color:#fff;padding:40px 0 32px}
+.site-header h1{font-size:2.4rem;font-weight:300;letter-spacing:2px}
+.site-header p{font-size:.9rem;opacity:.8;margin-top:6px}
+.site-nav{background:#1e331e;padding:10px 0;position:sticky;top:0;z-index:100}
+.site-nav .container{display:flex;gap:4px;flex-wrap:wrap}
+.site-nav a{color:#bcd4bc;text-decoration:none;font-size:.82rem;padding:5px 18px;border-radius:20px;transition:.15s}
+.site-nav a:hover,.site-nav a.active{background:rgba(255,255,255,.12);color:#fff}
+
+/* Cards */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px;margin:30px 0}
+.course-card{background:#fff;border-radius:14px;padding:24px 26px;box-shadow:0 1px 6px rgba(0,0,0,.05);border-left:5px solid #4a7c4a;transition:.15s}
+.course-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08);transform:translateY(-2px)}
+.course-card .num{font-size:.75rem;color:#7a9a7a;font-weight:600}
+.course-card h3{font-size:1.15rem;margin:4px 0 8px}
+.course-card p{font-size:.85rem;color:#666;line-height:1.6}
+.course-card .tags{display:flex;gap:4px;margin:10px 0 0;flex-wrap:wrap}
+.course-card .tags span{font-size:.65rem;background:#eaf3ea;padding:2px 12px;border-radius:20px;color:#4a7c4a}
+
+/* Article reading */
+.article{background:#fff;border-radius:14px;padding:40px 50px;margin:30px 0;box-shadow:0 1px 6px rgba(0,0,0,.04);max-width:860px}
+.article h1{font-size:1.8rem;font-weight:600;color:#1a1a1a;margin-bottom:8px}
+.article .meta{font-size:.8rem;color:#999;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #eee}
+.article h2{font-size:1.3rem;margin:28px 0 12px;color:#2d4a2d;border-left:4px solid #4a7c4a;padding-left:14px}
+.article h3{font-size:1.05rem;margin:20px 0 8px;color:#333}
+.article p{margin:10px 0;font-size:.92rem;color:#444;text-indent:2em}
+.article p:first-of-type{text-indent:0}
+.article ul,.article ol{margin:10px 0 10px 2em}
+.article li{margin:5px 0;font-size:.9rem;color:#444}
+.article table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.82rem}
+.article th,.article td{border:1px solid #e0dcd8;padding:8px 12px;text-align:left}
+.article th{background:#f0f5f0;color:#2d4a2d;font-weight:600}
+.article blockquote{margin:14px 0;padding:14px 20px;background:#f8f6f2;border-left:4px solid #4a7c4a;border-radius:4px;color:#555}
+.article code{background:#f0ede8;padding:1px 6px;border-radius:4px;font-size:.82rem}
+
+/* Section titles */
+.section-title{font-size:1.3rem;font-weight:600;color:#2d4a2d;margin:36px 0 16px;padding-bottom:8px;border-bottom:2px solid #4a7c4a}
+
+/* PDF viewer */
+.pdf-viewer{width:100%;height:80vh;border:1px solid #ddd;border-radius:8px;margin:20px 0}
+
+/* Footer */
+.site-footer{background:#1e331e;color:#8aaa8a;text-align:center;padding:20px 0;margin-top:50px;font-size:.78rem}
+.site-footer a{color:#bcd4bc;text-decoration:none}
+
+/* Responsive */
+@media(max-width:600px){.article{padding:20px 16px}.card-grid{grid-template-columns:1fr}.site-header h1{font-size:1.5rem}}
+
+/* Watermark */
+.watermark{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;background-image:repeating-linear-gradient(45deg,transparent,transparent 200px,rgba(74,124,74,.012) 200px,rgba(74,124,74,.012) 400px)}

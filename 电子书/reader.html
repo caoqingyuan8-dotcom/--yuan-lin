@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>在线阅读 · 园林全景</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.pdf-nav{display:flex;gap:8px;margin:16px 0;flex-wrap:wrap}
+.pdf-nav a{padding:8px 20px;background:#2d4a2d;color:#fff;border-radius:8px;text-decoration:none;font-size:.85rem;transition:.12s}
+.pdf-nav a:hover{background:#3d6a3d}
+.pdf-nav .back{background:#666}
+.pdf-info{background:#fff;border-radius:12px;padding:20px 24px;margin:16px 0;box-shadow:0 1px 6px rgba(0,0,0,.04)}
+.pdf-info h2{margin-bottom:8px;font-size:1.3rem}
+.pdf-info p{color:#666;font-size:.85rem}
+@media(max-width:600px){.pdf-viewer{height:60vh}}
+</style>
+</head>
+<body>
+<div class="site-header" style="padding:20px 0">
+  <div class="container">
+    <h1 style="font-size:1.5rem">📖 在线阅读</h1>
+  </div>
+</div>
+<nav class="site-nav">
+  <div class="container">
+    <a href="../index.html">课程手册</a>
+    <a href="index.html">电子书馆</a>
+    <a href="../论文/index.html">学术论文</a>
+  </div>
+</nav>
+<div class="container">
+  <div id="pdf-info" class="pdf-info">
+    <h2 id="book-title">加载中...</h2>
+    <p id="book-desc"></p>
+  </div>
+  <div class="pdf-nav">
+    <a href="index.html" class="back">← 返回书馆</a>
+    <a href="#" id="download-link" target="_blank" download>📥 下载文件</a>
+  </div>
+  <iframe id="pdf-viewer" class="pdf-viewer" src=""></iframe>
+</div>
+<div class="site-footer">
+  <div class="container">电子书仅供学习研究 · 版权归原作者所有</div>
+</div>
+<div class="watermark"></div>
+<script>
+const params = new URLSearchParams(window.location.search);
+const file = params.get('file');
+if(!file||file==='null'){document.getElementById('book-title').textContent='未指定书籍';return}
+const path = file;
+document.getElementById('pdf-viewer').src = path;
+document.getElementById('download-link').href = path;
+
+const titles = {'园冶注释 （第二版）.pdf':'园冶注释','扬州园林.pdf':'扬州园林','扬州园林 图册.pdf':'扬州园林 图册','江南园林志 一.pdf':'江南园林志','上海豫园.pdf':'上海豫园','画境文心：中国古典园林之美.pdf.pdf':'画境文心：中国古典园林之美','苏州园林.pdf':'苏州园林','苏州园林匾额楹联鉴赏.pdf':'苏州园林匾额楹联鉴赏','说园.pdf':'说园','陈从周说园.epub':'陈从周说园（EPUB）','陈从周全集7-园林谈丛.pdf':'陈从周全集7：园林谈丛','园林与中国文化.pdf.pdf':'园林与中国文化','西方园林史.pdf':'西方园林史',};
+const descs = {'园冶注释 （第二版）.pdf':'世界第一部园林艺术专著，中国古典园林的理论基石。陈植先生的注释版是最权威版本之一。','扬州园林.pdf':'扬州园林艺术特色与经典案例解析。个园、何园、瘦西湖等扬州园林集群的深度解读。','扬州园林 图册.pdf':'陈从周先生拍摄绘制的扬州园林影像图册，珍贵历史资料。','江南园林志 一.pdf':'童寯先生经典之作。系统考察江南园林，测量绘图并记录造园理法。','上海豫园.pdf':'上海豫园的历史沿革、景区特色与造园艺术全解。','画境文心：中国古典园林之美.pdf.pdf':'中国古典园林美学入门——画境即园境，文心即园心。','苏州园林.pdf':'苏州园林的官方权威介绍，涵盖拙政园、留园、网师园等经典。','苏州园林匾额楹联鉴赏.pdf':'苏州园林匾额楹联的系统解读，以文字解读园林意境。','说园.pdf':'陈从周先生谈中国园林的经典文集。文笔优美，见解独到，中国园林美学的入门必读。','陈从周说园.epub':'《说园》的EPUB格式版本，适合移动设备阅读。','陈从周全集7-园林谈丛.pdf':'陈从周先生园林文章合集，涵盖园林谈丛、园林散记等，是研究中国园林的重要文献。','园林与中国文化.pdf.pdf':'从文化角度解读中国园林，探讨园林与中国哲学、文学、绘画的深层关联。','西方园林史.pdf':'高等院校风景园林专业教材，系统讲述古埃及至当代的西方园林演变。',};
+if(titles[file]){document.getElementById('book-title').textContent=titles[file]}
+if(descs[file]){document.getElementById('book-desc').textContent=descs[file]}
+</script>
+</body>
+</html>
