@@ -1,0 +1,94 @@
+/* ===== 园林全景 · 完整样式 ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Georgia","PingFang SC","Microsoft YaHei","Noto Serif CJK SC",serif;
+  background: #f8faf8; color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+/* ===== 站点头部 ===== */
+.site-header {
+  background: linear-gradient(135deg, #1a3a2a, #2a5a3a);
+  color: #fff; padding: 24px 0;
+}
+.site-header h1 { font-size: 1.3rem; font-weight: 600; margin-bottom: 4px; }
+.site-header p { font-size: .82rem; opacity: .75; }
+
+/* ===== 导航栏 ===== */
+.site-nav {
+  background: #fff; border-bottom: 1px solid #e0e8e4;
+  padding: 0; position: sticky; top: 0; z-index: 100;
+}
+.site-nav .container {
+  display: flex; gap: 0; overflow-x: auto;
+}
+.site-nav a {
+  padding: 10px 16px; font-size: .8rem; color: #5a7a6a;
+  text-decoration: none; white-space: nowrap; font-weight: 500;
+  border-bottom: 2px solid transparent; transition: .15s;
+}
+.site-nav a:hover { color: #1a7a6a; background: #f0f8f4; }
+.site-nav a.active { color: #1a7a6a; border-bottom-color: #1a7a6a; }
+
+/* ===== 返回导航 ===== */
+.nav-bar { margin-bottom: 8px; }
+.nav-bar .nav-home {
+  font-size: 13px; color: #999; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 4px;
+}
+.nav-bar .nav-home:hover { color: #2e7d32; }
+
+/* ===== 通用 ===== */
+a { color: #2e7d32; text-decoration: none; }
+a:hover { color: #1a5a22; }
+
+/* ===== 卡片网格 ===== */
+.card-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px; margin: 16px 0;
+}
+.course-card {
+  background: #fff; border-radius: 12px; padding: 18px 20px;
+  border-left: 4px solid #c9a959;
+  box-shadow: 0 1px 6px rgba(0,0,0,.04); transition: .2s;
+}
+.course-card:hover { box-shadow: 0 3px 14px rgba(0,0,0,.08); transform: translateY(-1px); }
+.course-card h3 { font-size: .95rem; color: #1a3a2a; margin-bottom: 4px; }
+.course-card p { font-size: .8rem; color: #777; line-height: 1.5; }
+.course-card .num {
+  font-size: .7rem; color: #b8c8b8; font-weight: 600; margin-bottom: 4px;
+}
+.course-card .tags { display: flex; gap: 6px; margin-top: 8px; }
+.course-card .tags span {
+  font-size: .68rem; padding: 2px 10px; border-radius: 20px;
+  background: #e8f4ee; color: #2e7d32;
+}
+
+/* ===== 章节标题 ===== */
+.section-title {
+  font-size: 1.05rem; color: #2e7d32; margin: 28px 0 0;
+  padding-bottom: 8px; border-bottom: 2px solid #c9a959;
+}
+
+/* ===== 页脚 ===== */
+.footer { text-align: center; color: #ccc; font-size: 11px; padding: 30px 0 20px; }
+.site-footer {
+  text-align: center; padding: 24px 0; margin-top: 48px;
+  border-top: 1px solid #e0dcd8;
+  font-size: .78rem; color: #aaa;
+}
+
+/* ===== 水印保护 ===== */
+.watermark {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none; z-index: 9999;
+  background-image: repeating-linear-gradient(45deg,
+    transparent 0, transparent 200px,
+    rgba(179,140,60,.015) 200px, rgba(179,140,60,.015) 400px);
+  background-size: 400px 400px;
+}
+.watermark-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0,0,0,0); white-space: nowrap; opacity: 0;
+}

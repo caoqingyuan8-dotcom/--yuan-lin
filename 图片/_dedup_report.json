@@ -1,0 +1,282 @@
+{
+  "total_files": 2551,
+  "unique_md5": 2496,
+  "duplicate_count": 55,
+  "duplicates": [
+    {
+      "original": "01-全景空间/007a8ead50b07dc5d880027b3988c9f1.jpg",
+      "duplicate": "12-岩石花园/03-花园墙体/007a8ead50b07dc5d880027b3988c9f1.jpg",
+      "md5": "23bbf9cf36dfd62992e8ce07b5ecc47f"
+    },
+    {
+      "original": "01-全景空间/007a8ead50b07dc5d880027b3988c9f1.jpg",
+      "duplicate": "设计案例/007a8ead50b07dc5d880027b3988c9f1.jpg",
+      "md5": "23bbf9cf36dfd62992e8ce07b5ecc47f"
+    },
+    {
+      "original": "01-全景空间/08e289feed647de9dec975f0a1967fcb.jpg",
+      "duplicate": "设计案例/08e289feed647de9dec975f0a1967fcb.jpg",
+      "md5": "a1a18ca349a0c58f7e45dbd2553fb897"
+    },
+    {
+      "original": "01-全景空间/10792724_162428362108_2.jpg",
+      "duplicate": "设计案例/10792724_162428362108_2.jpg",
+      "md5": "268b493dd344e9719c60d15e558a5e1e"
+    },
+    {
+      "original": "01-全景空间/12316844_145336347134_2.jpg",
+      "duplicate": "设计案例/12316844_145336347134_2.jpg",
+      "md5": "ff07858e9ca632736e3d80bfe9e182f8"
+    },
+    {
+      "original": "01-全景空间/1f487e97fdb2197a2058922b093c87a9.jpg",
+      "duplicate": "设计案例/1f487e97fdb2197a2058922b093c87a9.jpg",
+      "md5": "b7fa8dd817c23db2fd64d31bb4372eba"
+    },
+    {
+      "original": "01-全景空间/5c5a92c62a18f65116df810a8c948d4e.jpg",
+      "duplicate": "12-岩石花园/5c5a92c62a18f65116df810a8c948d4e.jpg",
+      "md5": "7fea7e10789b20a7f557c0ab8cf41332"
+    },
+    {
+      "original": "01-全景空间/5c5a92c62a18f65116df810a8c948d4e.jpg",
+      "duplicate": "岩石花园/5c5a92c62a18f65116df810a8c948d4e.jpg",
+      "md5": "7fea7e10789b20a7f557c0ab8cf41332"
+    },
+    {
+      "original": "01-全景空间/e085403b73050922b552bf5fb31b6c86.jpg",
+      "duplicate": "04-中式古典/02-中式古典/e085403b73050922b552bf5fb31b6c86.jpg",
+      "md5": "0dbff25b3f8c9d0e62ce46d6efaf24f2"
+    },
+    {
+      "original": "01-全景空间/e9e9a759b49e79a34b1e7a68bafb8ec0.jpg",
+      "duplicate": "04-中式古典/02-中式古典/e9e9a759b49e79a34b1e7a68bafb8ec0.jpg",
+      "md5": "81df20bb6b197c1e28a7561d187abe52"
+    },
+    {
+      "original": "02-英式田园/024f500374e10259051f74630b23f4ac_merged.jpg",
+      "duplicate": "英国园林/024f500374e10259051f74630b23f4ac_merged.jpg",
+      "md5": "6c01165662b4535e4339ad798c9622d3"
+    },
+    {
+      "original": "02-英式田园/05960207cfa9d5f4dee32c21af5ca92a.jpg",
+      "duplicate": "英国园林/05960207cfa9d5f4dee32c21af5ca92a.jpg",
+      "md5": "6e1ae99bdd38ff8f48ef66b62ea16762"
+    },
+    {
+      "original": "02-英式田园/060d7ab700a86a2a39dbccaa953ef0a8.jpg",
+      "duplicate": "英国园林/060d7ab700a86a2a39dbccaa953ef0a8.jpg",
+      "md5": "da0385dc58da75caab4add1af7289cd5"
+    },
+    {
+      "original": "02-英式田园/06e876cd6a37c3e7f56f54e49177f61a_merged.jpg",
+      "duplicate": "英国园林/06e876cd6a37c3e7f56f54e49177f61a_merged.jpg",
+      "md5": "b52f3f9a1577f4df69fb1c89b5e040e3"
+    },
+    {
+      "original": "02-英式田园/06f5d1f535149d7e5b8030a68b28575e.jpg",
+      "duplicate": "英国园林/06f5d1f535149d7e5b8030a68b28575e.jpg",
+      "md5": "21fdc0dbe67bdeca97f71fc4bbf0b0fa"
+    },
+    {
+      "original": "03-日式庭院/01-枯山水/933cb78f8452ad49c3375318c18cd2d0.jpg",
+      "duplicate": "03-日式庭院/07-全景远景/933cb78f8452ad49c3375318c18cd2d0.jpg",
+      "md5": "7d5f1e67bcf7898cbad3391bf75ded99"
+    },
+    {
+      "original": "03-日式庭院/04-建筑门窗/f1936bf039bd19afd885b322b8f7a0ad.jpg",
+      "duplicate": "04-中式古典/02-中式古典/f1936bf039bd19afd885b322b8f7a0ad.jpg",
+      "md5": "82260e614cf369e97b26ed5b8938b853"
+    },
+    {
+      "original": "03-日式庭院/06-植物苔藓/b2f1a2d8c279707c3c1220be0231ec85.jpg",
+      "duplicate": "03-日式庭院/07-全景远景/b2f1a2d8c279707c3c1220be0231ec85.jpg",
+      "md5": "3dcf3b425c88b82c9b8bf40e3a78a696"
+    },
+    {
+      "original": "03-日式庭院/2d471e842e7b87e993b6083b9527e42a.jpg",
+      "duplicate": "日本园林/2d471e842e7b87e993b6083b9527e42a.jpg",
+      "md5": "83522a3f6729040d09108606cbfe717f"
+    },
+    {
+      "original": "03-日式庭院/2f7a23a9240a4918ade908e3ed772a50.jpg",
+      "duplicate": "日本园林/2f7a23a9240a4918ade908e3ed772a50.jpg",
+      "md5": "ce92eb4e7367e58db3d53a86d0965a0d"
+    },
+    {
+      "original": "03-日式庭院/32d8100a4d558262d22a8ebed2b5addc.jpg",
+      "duplicate": "日本园林/32d8100a4d558262d22a8ebed2b5addc.jpg",
+      "md5": "1cbe109cab0c75e2564caa5593c07065"
+    },
+    {
+      "original": "03-日式庭院/35936855e53b1c43691f93020ed4d763.jpg",
+      "duplicate": "日本园林/35936855e53b1c43691f93020ed4d763.jpg",
+      "md5": "108073c46a0f92771c6a8a2362aca3b0"
+    },
+    {
+      "original": "03-日式庭院/491f8d96020316b6ecf1ccd99fbce9da.jpg",
+      "duplicate": "13-花卉/491f8d96020316b6ecf1ccd99fbce9da.jpg",
+      "md5": "156736f0bade7e2f971e52c640ded5c3"
+    },
+    {
+      "original": "03-日式庭院/491f8d96020316b6ecf1ccd99fbce9da.jpg",
+      "duplicate": "日本园林/491f8d96020316b6ecf1ccd99fbce9da.jpg",
+      "md5": "156736f0bade7e2f971e52c640ded5c3"
+    },
+    {
+      "original": "03-日式庭院/62d19c913f5277aea4a26f3808e5db50.jpg",
+      "duplicate": "03-日式庭院/07-全景远景/62d19c913f5277aea4a26f3808e5db50.jpg",
+      "md5": "82b1ab59e0343b274c0451434d7ac8ed"
+    },
+    {
+      "original": "04-中式古典/5fc868930e07ec5f1245eb54f1c87076.jpg",
+      "duplicate": "中国古典/5fc868930e07ec5f1245eb54f1c87076.jpg",
+      "md5": "ac107e990c930026e96c5cdce29a31bf"
+    },
+    {
+      "original": "04-中式古典/b542b3f54ea57a56678be6f81f8e6a6a.jpg",
+      "duplicate": "04-中式古典/苏州园林/b542b3f54ea57a56678be6f81f8e6a6a.jpg",
+      "md5": "f21766b2170b292216bc098d742273af"
+    },
+    {
+      "original": "04-中式古典/b542b3f54ea57a56678be6f81f8e6a6a.jpg",
+      "duplicate": "中国古典/b542b3f54ea57a56678be6f81f8e6a6a.jpg",
+      "md5": "f21766b2170b292216bc098d742273af"
+    },
+    {
+      "original": "06-热带园林/0f1ec64da54668dbfc9b3fd9f8805e52.jpg",
+      "duplicate": "热带园林/0f1ec64da54668dbfc9b3fd9f8805e52.jpg",
+      "md5": "602913bac7c26f4296e85de1a5875445"
+    },
+    {
+      "original": "06-热带园林/27fdab8b3192fd0fd63ddab8229bd386.jpg",
+      "duplicate": "热带园林/27fdab8b3192fd0fd63ddab8229bd386.jpg",
+      "md5": "fc3bc58b8f9cc92e8b3a16ba3fb88388"
+    },
+    {
+      "original": "06-热带园林/3c4ff81639e05ce6fe4ac152c92e707c.jpg",
+      "duplicate": "热带园林/3c4ff81639e05ce6fe4ac152c92e707c.jpg",
+      "md5": "f9f5704b04aa84b77a747cc004a470af"
+    },
+    {
+      "original": "06-热带园林/43b9bcb7e05d719afde86e07aef315fa.jpg",
+      "duplicate": "热带园林/43b9bcb7e05d719afde86e07aef315fa.jpg",
+      "md5": "8901eb0c11f8c1f2f8fbc8cb7f9dd73a"
+    },
+    {
+      "original": "06-热带园林/465b11159a5a4daebe7186806f3d4585.jpg",
+      "duplicate": "热带园林/465b11159a5a4daebe7186806f3d4585.jpg",
+      "md5": "76a644d4efca2c2b5509e50edad41e09"
+    },
+    {
+      "original": "08-沙漠多肉/01-组合盆栽/93ce733090ccb54f47509543377c629b.jpg",
+      "duplicate": "08-沙漠多肉/多肉花园/93ce733090ccb54f47509543377c629b.jpg",
+      "md5": "a7894709272962b72dfd28ee6e3fe483"
+    },
+    {
+      "original": "08-沙漠多肉/01-组合盆栽/ac2b19f246f7d66adedb18701a75036b.jpg",
+      "duplicate": "08-沙漠多肉/多肉花园/ac2b19f246f7d66adedb18701a75036b.jpg",
+      "md5": "033b062bf705fc41a7ef737da4f70d56"
+    },
+    {
+      "original": "08-沙漠多肉/594f03880ac72b514f01a31da189153b.jpg",
+      "duplicate": "沙漠园林/594f03880ac72b514f01a31da189153b.jpg",
+      "md5": "d335c8dc6264c588df3e8055f93472a4"
+    },
+    {
+      "original": "09-水景/014f88226b70bd5525b7dcbeb037fb50.jpg",
+      "duplicate": "13-花卉/04-玉簪/014f88226b70bd5525b7dcbeb037fb50.jpg",
+      "md5": "c65fe86c5c3e19b213dceaa2c814f0c4"
+    },
+    {
+      "original": "09-水景/014f88226b70bd5525b7dcbeb037fb50.jpg",
+      "duplicate": "水景/014f88226b70bd5525b7dcbeb037fb50.jpg",
+      "md5": "c65fe86c5c3e19b213dceaa2c814f0c4"
+    },
+    {
+      "original": "09-水景/01d00204edb7b898f8e68e6a120256ce.jpg",
+      "duplicate": "水景/01d00204edb7b898f8e68e6a120256ce.jpg",
+      "md5": "c018508f878056fe17c5d2b19b6c75fa"
+    },
+    {
+      "original": "09-水景/075d5362394bab1729f6db237380f5ef.jpg",
+      "duplicate": "水景/075d5362394bab1729f6db237380f5ef.jpg",
+      "md5": "e4de03bec3148268ad93a6fc925f5943"
+    },
+    {
+      "original": "09-水景/12039356bb25d354094ccda982931320.jpg",
+      "duplicate": "水景/12039356bb25d354094ccda982931320.jpg",
+      "md5": "e5db0c243edd2346400dfa4b94ba984c"
+    },
+    {
+      "original": "09-水景/1e53b2f453868f1f9cb60a676d00da8e.jpg",
+      "duplicate": "水景/1e53b2f453868f1f9cb60a676d00da8e.jpg",
+      "md5": "8f8442e2ac0b497746a9774ef85db803"
+    },
+    {
+      "original": "10-花境组合/96ec49dfa41ac7152e52aa9e9af97171.jpg",
+      "duplicate": "10-花境组合/96ec49dfa41ac7152e52aa9e9af97171_v2.jpg",
+      "md5": "d5f0fac79ce957985d3e4eb8c2bb4078"
+    },
+    {
+      "original": "10-花境组合/b2da4cae25b6ac80cc2b878828c75a3c.jpg",
+      "duplicate": "18-铺装材料/01-石阶/b2da4cae25b6ac80cc2b878828c75a3c.jpg",
+      "md5": "da1bf91835a63c73b3aa84580eafe6a0"
+    },
+    {
+      "original": "12-岩石花园/43719792dc7d238a11032b2d7716d949.jpg",
+      "duplicate": "岩石花园/43719792dc7d238a11032b2d7716d949.jpg",
+      "md5": "301c1ac60e692a08de700bb832371441"
+    },
+    {
+      "original": "12-岩石花园/54d2aaba40de16739ed75f277064638d.jpg",
+      "duplicate": "岩石花园/54d2aaba40de16739ed75f277064638d.jpg",
+      "md5": "dfdfbdf409bfd4cf6f989feb866b05a0"
+    },
+    {
+      "original": "12-岩石花园/58ac6093800505209953d81479a9f377.jpg",
+      "duplicate": "岩石花园/58ac6093800505209953d81479a9f377.jpg",
+      "md5": "144321c24d55fb45ef297078728e214e"
+    },
+    {
+      "original": "12-岩石花园/850b5565c375174668f1420e8cdd0294.jpg",
+      "duplicate": "岩石花园/850b5565c375174668f1420e8cdd0294.jpg",
+      "md5": "876bcf8737a6f8e6534033d7753f25e0"
+    },
+    {
+      "original": "14-盆景/多肉/247beaeed16acdce0c2f726205634ec3.jpg",
+      "duplicate": "16-组合盆栽/01-组合盆栽/247beaeed16acdce0c2f726205634ec3.jpg",
+      "md5": "ec575521533226c36f0d4205285ba35c"
+    },
+    {
+      "original": "14-盆景/玉簪/12dbb1771efca2bed5492a349a255b57.jpg",
+      "duplicate": "15-微景观/12dbb1771efca2bed5492a349a255b57.jpg",
+      "md5": "d297f377cbfb6aec2a6ec81ab5ad3478"
+    },
+    {
+      "original": "15-微景观/3dd27dc9ffa61817233a08dc48973f03.jpg",
+      "duplicate": "16-组合盆栽/01-组合盆栽/3dd27dc9ffa61817233a08dc48973f03.jpg",
+      "md5": "a7625d49e67ffaf11c2f99971630de36"
+    },
+    {
+      "original": "20-设计图纸/01-设计图/cf3b982c38332b9d4194158a6a922f4b.jpg",
+      "duplicate": "设计案例/cf3b982c38332b9d4194158a6a922f4b.jpg",
+      "md5": "c2d95cbb87ab543cad208e1e3611beff"
+    },
+    {
+      "original": "20-设计图纸/01-设计图/d115d6025cca4a392c8302b8d824d4c4.jpg",
+      "duplicate": "设计案例/d115d6025cca4a392c8302b8d824d4c4.jpg",
+      "md5": "566981e6a8ff270fca9ec268bfeae386"
+    },
+    {
+      "original": "21-风景/02-风景自然/2008919182531239_2 (1).jpg",
+      "duplicate": "21-风景/02-风景自然/2008919182531239_2.jpg",
+      "md5": "9a316ea585d54f68a97ab47b18e13b09"
+    },
+    {
+      "original": "22-建筑室内/aac3741593ae255d454b1788f85d1551 (1).jpg",
+      "duplicate": "22-建筑室内/aac3741593ae255d454b1788f85d1551.jpg",
+      "md5": "ff1d6c04c0cee47b9cc5965600e64c7b"
+    }
+  ]
+}
