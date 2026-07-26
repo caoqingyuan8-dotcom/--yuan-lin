@@ -5,298 +5,667 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>中国园林美学 · 园林全景</title>
 <link rel="stylesheet" href="../style.css">
+<style>
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.93rem}
+th,td{border:1px solid #d4e8d4;padding:8px 12px;text-align:left}
+th{background:#e8f5e8;font-weight:600;color:#2e7d32}
+td{background:#fff}
+.article h2{margin-top:36px;padding-bottom:8px;border-bottom:2px solid #c9a959;color:#2e7d32}
+.article h3{margin-top:24px;color:#333}
+.article ul{margin:8px 0 8px 20px}
+.article li{margin:4px 0;line-height:1.7}
+.article p{line-height:1.8;margin:10px 0}
+.article blockquote{border-left:4px solid #c9a959;margin:16px 0;padding:10px 16px;background:#f9f6ee;color:#555;border-radius:0 6px 6px 0}
+.meta{color:#888;font-size:.85rem;margin-bottom:20px;padding:10px 14px;background:#f8faf8;border-radius:8px}
+</style>
+<style>
+.tab-bar-course{display:flex;gap:8px;margin-bottom:16px;border-bottom:2px solid #e0e0e0;padding-bottom:8px}
+.tab-btn-course{padding:8px 20px;border:none;border-radius:8px 8px 0 0;background:transparent;color:#666;font-size:.95rem;cursor:pointer;transition:all .2s}
+.tab-btn-course:hover{background:#f0f7f0;color:#2e7d32}
+.tab-btn-course.active{background:#e8f5e9;color:#2e7d32;font-weight:600}
+.tab-panel{min-height:200px}
+.photo-grid a{transition:transform .2s,box-shadow .2s}
+.photo-grid a:hover{transform:scale(1.03);box-shadow:0 4px 16px rgba(0,0,0,.15)}
+</style>
+
 </head>
 <body>
-<div class="site-header" style="padding:20px 0">
+<div class="site-header">
   <div class="container">
     <h1 style="font-size:1.4rem">🌿 园林全景</h1>
+    <p style="color:#666;font-size:.9rem">风景园林知识体系 · 免费全文阅读</p>
   </div>
 </div>
 <nav class="site-nav">
   <div class="container">
-    <a href="../index.html">课程手册</a>
+    <a href="../index.html">园林专业知识</a>
     <a href="../电子书/index.html">电子书</a>
     <a href="../论文/index.html">学术论文</a>
+    <a href="../科普文章/index.html">科普及文章</a>
   </div>
 </nav>
 <div class="container">
-  <div class="article">
-    <h1>中国园林美学</h1>
+      <div class="tab-bar-course">
+    <button class="tab-btn-course active" onclick="switchCourseTab('content')">📖 课程正文</button>
+    <button class="tab-btn-course" onclick="switchCourseTab('photos')">📸 照片图库</button>
+    <button class="tab-btn-course" onclick="switchCourseTab('refs')">📚 延伸参考</button>
+  </div>
+  <div id="tab-content" class="tab-panel">
+  <div class="article" style="margin-top:24px">
+<h1>中国园林美学：诗画在三维空间中的投射</h1>
 
-<p>知识类型：专业必修课 │ 核心文献：《园冶》《说园》《画境文心》 │ 核心框架：意境·空间·品评·美学范畴</p>
+<h2>课程定位</h2>
 
-<h2>一、课程概述</h2>
+<p><strong>知识类型：专业必修课</strong> | <strong>核心文献</strong>：《园冶》《说园》《画境文心》| <strong>核心框架</strong>：意境·空间·品评·美学范畴</p>
 
-<p>中国园林美学不是"园林+美学的拼贴"，而是一套完整的审美体系——园林是中国文人"诗画合一"理想在三维空间中的投射。核心命题：<strong>如何在有限空间中创造无限意境？</strong></p>
+<p>中国园林美学不是"把美学概念套在园林上"的拼贴，而是一套自洽的审美体系。它的根本命题是：如何在有限的物质空间里，创造无限的精神意境？</p>
 
-<p>中国园林美学有三个根基：</p>
+<p>西方美学把"美"作为一个独立范畴来讨论——比例、和谐、崇高、优美。中国园林美学不这样提问。它问的是：一个园子怎么让人"觉得好"，好到想住进去，好到离开后还一直想？这不是形式问题，而是存在感的问题——人在园中，不只是"看到了美"，而是"感到了对"。</p>
+
+<p>本课程的核心不是记住概念，而是进入一种观看方式：像读诗一样读园，像看画一样看园，像品人一样品园。</p>
+
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
+
+<h2>第一部分：哲学根基——儒释道在园林中的汇流</h2>
+
+<p>中国园林的审美意识不是凭空而来的。它的深层结构来自三股哲学源流的交汇。</p>
+
+<h3>儒家——"比德"与"乐山乐水"</h3>
+
+<p>儒家对自然的态度是伦理化的。孔子说"智者乐水，仁者乐山"——山水之所以被喜爱，不是因为它们"好看"，而是因为它们的人格隐喻：水象征智慧（流动、应变），山象征仁德（稳重、恒常）。这种"比德"传统（以自然物比拟人的德性），使中国园林中的一石一木从一开始就负载了人格含义。</p>
+
 <ul>
-<li><strong>哲学根基</strong>：儒释道融合——儒家的"比德"、道家的"道法自然"、禅宗的"意境"</li>
-<li><strong>艺术根基</strong>：诗画同源——园林是"立体的画""凝固的诗"</li>
-<li><strong>技术根基</strong>：《园冶》——世界最早的造园美学专著</li>
+<li>松之挺拔 → 君子之刚直</li>
+<li>竹之虚心 → 君子之谦逊</li>
+<li>莲之出淤泥不染 → 君子之清高</li>
+<li>梅之凌寒独放 → 君子之坚韧</li>
 </ul>
 
-<h3>核心概念谱系</h3>
+<p>这就是为什么中国园林中很少有"纯装饰性"的植物——每一棵树的背后都站着一个人格。</p>
 
-<table><thead><tr>
-<th>概念</th>
-<th>含义</th>
-<th>典型表现</th>
-</tr></thead><tbody>
-<tr>
-<td>意境</td>
-<td>情景交融产生的精神空间</td>
-<td>拙政园"荷风四面"无荷亦觉风</td>
-</tr>
-<tr>
-<td>借景</td>
-<td>将园外之景纳入园内</td>
-<td>拙政园借北寺塔</td>
-</tr>
-<tr>
-<td>对景</td>
-<td>两景点互为观赏对象</td>
-<td>留园冠云峰对林泉耆硕之馆</td>
-</tr>
-<tr>
-<td>框景</td>
-<td>通过门洞窗洞裁取画面</td>
-<td>苏州园林几乎每窗皆画</td>
-</tr>
-<tr>
-<td>抑景</td>
-<td>先抑后扬的空间对比</td>
-<td>留园入口狭长→豁然开朗</td>
-</tr>
-<tr>
-<td>虚实</td>
-<td>物质与空间的互生关系</td>
-<td>粉墙为实，花影为虚</td>
-</tr>
-<tr>
-<td>含蓄</td>
-<td>不直说，留想象余地</td>
-<td>匾额楹联的隐晦典故</td>
-</tr>
+<h3>道家——"道法自然"与"无为"</h3>
 
-<h2>二、核心文献体系</h2>
+<p>道家对园林的影响比儒家更直接、更深刻。"道法自然"不是"模仿自然的外形"，而是顺应自然的规律——山该怎么堆就怎么堆，水该怎么流就怎么流，不强行扭曲。</p>
 
-</tbody></table>
-<p>中国园林美学的知识谱系，由四部经典构成：</p>
+<p>道家贡献了两个核心美学原则：</p>
+<ul>
+<li>**"大巧若拙"**：最高的技巧看起来像没有技巧。叠石的最高境界是让人看不出是堆的。</li>
+<li>**"虚实相生"**：有（物质）和无（空间）相互依存。墙是实的，墙上的漏窗是虚的；建筑是实的，建筑围出的庭院是虚的。</li>
+</ul>
+
+<h3>禅宗——"意境"与"顿悟"</h3>
+
+<p>禅宗在宋以后深刻影响了中国园林。"意境"这个概念本身就是禅宗美学的核心——不执着于物象本身，而追求物象之外的"言外之意、象外之象"。</p>
+
+<p>禅宗的影响体现在：</p>
+<ul>
+<li>枯山水的精神（源头在中国）</li>
+<li>"少即是多"的审美偏好——一峰则太华千仞，一勺则江湖万里</li>
+<li>游园如参禅——每一步都是"发现"，每一转折都是"顿悟"</li>
+</ul>
+
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
+
+<h2>第二部分：核心文献体系——四部奠基之作</h2>
+
+<p>中国园林美学的知识体系，由四部跨越四百年的著作构成。</p>
 
 <h3>计成《园冶》（1634年）</h3>
-<p>世界第一部园林艺术理论专著。</p>
+
+<p>世界第一部系统性的造园美学专著。最核心命题：<strong>"虽由人作，宛自天开"</strong>——人工营造的最高成就是"像没被人工动过一样"。</p>
+
 <ul>
-<li><strong>最核心命题</strong>："虽由人作，宛自天开"——人工与自然的最高统一</li>
-<li><strong>相地篇</strong>：六种选址——山林地、城市地、村庄地、郊野地、傍宅地、江湖地，各有设计策略</li>
-<li><strong>借景篇</strong>："夫借景，园林之最要者也。如远借、邻借、仰借、俯借、应时而借"——五种借景法则</li>
-<li><strong>价值观</strong>：反对过度堆砌——"雕栋飞楹构易，荫槐挺玉成难"</li>
+<li>**相地篇**：六种选址——山林地（最佳）、城市地（最难）、村庄地、郊野地、傍宅地、江湖地</li>
+<li>**立基篇**：如何确定建筑位置——"先乎取景，妙在朝南"</li>
+<li>**借景篇**："夫借景，园林之最要者也"——提出五种借景法则：远借、邻借、仰借、俯借、应时而借</li>
+<li>**叠山篇**："有真为假，做假成真"——叠山的辩证法</li>
+<li>**价值观**："雕栋飞楹构易，荫槐挺玉成难"——雕梁画栋容易做，有姿态的老槐树却要等上百年</li>
 </ul>
 
-<h3>陈从周《说园》</h3>
-<p>中国园林美学的现代经典，以文人随笔方式写就。</p>
+<h3>陈从周《说园》（1980年代）</h3>
+
+<p>中国园林美学的现代经典。不是学院论文，而是以文人随笔的方式写成的美学散文。核心贡献：</p>
 <ul>
-<li><strong>动静</strong>："小园以静观为主，大园以动观为主"</li>
-<li><strong>山水</strong>："水随山转，山因水活"——造园的核心辩证法</li>
-<li><strong>花木</strong>："不仅为了绿化，且要具有画意"</li>
-<li><strong>含蓄</strong>："中国园林妙在含蓄，一山一石耐人寻味"</li>
-<li><strong>质感</strong>："质感存真"——楠木厅不髹漆，真石假不了</li>
+<li>**"动静说"**——"小园以静观为主，大园以动观为主"</li>
+<li>**"山水说"**——"水随山转，山因水活"</li>
+<li>**"含蓄说"**——"中国园林妙在含蓄，一山一石耐人寻味"</li>
+<li>**"质感说"**——"质感存真"：楠木厅不髹漆，真石不仿造</li>
 </ul>
 
-<h3>童寯《江南园林志》</h3>
-<p>中国现代园林研究的奠基之作，以测绘+照片+分析三位一体。</p>
+<h3>童寯《江南园林志》（1937年成稿，1963年出版）</h3>
+
+<p>中国现代园林研究的奠基之作。以现代建筑学的精准测绘+摄影记录+文字分析三位一体的方式记录了江南园林。核心贡献：</p>
 <ul>
-<li><strong>核心贡献</strong>：首次以现代建筑学方法记录中国园林</li>
-<li><strong>审美标准</strong>："园之妙处，在虚实互映"</li>
+<li>首次以平面图、剖面图精确记录苏州园林的空间结构</li>
+<li>提出"园之妙处，在虚实互映"的空间美学判断</li>
 </ul>
 
-<h3>周维权《中国古典园林史》</h3>
-<p>中国古典园林的通史框架。</p>
+<h3>周维权《中国古典园林史》（1990年）</h3>
+
+<p>中国古典园林的通史框架。分期框架：</p>
 <ul>
-<li><strong>分期体系</strong>：生成期（商周秦汉）→转折期（魏晋南北朝）→全盛期（隋唐）→成熟期（宋）→成熟后期（元明清）</li>
-<li><strong>"四大要素"</strong>：叠山·理水·建筑·花木——园林语言的基本语法</li>
+<li>**生成期**（商周秦汉）——园林从祭祀和狩猎空间萌芽</li>
+<li>**转折期**（魏晋南北朝）——文人参与造园，园林开始"诗化"</li>
+<li>**全盛期**（隋唐）——规模宏大，诗画与园林深度融合</li>
+<li>**成熟期**（宋）——意境成为造园的最高追求</li>
+<li>**成熟后期**（元明清）——技法高度成熟，但也出现程式化</li>
 </ul>
 
-<h2>三、意境论——中国园林美学的核心</h2>
+<p><strong>四要素框架</strong>：叠山·理水·建筑·花木——造园的四种基本语言，任何园林都是这四种语言的组合。</p>
 
-<h3>意境是什么</h3>
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
 
-<p>"意"是园主/造园家的精神寄托，"境"是物理空间的营造。"意境"= 意与境的融合，情景交融产生的精神空间。</p>
+<h2>第三部分：意境论——中国园林美学的灵魂</h2>
 
-<p>陈从周总结："园林之妙，在于借景、对景、分景、隔景，种种手法，总以虚实二字统之。"虚实相生，意境自出。</p>
+<h3>什么是意境</h3>
+
+<p>"意"是造园家的精神寄托，"境"是物理空间的营造。"意境"不是这两者的简单相加，而是它们融合之后产生的新东西——一个无法被还原为物质元素的精神空间。</p>
+
+<p>陈从周的总结最精炼："园林之妙，在于借景、对景、分景、隔景，种种手法，总以虚实二字统之。"</p>
 
 <h3>意境生成三层次</h3>
 
 <p><strong>第一层：视觉之美（形）</strong></p>
+
+<p>这是最基础的层面，但中国园林的"视觉"从来不是纯粹的感官：</p>
 <ul>
-<li>太湖石：瘦皱漏透丑</li>
-<li>水面的倒影与天光</li>
-<li>花木的季节变化</li>
+<li>太湖石的"瘦"——不是瘦弱，是"清瘦骨立"的精神气质</li>
+<li>水面的"倒影"——把天空拉入地面，虚与实在此交汇</li>
+<li>花木的"色"——不仅是颜色，更是"春山淡冶而如笑"的情态</li>
 </ul>
 
 <p><strong>第二层：时空之美（境）</strong></p>
+
+<p>中国园林拒绝"一次性看完"的体验。它要求你反复来、不同季节来、不同时辰来。</p>
 <ul>
-<li>四时之景不同："春见山容，夏见山气，秋见山情，冬见山骨"</li>
-<li>雨雪晴晦各成意境——拙政园"留听阁"（李商隐"留得枯荷听雨声"）</li>
-<li>月光下的园林——网师园"月到风来亭"</li>
+<li>四时之景不同——"春见山容，夏见山气，秋见山情，冬见山骨"</li>
+<li>雨雪晴晦各成意境——拙政园"留听阁"的存在，就是提醒你"雨天还要来"</li>
+<li>月光下的园林——网师园"月到风来亭"，没有月亮的夜晚这个亭子少了三分魂</li>
 </ul>
 
 <p><strong>第三层：精神之美（意）</strong></p>
+
+<p>这是意境的最高层次——超越了视觉和时空，进入文化记忆和人格投射的领域。</p>
 <ul>
-<li>匾额楹联——点题</li>
-<li>历史记忆——沧浪亭的苏舜钦、拙政园的文徵明</li>
-<li>文化联想——一石一木皆有出处典故</li>
+<li>匾额楹联——用文字点题，给空间一个"说法"</li>
+<li>历史记忆——沧浪亭因苏舜钦而有了"苍古"气质</li>
+<li>文化联想——一石一木皆有出处：竹是君子，松是刚直，莲是清高</li>
 </ul>
 
-<h3>意境名句与案例</h3>
+<h3>意境典型案例</h3>
 
-<p>"清风明月本无价，近水远山皆有情"——沧浪亭（欧阳修+苏舜钦/对联）</p>
-<p>"拙者之为政"——拙政园（潘岳《闲居赋》）</p>
-<p>"香远益清"——拙政园远香堂（周敦颐《爱莲说》）</p>
-<p>"濯缨濯足"——网师园濯缨水阁（《楚辞·渔父》）</p>
-<p>"退思补过"——退思园（《左传》）</p>
+<p><strong>沧浪亭</strong>："清风明月本无价，近水远山皆有情"——上联欧阳修，下联苏舜钦，两位北宋文人在南宋园林中隔空对话。</p>
 
-<h2>四、空间美学——造园的核心手法</h2>
+<p><strong>拙政园·远香堂</strong>："香远益清"取自周敦颐《爱莲说》——站在堂中，看着满池荷花，"闻到"的不仅是荷香，更是"君子"的人格芬芳。</p>
 
-<h3>空间序列</h3>
+<p><strong>拙政园·与谁同坐轩</strong>：苏轼"与谁同坐？明月清风我"——轩极小，只容二三人，但三个"人"（你、明月、清风）在精神层面济济一堂。</p>
 
-<p>中国园林的空间是<strong>叙事性</strong>的——游园如读画、如品诗。</p>
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
 
+<h2>第四部分：空间美学——造园的核心手法</h2>
+
+<p>意境不能凭空产生。它需要一整套空间手法来"制造"。</p>
+
+<h3>空间序列：游园如读画</h3>
+
+<p>中国园林的空间不是"摊开"给人看的，而是逐步展开的。游园的过程如同展开一幅手卷。</p>
+
+<p><strong>经典案例：留园入口</strong>——从狭窄幽暗的城市巷弄进入 → 经过曲折廊道（极度压缩）→ 古木交柯（第一次"透一口气"）→ 绿荫轩（视线进一步扩展）→ 涵碧山房前（豁然开朗）。全长不过数十米，经历了三次空间节奏变化。</p>
+
+<h3>借景：园之最要</h3>
+
+<blockquote>"借者，园虽别内外，得景则无拘远近。"——《园冶》</blockquote>
+
+<p>借景的本质是突破物理边界：园墙之内空间有限，但视线可以出去。</p>
 <ul>
-<li><strong>起承转合</strong>：入口→过渡→高潮→收束</li>
-<li><strong>案例</strong>：留园入口——从狭窄幽暗的城市巷弄，经曲折廊道，至古木交柯（第一次豁然），到绿荫轩（第二次扩展），最终在涵碧山房前达到高潮——全长不过数十米，却经历了三次空间节奏变化</li>
-</ul>
-
-<h3>借景（园林之最要）</h3>
-
-<ul>
-<li><strong>远借</strong>：拙政园借北寺塔——园内无塔，视线出园即见</li>
-<li><strong>邻借</strong>：沧浪亭借园外水景——园墙临水，水面为邻</li>
-<li><strong>仰借</strong>：仰视山巅高塔、飞檐翘角</li>
-<li><strong>俯借</strong>：俯瞰池中倒影、游鱼水草</li>
-<li><strong>应时而借</strong>：四季光景——春桃夏荷秋枫冬梅</li>
+<li>**远借**：拙政园借北寺塔</li>
+<li>**邻借**：沧浪亭借园外河景</li>
+<li>**仰借**：仰视高塔、飞檐、云天</li>
+<li>**俯借**：俯瞰水面倒影、池中游鱼</li>
+<li>**应时而借**：春桃、夏荷、秋枫、冬梅</li>
 </ul>
 
 <h3>虚实相生</h3>
 
-<p>"虚" = 空间、水面、光影、声音、气味</p>
-<p>"实" = 建筑、山石、墙体、植物</p>
-
+<p>"虚"是空间、水面、光影、声音、气味；"实"是建筑、山石、墙体、植物。两者必须互相定义。</p>
 <ul>
-<li><strong>粉墙为纸，花影为画</strong>——白墙前植竹，日光投射即成一幅墨竹图</li>
-<li><strong>水面为虚，建筑为实</strong>——拙政园水面占五分之三，建筑浮于水上</li>
-<li><strong>窗为虚，墙为实</strong>——漏窗既是墙上的"虚"，又框出"实"的景致</li>
+<li>粉墙为纸，花影为画</li>
+<li>水面为虚，建筑为实</li>
+<li>漏窗为虚，墙体为实</li>
 </ul>
 
 <h3>对比与节奏</h3>
 
 <ul>
-<li><strong>大小对比</strong>：留园入口→阔大水面</li>
-<li><strong>明暗对比</strong>：狮子林洞壑幽暗→亭台明亮</li>
-<li><strong>高低对比</strong>：远香堂平视→假山仰望→亭榭俯瞰</li>
-<li><strong>藏露对比</strong>：景不藏不深，路不曲不幽</li>
+<li>**大小对比**：留园入口极窄 → 阔大水面</li>
+<li>**明暗对比**：狮子林假山洞穴幽暗 → 走出洞口亭台明亮</li>
+<li>**高低对比**：平视→仰望→俯瞰</li>
+<li>**藏露对比**："景不藏不深，路不曲不幽"</li>
 </ul>
 
-<h2>五、审美范畴</h2>
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
 
-<h3>雅俗之辨</h3>
+<h2>第五部分：审美范畴——价值判断的坐标</h2>
 
-<p>中国园林美学最鲜明的价值判断。</p>
-<ul>
-<li><strong>雅</strong>：简素、含蓄、书卷气——网师园（小园极则）、沧浪亭（苍古无金粉气）</li>
-<li><strong>俗</strong>：堆砌、张扬、匠气——晚清某些盐商园林</li>
-</ul>
+<h3>雅与俗</h3>
 
-<p>陈从周说："中国园林该有书卷气，这一条是中国传统艺术的命脉。"</p>
+<p>这是最核心的价值判断。<strong>雅</strong>：简素、含蓄、书卷气——如网师园（"小园极则"）、沧浪亭。<strong>俗</strong>：堆砌、张扬、匠气。陈从周："中国园林该有书卷气，这一条是中国传统艺术的命脉。"</p>
 
 <h3>自然与人工</h3>
 
-<p>不是对立，而是辩证统一。</p>
-<ul>
-<li>"虽由人作，宛自天开"——最高境界是人工痕迹的消失</li>
-<li>"有真为假，做假成真"（《园冶》）——叠山"假"得"真"才是好假山</li>
-</ul>
+<p>"虽由人作，宛自天开"——最高境界是人工痕迹消失。"有真为假，做假成真"——环秀山庄的假山是"做假成真"的巅峰。</p>
 
-<h3>繁简之辩</h3>
+<h3>繁与简</h3>
 
-<ul>
-<li>简：明代园林（品类不多，安排得当，无一处雷同）——简而精</li>
-<li>繁：晚清园林（作品趋于繁缛）——繁而匠气</li>
-<li>陈从周："造园不在花钱多，而在花思想多"</li>
-<li>最高境界："贫女巧梳头"——朴素中的精致</li>
-</ul>
+<p><strong>简</strong>：明代园林——品类不多，安排得当，无一处雷同。<strong>繁</strong>：晚清部分园林——堆砌过多，失了空灵。陈从周："造园不在花钱多，而在花思想多。"——最好的比喻是"贫女巧梳头"。</p>
 
 <h3>质朴与真</h3>
 
+<p>"质感存真"：楠木厅不髹漆，真石不用水泥仿制。"真"在中国园林美学中不是"写实"，而是<strong>"不欺骗"</strong>——材料是什么就呈现什么。</p>
+
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
+
+<h2>第六部分：品园方法论——如何"读"一座园林</h2>
+
+<h3>静观与动观</h3>
+
 <ul>
-<li>"质感存真"——楠木不髹漆、真石胜水泥</li>
-<li>假山用混凝土——"不真了"</li>
-<li>素菜以荤名——"不真了"</li>
+<li>**静观**：小园——驻足观赏。"槛前细数游鱼"</li>
+<li>**动观**：大园——移步换景。"径缘池转，廊引人随"</li>
 </ul>
 
-<h2>六、品园方法论</h2>
-
-<p>陈从周提出了一套完整的品园方法：</p>
+<h3>四维观法</h3>
 
 <ul>
-<li><strong>静观</strong>：小园——驻足观赏，"槛前细数游鱼"</li>
-<li><strong>动观</strong>：大园——移步换景，"径缘池转，廊引人随"</li>
-<li><strong>仰观</strong>：看高处——楼阁掩映、高柳蝉鸣</li>
-<li><strong>俯观</strong>：看低处——假山脚、水口、铺地</li>
+<li>**仰观**：看高处——楼阁掩映、飞檐翘角</li>
+<li>**俯观**：看低处——假山脚如何入土、水口如何转折</li>
+<li>**平观**：看前方——视线的穿透、远景的层次</li>
+<li>**回观**：转身看背后——好园子没有"背面"</li>
 </ul>
 
-<h3>品园四要素</h3>
+<h3>品园四要素（陈从周）</h3>
 
-<p><strong>形</strong>：布局、比例、空间关系</p>
-<p><strong>影</strong>：倒影、花影、光影变化的审美价值</p>
-<p><strong>声</strong>：水声、风声、雨声、鸟鸣、钟声</p>
-<p><strong>色</strong>：粉墙黛瓦、花木四时之色——"雅洁存质感"</p>
-
-<h3>经典品评</h3>
-
-<p>陈从周对各园的经典评价：</p>
 <ul>
-<li>网师园："小园极则"</li>
-<li>拙政园："妙在移步换影"</li>
+<li>**形**：布局、比例、空间关系——可测量的部分</li>
+<li>**影**：倒影、花影、光影——时间和光线参与的部分</li>
+<li>**声**：水声、风声、雨声、鸟鸣——听觉进入的部分</li>
+<li>**色**：粉墙黛瓦、花木四时之色——"雅洁存质感"</li>
+</ul>
+
+<h3>经典品评摘录</h3>
+
+<ul>
+<li>网师园："小园极则"——小园的完美范本</li>
+<li>拙政园："妙在移步换影"——每走一步都是一个新的构图</li>
 <li>沧浪亭："园林苍古，在于树老石拙"</li>
-<li>留园冠云峰："翘首西望，远眺枫林若醉"</li>
 <li>环秀山庄假山："如真山洞壑"</li>
 <li>瘦西湖钓鱼台："从两圆拱门远眺，白塔与五亭桥正分别逗入两圆门中"</li>
 </ul>
 
-<h2>七、中国园林美学的世界意义</h2>
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
+
+<h2>第七部分：中国园林美学的世界影响</h2>
+
+<h3>对18世纪英国的影响</h3>
+
+<p>建筑师钱伯斯（Sir William Chambers）设计的邱园中的中国塔，以及其在《中国建筑与设计》中的论述，直接推动了英国自然风景园的革命——从僵硬的法国几何式园林转向"如画"的自然式园林。</p>
+
+<h3>对现代景观的启示</h3>
 
 <ul>
-<li><strong>对18世纪英国的影响</strong>：钱伯斯（Sir William Chambers）将中国造园理念带回欧洲，推动英国自然风景园革命</li>
-<li><strong>对现代景观的启示</strong>：布雷·马克斯的曲线抽象图案、日本现代建筑中的"借景"手法</li>
-<li><strong>对当代设计的价值</strong>：在有限空间中创造无限——城市微空间、口袋公园的中国智慧</li>
+<li>布雷·马克斯的曲线抽象图案——与苏州园林的铺地、水岸线有深层共鸣</li>
+<li>日本现代建筑中的"借景"手法</li>
+<li>当代"口袋公园"设计——在极有限空间中创造丰富体验</li>
 </ul>
 
-<h2>八、核心参考</h2>
+<h3>对当代城市设计的价值</h3>
 
+<p>在土地资源日益紧张的城市中，"如何在有限空间里创造无限意境"已从文人雅趣变成了普遍的城市命题。中国园林的智慧——以少胜多、以小见大、虚实相生——为城市微空间、社区花园、屋顶花园提供了古典答案。</p>
+
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
+
+<h2>延伸参考</h2>
+
+<p><strong>核心文献（按阅读顺序推荐）</strong>：</p>
 <ul>
-<li><strong>计成《园冶》</strong>——理论源头</li>
-<li><strong>陈从周《说园》</strong>（含《陈从周说园》长江文艺出版社2019版）——现代经典</li>
-<li><strong>画境文心：中国古典园林之美</strong>——通俗美学读本</li>
-<li><strong>童寯《江南园林志》</strong>——学术奠基</li>
-<li><strong>周维权《中国古典园林史》</strong>——通史框架</li>
-<li><strong>曹林娣《苏州园林匾额楹联鉴赏》</strong>——匾额文化</li>
-<li>参考资料/道家思想与中国园林艺术精神.md</li>
+<li>陈从周.《说园》——入门最佳，文字优美</li>
+<li>计成（明）.《园冶》（陈植注释版）——理论源头</li>
+<li>童寯.《江南园林志》——图版丰富，精准可靠</li>
+<li>周维权.《中国古典园林史》——完整的历史框架</li>
+<li>曹林娣.《苏州园林匾额楹联鉴赏》——匾联文化的专门研究</li>
 </ul>
 
-<h2>九、图片素材</h2>
-
+<p><strong>参考资料</strong>：</p>
 <ul>
-<li>13-园林学习/01-图片/04-中式古典/（意境空间的摄影表达）</li>
-<li>45-园林全景/图片/中国古典/（样本图）</li>
+<li>《画境文心：中国古典园林之美》——通俗美学读本</li>
 </ul>
+
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
+
+<p><em>专业必修 · 美学</em></p>
 
   </div>
-  <div style="text-align:center;margin:10px 0 30px;display:flex;gap:10px;justify-content:center"><a href="10-园林心理学.html" style="padding:8px 20px;background:#2d4a2d;color:#fff;border-radius:8px;text-decoration:none;font-size:.85rem">← 上一科</a></div>
+</div>
+  </div>
+  <div id="tab-photos" class="tab-panel" style="display:none">
+  <h2 style="margin:24px 0 12px;color:#2e7d32">📸 中国园林美学照片图库</h2>
+  <p style="color:#888;font-size:.85rem;margin-bottom:16px">共 283 张 · 点击可查看大图</p>
+  <div class="photo-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:30px">
+    <a href="../图片/04-江南园林专题/5fc868930e07ec5f1245eb54f1c87076.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/5fc868930e07ec5f1245eb54f1c87076.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/b542b3f54ea57a56678be6f81f8e6a6a.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/b542b3f54ea57a56678be6f81f8e6a6a.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/027481c7b4f083846734b5a64737907d.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/027481c7b4f083846734b5a64737907d.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/1119c024c43106f906d7b3bb61e3242b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/1119c024c43106f906d7b3bb61e3242b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/332e7dde262014352cd468da47d47d86.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/332e7dde262014352cd468da47d47d86.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/33ce71832e53b2f20dd10bc5703d4a74.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/33ce71832e53b2f20dd10bc5703d4a74.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/41a347e2dc15ed93dcaf6fedfc3060ac.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/41a347e2dc15ed93dcaf6fedfc3060ac.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/4aa679a4e352fb61f045e5a792fdc3e7.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/4aa679a4e352fb61f045e5a792fdc3e7.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/5661999_214704766000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/5661999_214704766000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/6150b6c0e6322d256abcf73634d44808.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/6150b6c0e6322d256abcf73634d44808.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/71938e668c2488d52144d9309682baa5.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/71938e668c2488d52144d9309682baa5.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/83564db4c5d295a5f7c8c231f82b6cb1.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/83564db4c5d295a5f7c8c231f82b6cb1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/84c452ffc2f89d9aef19f152b5a827b1.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/84c452ffc2f89d9aef19f152b5a827b1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/88e0b6f2de39949f766bba9eeb98ee7b (1).jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/88e0b6f2de39949f766bba9eeb98ee7b (1).jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/996faefd0ee6b8976a3e7b81ba0eb986.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/996faefd0ee6b8976a3e7b81ba0eb986.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/a3c20636d76a9c96216edae6bc36bd05.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/a3c20636d76a9c96216edae6bc36bd05.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/a78f153bdf865130dc1cce2d2efc7e98.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/a78f153bdf865130dc1cce2d2efc7e98.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/a9ee6ae489caad4fc3e36c2a4a0c534d.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/a9ee6ae489caad4fc3e36c2a4a0c534d.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/aa5072f2994842325d88fbc335309aef.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/aa5072f2994842325d88fbc335309aef.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/af6f42d24185cae64c0be3d7cc8e74de.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/af6f42d24185cae64c0be3d7cc8e74de.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/b18f0373e835ba3172eed42c7ca58211.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/b18f0373e835ba3172eed42c7ca58211.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/b242415047cd852cde30d2ccf2b6279c.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/b242415047cd852cde30d2ccf2b6279c.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/b37cbdf1e3eb9db283076c851e88b6ea.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/b37cbdf1e3eb9db283076c851e88b6ea.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/b4b7fb9fe0c5f837fc9b53538b5f067f.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/b4b7fb9fe0c5f837fc9b53538b5f067f.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/b53bc6a075a91b607875e04b3e089808.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/b53bc6a075a91b607875e04b3e089808.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/b6ef1ebcccb9ba17c186ff36176f0e65.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/b6ef1ebcccb9ba17c186ff36176f0e65.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/b82461b16a3859bc61fb46979edb2f68.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/b82461b16a3859bc61fb46979edb2f68.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/b89549273ffe65341da590e3684dd543.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/b89549273ffe65341da590e3684dd543.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/c05f1337ca7a8e0a83d6573903f5afcd.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/c05f1337ca7a8e0a83d6573903f5afcd.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/c1ef4c4d23ecd0d47ac1e3d65ec88ae9.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/c1ef4c4d23ecd0d47ac1e3d65ec88ae9.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/c55b910878ea1289e74fb214caac39f7.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/c55b910878ea1289e74fb214caac39f7.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/c9b95a59f547e0c805eb232b4c8daca8.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/c9b95a59f547e0c805eb232b4c8daca8.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/ce2a80ca6b8afb666431ade0fae8acb6.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/ce2a80ca6b8afb666431ade0fae8acb6.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/d5a3470daa51ead8f1194ed136b6e19b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/d5a3470daa51ead8f1194ed136b6e19b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/d9426f5bdb58d47bf1f8cff67bbec36d.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/d9426f5bdb58d47bf1f8cff67bbec36d.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/da1ceb254a67d26db6612769a4f4e839.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/da1ceb254a67d26db6612769a4f4e839.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/da9b97e578f10fbf3fca2b97a887e78c.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/da9b97e578f10fbf3fca2b97a887e78c.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/dbe651afbcbef8ff78c8cac3917259ad.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/dbe651afbcbef8ff78c8cac3917259ad.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/e155f697ae58cf166adcca0926a02e4a.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/e155f697ae58cf166adcca0926a02e4a.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/e597e8fef48ecffbe048f5faa5c41281.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/e597e8fef48ecffbe048f5faa5c41281.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/e5b4034e15654457c763dbc493d6f2b8.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/e5b4034e15654457c763dbc493d6f2b8.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/e91bf661821f81223540bc5297618b45.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/e91bf661821f81223540bc5297618b45.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/e93c37c6a7de789bba8421944a19e48e.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/e93c37c6a7de789bba8421944a19e48e.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/e955ae5a3c7331f8c583967c5c721523.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/e955ae5a3c7331f8c583967c5c721523.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/e9a1fa277003265a10e9d4bf48ac38a0.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/e9a1fa277003265a10e9d4bf48ac38a0.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/ea539c029d4897f4dc2815051c1f7e9b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/ea539c029d4897f4dc2815051c1f7e9b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/eab38190fceeb96bdc2964c00dc10296.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/eab38190fceeb96bdc2964c00dc10296.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/eaf8649fb35ce967f73ea7e19e739bf4.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/eaf8649fb35ce967f73ea7e19e739bf4.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/eef5daa407ed0d9f075ff0c6d991d003.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/eef5daa407ed0d9f075ff0c6d991d003.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/f07cd8206f1b384d61b389013743984d.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/f07cd8206f1b384d61b389013743984d.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/fa114db3ef70de2c333af2eb9d7e4ee8.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/fa114db3ef70de2c333af2eb9d7e4ee8.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/fc28588e9146ebc18cab373c6e5986f0.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/fc28588e9146ebc18cab373c6e5986f0.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/fcc6a0e5cf5b1d74f6200df3be9e2b1e.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/fcc6a0e5cf5b1d74f6200df3be9e2b1e.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/fddb4268dddc252735a636883702619f.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/fddb4268dddc252735a636883702619f.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/fde6ea3e1a3641005152695776bd4e8c.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/fde6ea3e1a3641005152695776bd4e8c.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/02-中式古典/images (4).jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/02-中式古典/images (4).jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/0033033979247366_b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/0033033979247366_b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/0033034190859664_b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/0033034190859664_b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/0034034836264220_b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/0034034836264220_b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/0040039506760992_b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/0040039506760992_b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/0040039529294118_b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/0040039529294118_b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/0040039542326343_b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/0040039542326343_b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/0040039542370841_b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/0040039542370841_b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/0040039549165729_b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/0040039549165729_b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/0040039549384783_b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/0040039549384783_b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/0040039588437416_b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/0040039588437416_b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/0040039588539797_b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/0040039588539797_b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/08ce228a-ddb8-4bcf-8cde-456bd424d944.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/08ce228a-ddb8-4bcf-8cde-456bd424d944.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/0901221440155fa4196dcd2482.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/0901221440155fa4196dcd2482.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/094753973.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/094753973.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/100d060000001jgkf29BB.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/100d060000001jgkf29BB.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/10298867_204405223000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/10298867_204405223000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/10315300_093136514108_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/10315300_093136514108_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/10416317_231243246000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/10416317_231243246000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/10590999_123532146000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/10590999_123532146000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/10590999_123620927000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/10590999_123620927000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/110.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/110.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/11013840_203200127000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/11013840_203200127000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/11013840_203544652000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/11013840_203544652000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/11029200_000453161000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/11029200_000453161000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/11029200_235401923000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/11029200_235401923000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/110927aqnspt0sls4xjhtj.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/110927aqnspt0sls4xjhtj.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/11117862_222727378000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/11117862_222727378000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/115257a987oje9cza797q8.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/115257a987oje9cza797q8.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/11925352553322018775552.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/11925352553322018775552.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/121810mwqjlewjuquwcsl9.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/121810mwqjlewjuquwcsl9.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/12300609_12300609_1341989755359.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/12300609_12300609_1341989755359.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/12345275_152230313127_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/12345275_152230313127_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/12488932_000412631136_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/12488932_000412631136_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/1271141714899.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/1271141714899.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/1271141715259.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/1271141715259.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/1353016112115.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/1353016112115.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/13588550_222656782595_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/13588550_222656782595_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/13639685_153630188000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/13639685_153630188000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/1376278395531p181o9beis1cb910g51065p371meg2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/1376278395531p181o9beis1cb910g51065p371meg2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/1376453265365p181tg01ii1nckeoe4pj16hb3fng.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/1376453265365p181tg01ii1nckeoe4pj16hb3fng.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/1376454465530p181tgtote43hgc547rn4qm2h1b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/1376454465530p181tgtote43hgc547rn4qm2h1b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/1384722_095316092785_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/1384722_095316092785_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/13971798301228asybf.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/13971798301228asybf.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/1401432541212p18p5ts7g81k7u951has15gkrh820.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/1401432541212p18p5ts7g81k7u951has15gkrh820.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/1401432621083p18p5ts7g826e1ot1cu6l3r1gf2e.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/1401432621083p18p5ts7g826e1ot1cu6l3r1gf2e.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/1401433984770p18p5vhv7o620doov851s571kaca.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/1401433984770p18p5vhv7o620doov851s571kaca.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/14379063_14379063_1349967403031_mthumb.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/14379063_14379063_1349967403031_mthumb.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/1468565522605933.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/1468565522605933.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/151334y15pxx2kxpxl501y.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/151334y15pxx2kxpxl501y.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/152143hj09cc9f9f3tcvvh.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/152143hj09cc9f9f3tcvvh.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/15926661_1448885569419.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/15926661_1448885569419.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/160415135Z7-5.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/160415135Z7-5.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/16542225_101227209192_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/16542225_101227209192_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/16556964_125805644178_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/16556964_125805644178_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/16pic_755498_b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/16pic_755498_b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/16pic_755816_b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/16pic_755816_b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/172238y27and672sbysyam.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/172238y27and672sbysyam.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/18249314_113718122000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/18249314_113718122000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/18772131_221951268000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/18772131_221951268000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/192-0754.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/192-0754.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/19327785_232759659000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/19327785_232759659000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/19450093_19450093_1364833161703.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/19450093_19450093_1364833161703.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/1efb3d7940a9c0038fb7ed38a47de9b867c3ddff5fb1a-akBmfQ_fw658.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/1efb3d7940a9c0038fb7ed38a47de9b867c3ddff5fb1a-akBmfQ_fw658.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/2007.11.07.20.29.26.01.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/2007.11.07.20.29.26.01.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/20080407104827821.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/20080407104827821.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/2009528154239113733112.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/2009528154239113733112.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/20100809233638-B045.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/20100809233638-B045.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/20100809233714-B053.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/20100809233714-B053.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/20110323_09b3ba9d41fefd75fe06DMaVr0W6xg8J.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/20110323_09b3ba9d41fefd75fe06DMaVr0W6xg8J.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/20120521165859968110778.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/20120521165859968110778.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/20131220120247-786815129.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/20131220120247-786815129.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/20141017221734_tmVtx.jpeg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/20141017221734_tmVtx.jpeg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/201465144727908.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/201465144727908.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/20150313111056_s8vaW.jpeg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/20150313111056_s8vaW.jpeg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/20762624_102515939000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/20762624_102515939000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/20832294_124948722000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/20832294_124948722000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/211352z2gz02c800cjuu9c.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/211352z2gz02c800cjuu9c.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/2119458_094848685188_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/2119458_094848685188_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/212702ao19ymmmazy8o9oa.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/212702ao19ymmmazy8o9oa.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/224453a87g5vu79dg5v548.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/224453a87g5vu79dg5v548.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/25151295_25151295_1378029219734.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/25151295_25151295_1378029219734.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/25151295_25151295_1378029237250.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/25151295_25151295_1378029237250.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/254979.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/254979.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/260233556306.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/260233556306.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/2643141_961059.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/2643141_961059.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/2643155_405159.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/2643155_405159.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/267232_060009027_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/267232_060009027_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/27027456_1381117564725_mthumb.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/27027456_1381117564725_mthumb.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/28300142306070140974384868404.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/28300142306070140974384868404.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/28300142306070140974494835617.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/28300142306070140974494835617.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/28300142306070141013625412046.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/28300142306070141013625412046.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/28300142306070141013710190854.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/28300142306070141013710190854.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/28300142306070141013924918513.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/28300142306070141013924918513.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/28300542261568141017035725251.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/28300542261568141017035725251.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/28300542261568141017143254760.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/28300542261568141017143254760.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/28300542261568141017159977915.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/28300542261568141017159977915.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/28300542261568141017326112357.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/28300542261568141017326112357.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/28300542261568141035128789700.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/28300542261568141035128789700.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/30288602_1388838881300_mthumb.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/30288602_1388838881300_mthumb.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/30464771_1389361594280_mthumb.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/30464771_1389361594280_mthumb.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/32405485_1395644286570_mthumb.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/32405485_1395644286570_mthumb.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/3424562_142425279162_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/3424562_142425279162_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/35aaf218013f4d2abbedb487615762f9.jpeg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/35aaf218013f4d2abbedb487615762f9.jpeg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/367377_20141009105250569164_1.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/367377_20141009105250569164_1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/39356403_1412682022872_mthumb.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/39356403_1412682022872_mthumb.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/399-0313.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/399-0313.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/4133180_142457856963_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/4133180_142457856963_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/4898308507986825960.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/4898308507986825960.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/4944785_191028919247_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/4944785_191028919247_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/50402ce6d7485.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/50402ce6d7485.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/5254506_122110075616_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/5254506_122110075616_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/530840_20150407183020933200_1.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/530840_20150407183020933200_1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/53601049201006112336582930284767554_016.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/53601049201006112336582930284767554_016.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/5410902_103502537131_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/5410902_103502537131_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/549219_20151026123905147111_1.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/549219_20151026123905147111_1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/5534961_093441007950_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/5534961_093441007950_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/5661999_145749914000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/5661999_145749914000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/5713677_215111794000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/5713677_215111794000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/5713677_224331277281_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/5713677_224331277281_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/5713677_224332078715_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/5713677_224332078715_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/5713677_230222491303_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/5713677_230222491303_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/5713677_230222858149_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/5713677_230222858149_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/635939_5.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/635939_5.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6361896_223109181152_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6361896_223109181152_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6436497_234751248000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6436497_234751248000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6436497_234755803000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6436497_234755803000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_094431504124_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_094431504124_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_104851189108_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_104851189108_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_112139487185_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_112139487185_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_122521271112_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_122521271112_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_124555242190_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_124555242190_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_133154394161_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_133154394161_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_134854391123_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_134854391123_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_135312384177_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_135312384177_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_141224343142_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_141224343142_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_142903512114_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_142903512114_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_170341178196_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_170341178196_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_200125872000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_200125872000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_202951524121_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_202951524121_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_211659594177_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_211659594177_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_212126636195_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_212126636195_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_212721657116_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_212721657116_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6647776_213536269124_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6647776_213536269124_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6842469_170750257000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6842469_170750257000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6860457_6860457_1298881144484.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6860457_6860457_1298881144484.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/6890032_004953134148_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/6890032_004953134148_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/7039414_080024106000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/7039414_080024106000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/7039414_080026130000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/7039414_080026130000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/7097880_205047435631_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/7097880_205047435631_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/7097880_205640526881_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/7097880_205640526881_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/7117590_231706760197_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/7117590_231706760197_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/7782877_100035310000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/7782877_100035310000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/7782877_103950606000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/7782877_103950606000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/78f3c19b075a44798e43cb4dcde5a920.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/78f3c19b075a44798e43cb4dcde5a920.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/80430_20160121102239566600_1.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/80430_20160121102239566600_1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/8232725_171719408125_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/8232725_171719408125_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/8360181_000630917000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/8360181_000630917000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/9459407_010030842116_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/9459407_010030842116_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/9460604_115331302000_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/9460604_115331302000_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/953_20130628142740552325_1.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/953_20130628142740552325_1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/953_20130628142845597319_1.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/953_20130628142845597319_1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/953_20130628143649556370_1.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/953_20130628143649556370_1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/9600410dc8ff6c6d2d8e3e85b0b302ffc37b8cc9435b1a-NJ7dT4_fw658.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/9600410dc8ff6c6d2d8e3e85b0b302ffc37b8cc9435b1a-NJ7dT4_fw658.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/9711380_105819593102_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/9711380_105819593102_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/Cg-4jVK-amCIB3n2AAJUo2S8egUAAAjPQPk8jEAAlS7295.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/Cg-4jVK-amCIB3n2AAJUo2S8egUAAAjPQPk8jEAAlS7295.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/Cg-4jVK-amGIDBIQAASh4c4e76sAAAjPQPzsU8ABKH5829.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/Cg-4jVK-amGIDBIQAASh4c4e76sAAAjPQPzsU8ABKH5829.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/Cg-4jVMRFGiIBKRFAA9QH3sIREYAAJkQQLvg4kAD1A3438.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/Cg-4jVMRFGiIBKRFAA9QH3sIREYAAJkQQLvg4kAD1A3438.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/Cg-4jVMRFGuIVyK4AA8qvg4Sc4cAAJkQQMo5RYADyrW985.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/Cg-4jVMRFGuIVyK4AA8qvg4Sc4cAAJkQQMo5RYADyrW985.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/Cg-4jlMFEqqIPEvjAAn-fWP8HGgAAIFvQOlmi0ACf6V572.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/Cg-4jlMFEqqIPEvjAAn-fWP8HGgAAIFvQOlmi0ACf6V572.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/Cg-4jlMJ0p-IElt4AAPvZuEmw-IAAIsFwIsbUgAA-9-182.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/Cg-4jlMJ0p-IElt4AAPvZuEmw-IAAIsFwIsbUgAA-9-182.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/Cg-4jlMRFG-IMyhwABBjbcaQ37YAAJkQQN8SRQAEGOF764.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/Cg-4jlMRFG-IMyhwABBjbcaQ37YAAJkQQN8SRQAEGOF764.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/Cg-4jlMRFG2ISl11AAvTAZoGxroAAJkQQNOR7UAC9MZ038.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/Cg-4jlMRFG2ISl11AAvTAZoGxroAAJkQQNOR7UAC9MZ038.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/Cg-4jlMRFGiId8LmABAN9p2HM0sAAJkQQLew00AEA4O919.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/Cg-4jlMRFGiId8LmABAN9p2HM0sAAJkQQLew00AEA4O919.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/Cg-4jlMRFHCICH7KAA43bx5R9JwAAJkQQOeBEIADjeH206.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/Cg-4jlMRFHCICH7KAA43bx5R9JwAAJkQQOeBEIADjeH206.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/CggYs1cgg_GAcO_xABaCXlT6JHs013.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/CggYs1cgg_GAcO_xABaCXlT6JHs013.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/CggYs1cghH2Aa6EFABcSdWrGXXE431.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/CggYs1cghH2Aa6EFABcSdWrGXXE431.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/Cii-TlhwIkiIE_WEAAJuU0f5hRkAAGcAgMNUgMAAm5r420.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/Cii-TlhwIkiIE_WEAAJuU0f5hRkAAGcAgMNUgMAAm5r420.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/DSCN4665.JPG" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/DSCN4665.JPG" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/OOOPIC_endofriver_20091114f81516c194213892.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/OOOPIC_endofriver_20091114f81516c194213892.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/OOOPIC_endofriver_200911159981c9514412a130.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/OOOPIC_endofriver_200911159981c9514412a130.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/U8116P1194DT20120801134501.png" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/U8116P1194DT20120801134501.png" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/W020170425370373893482.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/W020170425370373893482.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/_DSC0662_调整大小.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/_DSC0662_调整大小.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/a16413418_01000.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/a16413418_01000.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/a7112225.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/a7112225.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/b01e5312-0b8c-4157-873f-d5a4478e92a7.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/b01e5312-0b8c-4157-873f-d5a4478e92a7.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/b4a94f2368decaa0004975d14079cbd562425a55349da-r67H99_fw658.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/b4a94f2368decaa0004975d14079cbd562425a55349da-r67H99_fw658.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/b8ca956bfe0ab12a5cdfde45df44c8066ebfb92753030-TkxVjl_fw658.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/b8ca956bfe0ab12a5cdfde45df44c8066ebfb92753030-TkxVjl_fw658.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/c03fd5e7bb0d194030b902.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/c03fd5e7bb0d194030b902.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/d1d23f8391684c53a36776195b314abe.jpeg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/d1d23f8391684c53a36776195b314abe.jpeg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/e3a6e5769a014f60a21aa6164f485d3c_th.png" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/e3a6e5769a014f60a21aa6164f485d3c_th.png" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/f368a2fbbaf9466caf59dbe548d8e2bd.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/f368a2fbbaf9466caf59dbe548d8e2bd.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/http_imgload.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/http_imgload.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/mhrm-dspd29920a30.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/mhrm-dspd29920a30.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/proxy.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/proxy.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/userid263530time20100807021426.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/userid263530time20100807021426.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/wKgBm04VKbSdIJi1AAODFtJbrp858.jpeg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/wKgBm04VKbSdIJi1AAODFtJbrp858.jpeg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/wKgBs1gs_8mAApA_ABEHKk1fbiM41.jpeg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/wKgBs1gs_8mAApA_ABEHKk1fbiM41.jpeg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/江南水乡/wKhJEFSCT84EAAAAAAAAAAAAAAA189.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/江南水乡/wKhJEFSCT84EAAAAAAAAAAAAAAA189.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/124206zhqqwpt2p63p44qh.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/124206zhqqwpt2p63p44qh.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/1401432344435p18p5ts7g71jop26k1fbosa01921q.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/1401432344435p18p5ts7g71jop26k1fbosa01921q.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/140754955.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/140754955.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/19300032686245132404302022038_950.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/19300032686245132404302022038_950.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/19627431_19627431_1365379565093.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/19627431_19627431_1365379565093.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/300001174781130795360051456_950.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/300001174781130795360051456_950.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/430-0689.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/430-0689.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/6647776_091136495175_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/6647776_091136495175_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/6647776_092944698107_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/6647776_092944698107_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/6647776_110127372137_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/6647776_110127372137_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/6647776_171634372106_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/6647776_171634372106_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/6647776_200933708172_2.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/6647776_200933708172_2.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/8ddd-hvvuiyn0345419.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/8ddd-hvvuiyn0345419.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/ChMkK2I7v-uIYwCtAAOTM5_tHvIAABzmAPZgc8AA5NL953.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/ChMkK2I7v-uIYwCtAAOTM5_tHvIAABzmAPZgc8AA5NL953.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/east-ep-a21-2807986.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/east-ep-a21-2807986.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/fae11045ef764aec9be2f85036f8b236.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/fae11045ef764aec9be2f85036f8b236.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州园林/t012c19772bb631e00d.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州园林/t012c19772bb631e00d.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州环秀山庄/1f178a82b9014a90c529bb5ca0773912b31bee38.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州环秀山庄/1f178a82b9014a90c529bb5ca0773912b31bee38.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州环秀山庄/6f061d950a7b0208dc55729661d9f2d3572cc82d.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州环秀山庄/6f061d950a7b0208dc55729661d9f2d3572cc82d.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州环秀山庄/77094b36acaf2edd5f9a049e8e1001e93901935a.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州环秀山庄/77094b36acaf2edd5f9a049e8e1001e93901935a.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州环秀山庄/78310a55b319ebc49c6f8b788b26cffc1e17163f.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州环秀山庄/78310a55b319ebc49c6f8b788b26cffc1e17163f.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州环秀山庄/83025aafa40f4bfbdafa63b50a4f78f0f736182c.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州环秀山庄/83025aafa40f4bfbdafa63b50a4f78f0f736182c.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州环秀山庄/8c1001e93901213fba8d03ab57e736d12f2e950e.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州环秀山庄/8c1001e93901213fba8d03ab57e736d12f2e950e.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州环秀山庄/9358d109b3de9c820766046e6581800a18d843d4.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州环秀山庄/9358d109b3de9c820766046e6581800a18d843d4.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州环秀山庄/b58f8c5494eef01f209355b2e3fe9925bd317dc5.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州环秀山庄/b58f8c5494eef01f209355b2e3fe9925bd317dc5.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州环秀山庄/bd7faf3513ccf8b1a61e12d5.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州环秀山庄/bd7faf3513ccf8b1a61e12d5.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州环秀山庄/d009b3de9c82d1581b81a450890a19d8bd3e42d4.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州环秀山庄/d009b3de9c82d1581b81a450890a19d8bd3e42d4.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/04-江南园林专题/苏州环秀山庄/e4dde71190ef76c6b715b65c9e16fdfaae516785.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/04-江南园林专题/苏州环秀山庄/e4dde71190ef76c6b715b65c9e16fdfaae516785.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+  </div>
+  </div>
+
+
+  <div id="tab-refs" class="tab-panel" style="display:none">
+  <h2 style="margin:24px 0 12px;color:#2e7d32">📚 延伸参考</h2>
+  <p style="color:#888;font-size:.85rem;margin-bottom:16px">推荐阅读与相关电子书</p>
+  <h3 style="margin:20px 0 8px;color:#333">关联阅读</h3>
+  <ul style="margin:8px 0 8px 20px">
+    <li><a href="10-园林心理学.html" style="color:#2e7d32">园林心理学</a></li>
+    <li><a href="12-园林楹联鉴赏.html" style="color:#2e7d32">园林楹联鉴赏</a></li>
+    <li><a href="05-江南园林专题.html" style="color:#2e7d32">江南园林专题</a></li>
+    <li><a href="../电子书/index.html" style="color:#2e7d32">电子书总目录</a></li>
+  </ul>
+  <p style="margin-top:20px;padding:12px;background:#f8faf8;border-radius:8px;font-size:.85rem;color:#888">📖 更多相关电子书，请访问 <a href="../电子书/index.html" style="color:#2e7d32">电子书栏目</a></p>
+  </div>
 </div>
 <div class="site-footer">
-  <div class="container"><a href="../index.html">← 返回课程手册</a> · 园林全景 · 知识共享</div>
+  <div class="container">园林全景 · 知识共享 · 自由阅读</div>
 </div>
 <div class="watermark"></div>
+<div id="related-ebooks" data-keywords="美学,陈从周,说园,园冶,意境"></div>
+<script src="../电子书/related-ebooks.js"></script>
+
+<script>
+function switchCourseTab(tab) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.style.display = 'none');
+  document.querySelectorAll('.tab-btn-course').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + tab).style.display = 'block';
+  document.querySelector('.tab-btn-course[onclick*="' + tab + '"]').classList.add('active');
+}
+</script>
+
 </body>
 </html>

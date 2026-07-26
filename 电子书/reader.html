@@ -38,7 +38,7 @@
     <a href="index.html" class="back">← 返回书馆</a>
     <a href="#" id="download-link" target="_blank" download>📥 下载文件</a>
   </div>
-  <iframe id="pdf-viewer" class="pdf-viewer" src=""></iframe>
+  <iframe id="pdf-viewer" class="pdf-viewer" src="" style="width:100%;height:85vh;border:none;border-radius:8px"></iframe>
 </div>
 <div class="site-footer">
   <div class="container">电子书仅供学习研究 · 版权归原作者所有</div>
@@ -47,15 +47,18 @@
 <script>
 const params = new URLSearchParams(window.location.search);
 const file = params.get('file');
-if(!file||file==='null'){document.getElementById('book-title').textContent='未指定书籍';return}
-const path = file;
-document.getElementById('pdf-viewer').src = path;
-document.getElementById('download-link').href = path;
+if(!file||file==='null'){
+  document.getElementById('book-title').textContent='未指定书籍';
+} else {
+  const path = file;
+  document.getElementById('pdf-viewer').src = path;
+  document.getElementById('download-link').href = path;
 
-const titles = {'园冶注释 （第二版）.pdf':'园冶注释','扬州园林.pdf':'扬州园林','扬州园林 图册.pdf':'扬州园林 图册','江南园林志 一.pdf':'江南园林志','上海豫园.pdf':'上海豫园','画境文心：中国古典园林之美.pdf.pdf':'画境文心：中国古典园林之美','苏州园林.pdf':'苏州园林','苏州园林匾额楹联鉴赏.pdf':'苏州园林匾额楹联鉴赏','说园.pdf':'说园','陈从周说园.epub':'陈从周说园（EPUB）','陈从周全集7-园林谈丛.pdf':'陈从周全集7：园林谈丛','园林与中国文化.pdf.pdf':'园林与中国文化','西方园林史.pdf':'西方园林史',};
-const descs = {'园冶注释 （第二版）.pdf':'世界第一部园林艺术专著，中国古典园林的理论基石。陈植先生的注释版是最权威版本之一。','扬州园林.pdf':'扬州园林艺术特色与经典案例解析。个园、何园、瘦西湖等扬州园林集群的深度解读。','扬州园林 图册.pdf':'陈从周先生拍摄绘制的扬州园林影像图册，珍贵历史资料。','江南园林志 一.pdf':'童寯先生经典之作。系统考察江南园林，测量绘图并记录造园理法。','上海豫园.pdf':'上海豫园的历史沿革、景区特色与造园艺术全解。','画境文心：中国古典园林之美.pdf.pdf':'中国古典园林美学入门——画境即园境，文心即园心。','苏州园林.pdf':'苏州园林的官方权威介绍，涵盖拙政园、留园、网师园等经典。','苏州园林匾额楹联鉴赏.pdf':'苏州园林匾额楹联的系统解读，以文字解读园林意境。','说园.pdf':'陈从周先生谈中国园林的经典文集。文笔优美，见解独到，中国园林美学的入门必读。','陈从周说园.epub':'《说园》的EPUB格式版本，适合移动设备阅读。','陈从周全集7-园林谈丛.pdf':'陈从周先生园林文章合集，涵盖园林谈丛、园林散记等，是研究中国园林的重要文献。','园林与中国文化.pdf.pdf':'从文化角度解读中国园林，探讨园林与中国哲学、文学、绘画的深层关联。','西方园林史.pdf':'高等院校风景园林专业教材，系统讲述古埃及至当代的西方园林演变。',};
-if(titles[file]){document.getElementById('book-title').textContent=titles[file]}
-if(descs[file]){document.getElementById('book-desc').textContent=descs[file]}
+  const titles = {'园冶注释 （第二版）.pdf':'园冶注释','扬州园林.pdf':'扬州园林','扬州园林 图册.pdf':'扬州园林 图册','江南园林志 一.pdf':'江南园林志','上海豫园.pdf':'上海豫园','画境文心：中国古典园林之美.pdf':'画境文心：中国古典园林之美','苏州园林.pdf':'苏州园林','苏州园林匾额楹联鉴赏.pdf':'苏州园林匾额楹联鉴赏','说园.pdf':'说园','陈从周说园 (陈从周) (z-library.sk, 1lib.sk, z-lib.sk).epub':'陈从周说园（EPUB）','陈从周全集7-园林谈丛.pdf':'陈从周全集7：园林谈丛','园林与中国文化.pdf':'园林与中国文化','西方园林史_朱建宁.pdf':'西方园林史','江南园林图录：庭院·景观建筑 () (z-library.sk, 1lib.sk, z-lib.sk).pdf':'江南园林图录：庭院·景观建筑','世界园林史 (【英】Tom Turner) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'世界园林史','世界园林史概要 (张祖刚著, 张祖刚 (1933-)) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'世界园林史概要','中国古典园林史. (周维权) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'中国古典园林史','世界园林史图说（第2版） (张祖刚) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'世界园林史图说','生活美学：英国皇家园艺学会小花园园艺指南（英国皇家园艺学会 200年宝典级收藏之作，BBC《花园画报》杂志盛赞！135种打造小花园的方法，300幅身... (z-library.sk, 1lib.sk, z-lib.sk).pdf':'生活美学：小花园园艺指南','中国岭南盆景创作新技法 (关耀) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'中国岭南盆景创作新技法','图解附石盆景制作与养护 彩图版 (王琼培编著) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'图解附石盆景制作与养护','家庭常见盆景造型与养护 (陈纪周主编) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'家庭常见盆景造型与养护','盆景 (徐晓白编著) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'盆景','盆景技艺入门 (李真，魏耘编著) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'盆景技艺入门','中外景观-居住区景观设计 (administrator) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'中外景观-居住区景观设计','园林景观设计：从概念到形式 ([美]格兰特·W.里德美国风景园林设计师协会陈建业赵寅) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'园林景观设计：从概念到形式','图解景观植物设计-花卉 (Administrator) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'图解景观植物设计-花卉','现代景观设计理论与方法 (成玉宁) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'现代景观设计理论与方法'};
+  const descs = {'园冶注释 （第二版）.pdf':'世界第一部园林艺术专著，中国古典园林的理论基石。陈植先生的注释版是最权威版本之一。','扬州园林.pdf':'扬州园林艺术特色与经典案例解析。个园、何园、瘦西湖等扬州园林集群的深度解读。','扬州园林 图册.pdf':'陈从周先生拍摄绘制的扬州园林影像图册，珍贵历史资料。','江南园林志 一.pdf':'童寯先生经典之作。系统考察江南园林，测量绘图并记录造园理法。','上海豫园.pdf':'上海豫园的历史沿革、景区特色与造园艺术全解。','画境文心：中国古典园林之美.pdf':'中国古典园林美学入门——画境即园境，文心即园心。','苏州园林.pdf':'苏州园林的官方权威介绍，涵盖拙政园、留园、网师园等经典。','苏州园林匾额楹联鉴赏.pdf':'苏州园林匾额楹联的系统解读，以文字解读园林意境。','说园.pdf':'陈从周先生谈中国园林的经典文集。文笔优美，见解独到，中国园林美学的入门必读。','陈从周说园 (陈从周) (z-library.sk, 1lib.sk, z-lib.sk).epub':'《说园》的EPUB格式版本，适合移动设备阅读。','陈从周全集7-园林谈丛.pdf':'陈从周先生园林文章合集，涵盖园林谈丛、园林散记等，是研究中国园林的重要文献。','园林与中国文化.pdf':'从文化角度解读中国园林，探讨园林与中国哲学、文学、绘画的深层关联。','西方园林史_朱建宁.pdf':'高等院校风景园林专业教材，系统讲述古埃及至当代的西方园林演变。','江南园林图录：庭院·景观建筑 () (z-library.sk, 1lib.sk, z-lib.sk).pdf':'江南园林庭院与景观建筑的图录合集，涵盖亭台楼阁轩榭舫廊桥墙门等重要建筑类型。','世界园林史 (【英】Tom Turner) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'英国景观建筑师Tom Turner的世界园林通史，覆盖东西方造园传统的全面梳理。','世界园林史概要 (张祖刚著, 张祖刚 (1933-)) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'中国学者视角的世界园林史概述，系统讲述全球园林发展脉络与经典案例。','中国古典园林史. (周维权) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'周维权经典教材。中国古典园林发展通史，从商周直到明清的系统梳理。','世界园林史图说（第2版） (张祖刚) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'张祖刚著。以图说形式呈现世界园林史，图文并茂的入门佳作。','生活美学：英国皇家园艺学会小花园园艺指南（英国皇家园艺学会 200年宝典级收藏之作，BBC《花园画报》杂志盛赞！135种打造小花园的方法，300幅身... (z-library.sk, 1lib.sk, z-lib.sk).pdf':'英国皇家园艺学会200年宝典。135种小花园打造方法，300幅实景图。','中国岭南盆景创作新技法 (关耀) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'关耀著。岭南盆景创作技法全书，从选材到造型的完整指导。','图解附石盆景制作与养护 彩图版 (王琼培编著) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'王琼培编著。附石盆景从选石、配树到养护的全流程图解。','家庭常见盆景造型与养护 (陈纪周主编) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'陈纪周主编。家庭盆景爱好者必备教程，常见树种的造型与日常养护。','盆景 (徐晓白编著) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'徐晓白编著。盆景艺术基础入门，涵盖盆景史、流派与技法。','盆景技艺入门 (李真，魏耘编著) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'李真、魏耘编著。盆景技艺入门教程，从工具到技法的完整指导。','中外景观-居住区景观设计 (administrator) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'中外居住区景观设计案例集，涵盖住宅区、公寓、别墅等类型。','园林景观设计：从概念到形式 ([美]格兰特·W.里德美国风景园林设计师协会陈建业赵寅) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'美国风景园林设计师协会推荐。从设计概念到最终形式的完整过程。','图解景观植物设计-花卉 (Administrator) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'以图解形式讲述景观设计中花卉的配置原则与应用。','现代景观设计理论与方法 (成玉宁) (z-library.sk, 1lib.sk, z-lib.sk).pdf':'成玉宁著。现代景观设计的系统理论与方法框架。'};
+  if(titles[file]){document.getElementById('book-title').textContent=titles[file]}
+  if(descs[file]){document.getElementById('book-desc').textContent=descs[file]}
+}
 </script>
 </body>
 </html>

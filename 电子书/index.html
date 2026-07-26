@@ -3,97 +3,223 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>园林电子书 · 园林全景</title>
+<title>电子书馆 · 园林全景</title>
 <link rel="stylesheet" href="../style.css">
+<style>
+.tab-bar{display:flex;gap:4px;margin:24px 0 0;border-bottom:2px solid #e0e8e4;padding-bottom:0;flex-wrap:wrap}
+.tab-btn{padding:8px 18px;border:none;background:transparent;font-size:.82rem;font-weight:600;color:#7aaa9a;cursor:pointer;border-radius:10px 10px 0 0;transition:.15s;position:relative;bottom:-2px;white-space:nowrap}
+.tab-btn:hover{color:#1a7a6a;background:#f0f8f4}
+.tab-btn.active{color:#1a7a6a;background:#fff;border:2px solid #e0e8e4;border-bottom-color:#fff}
+.tab-btn .count{font-size:.7rem;background:#e0f0ea;padding:1px 8px;border-radius:20px;margin-left:4px;font-weight:400}
+.tab-btn.active .count{background:#1a7a6a;color:#fff}
+.tab-content{display:none}
+.tab-content.active{display:block}
+.tab-content .card-grid{margin-top:20px}
+.ebook-tag{font-size:.7rem;background:#e8f4ee;color:#2e7d32;padding:2px 10px;border-radius:20px;display:inline-block;margin-right:4px}
+.ebook-size{font-size:.75rem;color:#aaa}
+</style>
 </head>
 <body>
 <div class="site-header">
   <div class="container">
     <h1>📖 园林电子书馆</h1>
-    <p>14本经典园林著作 · 在线全文阅读</p>
+    <p>🏘️4册 · 🌊4册 · 📜5册 · 🎭2册 · 🌍5册 · 🌱5册 · 📐4册 共 29 册</p>
   </div>
 </div>
 <nav class="site-nav">
   <div class="container">
-    <a href="../index.html">课程手册</a>
+    <a href="../index.html">园林专业知识</a>
     <a href="index.html" class="active">电子书</a>
     <a href="../论文/index.html">学术论文</a>
+    <a href="../科普文章/index.html">科普及文章</a>
+    <a href="../图片/index.html">园林图片</a>
+    <a href="../视频/index.html" class="active">视频</a>
   </div>
 </nav>
 <div class="container">
-  <h2 class="section-title">经典电子书</h2>
-  <p style="color:#666;font-size:.9rem;margin:8px 0 4px">点击任意书籍即可在线全文阅读。PDF直接浏览器内嵌显示，EPUB可直接下载。</p>
-  <div class="card-grid">
-    <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=园冶注释%20（第二版）.pdf'">
-        <h3>📖 园冶注释</h3>
-        <p style="font-size:.8rem;color:#888;margin:2px 0 6px">计成（明）／陈植 注释 · 7MB</p>
-        <p>世界第一部园林艺术专著，中国古典园林的理论基石。陈植先生的注释版是最权威版本之一。</p>
-    </div>
-    <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=扬州园林.pdf'">
-        <h3>📖 扬州园林</h3>
-        <p style="font-size:.8rem;color:#888;margin:2px 0 6px">李亚如 · 2MB</p>
-        <p>扬州园林艺术特色与经典案例解析。个园、何园、瘦西湖等扬州园林集群的深度解读。</p>
-    </div>
-    <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=扬州园林%20图册.pdf'">
-        <h3>📖 扬州园林 图册</h3>
-        <p style="font-size:.8rem;color:#888;margin:2px 0 6px">陈从周 · 81MB</p>
-        <p>陈从周先生拍摄绘制的扬州园林影像图册，珍贵历史资料。</p>
-    </div>
-    <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=江南园林志%20一.pdf'">
-        <h3>📖 江南园林志</h3>
-        <p style="font-size:.8rem;color:#888;margin:2px 0 6px">童寯 · 3MB</p>
-        <p>童寯先生经典之作。系统考察江南园林，测量绘图并记录造园理法。</p>
-    </div>
-    <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=上海豫园.pdf'">
-        <h3>📖 上海豫园</h3>
-        <p style="font-size:.8rem;color:#888;margin:2px 0 6px">上海豫园办公室 · 9MB</p>
-        <p>上海豫园的历史沿革、景区特色与造园艺术全解。</p>
-    </div>
-    <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=画境文心：中国古典园林之美.pdf.pdf'">
-        <h3>📖 画境文心：中国古典园林之美</h3>
-        <p style="font-size:.8rem;color:#888;margin:2px 0 6px">佚名 · 6MB</p>
-        <p>中国古典园林美学入门——画境即园境，文心即园心。</p>
-    </div>
-    <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=苏州园林.pdf'">
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab('suzhou')">🏘️ 苏州扬州 <span class="count">4</span></button>
+    <button class="tab-btn" onclick="switchTab('jiangnan')">🌊 江南风物 <span class="count">4</span></button>
+    <button class="tab-btn" onclick="switchTab('classic')">📜 经典理论 <span class="count">5</span></button>
+    <button class="tab-btn" onclick="switchTab('culture')">🎭 园林文化 <span class="count">2</span></button>
+    <button class="tab-btn" onclick="switchTab('world')">🌍 西方·世界 <span class="count">5</span></button>
+    <button class="tab-btn" onclick="switchTab('bonsai')">🌱 盆景艺术 <span class="count">5</span></button>
+    <button class="tab-btn" onclick="switchTab('design')">📐 景观设计 <span class="count">4</span></button>
+  </div>
+  <div id="tab-suzhou" class="tab-content active">
+    <div class="card-grid">
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E8%8B%8F%E5%B7%9E%E5%9B%AD%E6%9E%97.pdf'">
         <h3>📖 苏州园林</h3>
-        <p style="font-size:.8rem;color:#888;margin:2px 0 6px">苏州园林管理局 · 25MB</p>
-        <p>苏州园林的官方权威介绍，涵盖拙政园、留园、网师园等经典。</p>
-    </div>
-    <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=苏州园林匾额楹联鉴赏.pdf'">
+        <p class="ebook-size">5MB · 中国园林 · 苏州 · 拙政园</p>
+        <p>苏州古典园林艺术总览，拙政园、留园、网师园等经典解读。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E8%8B%8F%E5%B7%9E%E5%9B%AD%E6%9E%97%E5%8C%BE%E9%A2%9D%E6%A5%B9%E8%81%94%E9%89%B4%E8%B5%8F.pdf'">
         <h3>📖 苏州园林匾额楹联鉴赏</h3>
-        <p style="font-size:.8rem;color:#888;margin:2px 0 6px">曹林娣 · 4MB</p>
-        <p>苏州园林匾额楹联的系统解读，以文字解读园林意境。</p>
+        <p class="ebook-size">8MB · 匾额 · 楹联 · 苏州园林</p>
+        <p>曹林娣著。苏州园林匾额楹联的系统鉴赏。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E6%89%AC%E5%B7%9E%E5%9B%AD%E6%9E%97.pdf'">
+        <h3>📖 扬州园林</h3>
+        <p class="ebook-size">2MB · 中国园林 · 扬州 · 个园</p>
+        <p>扬州园林艺术特色与经典案例解析。个园、何园、瘦西湖等深度解读。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E6%89%AC%E5%B7%9E%E5%9B%AD%E6%9E%97%20%E5%9B%BE%E5%86%8C.pdf'">
+        <h3>📖 扬州园林 图册</h3>
+        <p class="ebook-size">81MB · 扬州 · 陈从周</p>
+        <p>陈从周先生拍摄绘制的扬州园林影像图册，珍贵历史资料。</p>
+      </div>
     </div>
-    <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=说园.pdf'">
+  </div>
+  <div id="tab-jiangnan" class="tab-content">
+    <div class="card-grid">
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E6%B1%9F%E5%8D%97%E5%9B%AD%E6%9E%97%E5%BF%97%20%E4%B8%80.pdf'">
+        <h3>📖 江南园林志</h3>
+        <p class="ebook-size">3MB · 中国园林 · 江南 · 童寯</p>
+        <p>童寯先生经典之作。系统考察江南园林，测量绘图并记录造园理法。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E4%B8%8A%E6%B5%B7%E8%B1%AB%E5%9B%AD.pdf'">
+        <h3>📖 上海豫园</h3>
+        <p class="ebook-size">4MB · 中国园林 · 上海 · 豫园</p>
+        <p>上海豫园历史沿革、建筑特色与园林艺术全解析。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E6%B1%9F%E5%8D%97%E5%9B%AD%E6%9E%97%E5%9B%BE%E5%BD%95%EF%BC%9A%E5%BA%AD%E9%99%A2%C2%B7%E6%99%AF%E8%A7%82%E5%BB%BA%E7%AD%91%20%28%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 江南园林图录：庭院·景观建筑</h3>
+        <p class="ebook-size">12MB · 江南 · 园林建筑</p>
+        <p>江南园林建筑实录，涵盖庭院、亭台楼阁、水榭廊舫等。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E7%94%BB%E5%A2%83%E6%96%87%E5%BF%83%EF%BC%9A%E4%B8%AD%E5%9B%BD%E5%8F%A4%E5%85%B8%E5%9B%AD%E6%9E%97%E4%B9%8B%E7%BE%8E.pdf'">
+        <h3>📖 画境文心：中国古典园林之美</h3>
+        <p class="ebook-size">6MB · 中国古典园林 · 美学 · 画境</p>
+        <p>中国古典园林美学赏析。从画境到文心——园林的精神内核。</p>
+      </div>
+    </div>
+  </div>
+  <div id="tab-classic" class="tab-content">
+    <div class="card-grid">
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E5%9B%AD%E5%86%B6%E6%B3%A8%E9%87%8A%20%EF%BC%88%E7%AC%AC%E4%BA%8C%E7%89%88%EF%BC%89.pdf'">
+        <h3>📖 园冶注释</h3>
+        <p class="ebook-size">10MB · 园冶 · 计成</p>
+        <p>计成《园冶》权威注释本。中国造园理论开山之作。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E8%AF%B4%E5%9B%AD.pdf'">
         <h3>📖 说园</h3>
-        <p style="font-size:.8rem;color:#888;margin:2px 0 6px">陈从周 · 24MB</p>
-        <p>陈从周先生谈中国园林的经典文集。文笔优美，见解独到，中国园林美学的入门必读。</p>
-    </div>
-    <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=陈从周说园.epub'">
+        <p class="ebook-size">3MB · 说园 · 陈从周</p>
+        <p>陈从周《说园》经典文本。"园林之妙，在虚实之间"。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E9%99%88%E4%BB%8E%E5%91%A8%E8%AF%B4%E5%9B%AD%20%28%E9%99%88%E4%BB%8E%E5%91%A8%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.epub'">
         <h3>📖 陈从周说园（EPUB）</h3>
-        <p style="font-size:.8rem;color:#888;margin:2px 0 6px">陈从周 · 3MB</p>
-        <p>《说园》的EPUB格式版本，适合移动设备阅读。</p>
-    </div>
-    <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=陈从周全集7-园林谈丛.pdf'">
+        <p class="ebook-size">2MB · 说园 · 陈从周</p>
+        <p>陈从周《说园》EPUB版。适合手机阅读的轻量格式。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E9%99%88%E4%BB%8E%E5%91%A8%E5%85%A8%E9%9B%867-%E5%9B%AD%E6%9E%97%E8%B0%88%E4%B8%9B.pdf'">
         <h3>📖 陈从周全集7：园林谈丛</h3>
-        <p style="font-size:.8rem;color:#888;margin:2px 0 6px">陈从周 · 49MB</p>
-        <p>陈从周先生园林文章合集，涵盖园林谈丛、园林散记等，是研究中国园林的重要文献。</p>
+        <p class="ebook-size">15MB · 陈从周 · 园林谈丛</p>
+        <p>陈从周全集第7卷。园林随笔、品评、游记合集。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E4%B8%AD%E5%9B%BD%E5%8F%A4%E5%85%B8%E5%9B%AD%E6%9E%97%E5%8F%B2.%20%28%E5%91%A8%E7%BB%B4%E6%9D%83%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 中国古典园林史</h3>
+        <p class="ebook-size">24MB · 中国园林 · 古典 · 周维权 · 通史</p>
+        <p>周维权经典教材。中国古典园林发展通史，从商周直到明清的系统梳理。</p>
+      </div>
     </div>
-    <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=园林与中国文化.pdf.pdf'">
+  </div>
+  <div id="tab-culture" class="tab-content">
+    <div class="card-grid">
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E5%9B%AD%E6%9E%97%E4%B8%8E%E4%B8%AD%E5%9B%BD%E6%96%87%E5%8C%96.pdf'">
         <h3>📖 园林与中国文化</h3>
-        <p style="font-size:.8rem;color:#888;margin:2px 0 6px">佚名 · 13MB</p>
-        <p>从文化角度解读中国园林，探讨园林与中国哲学、文学、绘画的深层关联。</p>
+        <p class="ebook-size">7MB · 中国园林 · 文化 · 哲学</p>
+        <p>从哲学、文学、绘画视角解读园林与中华文化的关系。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E9%81%BF%E6%9A%91%E5%B1%B1%E5%BA%84%E5%9B%AD%E6%9E%97%E8%89%BA%E6%9C%AF%20%28%E5%AD%9F%E5%85%86%E7%A5%AF%E8%91%97%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 避暑山庄园林艺术</h3>
+        <p class="ebook-size">9MB · 避暑山庄 · 孟兆祯</p>
+        <p>孟兆祯院士著。避暑山庄——中国皇家园林艺术的巅峰。</p>
+      </div>
     </div>
-    <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=西方园林史.pdf'">
+  </div>
+  <div id="tab-world" class="tab-content">
+    <div class="card-grid">
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E8%A5%BF%E6%96%B9%E5%9B%AD%E6%9E%97%E5%8F%B2_%E6%9C%B1%E5%BB%BA%E5%AE%81.pdf'">
         <h3>📖 西方园林史</h3>
-        <p style="font-size:.8rem;color:#888;margin:2px 0 6px">朱建宁 · 48MB</p>
-        <p>高等院校风景园林专业教材，系统讲述古埃及至当代的西方园林演变。</p>
+        <p class="ebook-size">6MB · 西方园林 · 欧洲</p>
+        <p>朱建宁著。意大利、法国、英国等欧洲园林体系的系统梳理。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E4%B8%96%E7%95%8C%E5%9B%AD%E6%9E%97%E5%8F%B2%20%28%E3%80%90%E8%8B%B1%E3%80%91Tom%20Turner%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 世界园林史【英】Tom Turner</h3>
+        <p class="ebook-size">8MB · 世界园林 · 全球</p>
+        <p>英国学者Tom Turner的世界园林通史。跨文化比较视角。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E4%B8%96%E7%95%8C%E5%9B%AD%E6%9E%97%E5%8F%B2%E6%A6%82%E8%A6%81%20%28%E5%BC%A0%E7%A5%96%E5%88%9A%E8%91%97%2C%20%E5%BC%A0%E7%A5%96%E5%88%9A%20%281933-%29%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 世界园林史概要 张祖刚</h3>
+        <p class="ebook-size">4MB · 世界园林 · 全球</p>
+        <p>张祖刚著。简明世界园林史纲要。适合快速入门。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E4%B8%96%E7%95%8C%E5%9B%AD%E6%9E%97%E5%8F%B2%E5%9B%BE%E8%AF%B4%EF%BC%88%E7%AC%AC2%E7%89%88%EF%BC%89%20%28%E5%BC%A0%E7%A5%96%E5%88%9A%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 世界园林史图说</h3>
+        <p class="ebook-size">89MB · 世界园林 · 张祖刚 · 图说</p>
+        <p>张祖刚著。以图说形式呈现世界园林史，图文并茂的入门佳作。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E7%94%9F%E6%B4%BB%E7%BE%8E%E5%AD%A6%EF%BC%9A%E8%8B%B1%E5%9B%BD%E7%9A%87%E5%AE%B6%E5%9B%AD%E8%89%BA%E5%AD%A6%E4%BC%9A%E5%B0%8F%E8%8A%B1%E5%9B%AD%E5%9B%AD%E8%89%BA%E6%8C%87%E5%8D%97%EF%BC%88%E8%8B%B1%E5%9B%BD%E7%9A%87%E5%AE%B6%E5%9B%AD%E8%89%BA%E5%AD%A6%E4%BC%9A%20200%E5%B9%B4%E5%AE%9D%E5%85%B8%E7%BA%A7%E6%94%B6%E8%97%8F%E4%B9%8B%E4%BD%9C%EF%BC%8CBBC%E3%80%8A%E8%8A%B1%E5%9B%AD%E7%94%BB%E6%8A%A5%E3%80%8B%E6%9D%82%E5%BF%97%E7%9B%9B%E8%B5%9E%EF%BC%81135%E7%A7%8D%E6%89%93%E9%80%A0%E5%B0%8F%E8%8A%B1%E5%9B%AD%E7%9A%84%E6%96%B9%E6%B3%95%EF%BC%8C300%E5%B9%85%E8%BA%AB...%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 生活美学：英国皇家园艺学会小花园园艺指南</h3>
+        <p class="ebook-size">37MB · 英国 · 园艺 · 小花园 · RHS</p>
+        <p>英国皇家园艺学会200年宝典。135种小花园打造方法，300幅实景图。</p>
+      </div>
+    </div>
+  </div>
+  <div id="tab-bonsai" class="tab-content">
+    <div class="card-grid">
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E4%B8%AD%E5%9B%BD%E5%B2%AD%E5%8D%97%E7%9B%86%E6%99%AF%E5%88%9B%E4%BD%9C%E6%96%B0%E6%8A%80%E6%B3%95%20%28%E5%85%B3%E8%80%80%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 中国岭南盆景创作新技法</h3>
+        <p class="ebook-size">40MB · 盆景 · 岭南 · 关耀 · 创作技法</p>
+        <p>关耀著。岭南盆景创作技法全书，从选材到造型的完整指导。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E5%9B%BE%E8%A7%A3%E9%99%84%E7%9F%B3%E7%9B%86%E6%99%AF%E5%88%B6%E4%BD%9C%E4%B8%8E%E5%85%BB%E6%8A%A4%20%E5%BD%A9%E5%9B%BE%E7%89%88%20%28%E7%8E%8B%E7%90%BC%E5%9F%B9%E7%BC%96%E8%91%97%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 图解附石盆景制作与养护 彩图版</h3>
+        <p class="ebook-size">48MB · 盆景 · 附石 · 制作 · 养护</p>
+        <p>王琼培编著。附石盆景从选石、配树到养护的全流程图解。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E5%AE%B6%E5%BA%AD%E5%B8%B8%E8%A7%81%E7%9B%86%E6%99%AF%E9%80%A0%E5%9E%8B%E4%B8%8E%E5%85%BB%E6%8A%A4%20%28%E9%99%88%E7%BA%AA%E5%91%A8%E4%B8%BB%E7%BC%96%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 家庭常见盆景造型与养护</h3>
+        <p class="ebook-size">32MB · 盆景 · 家庭 · 造型 · 养护</p>
+        <p>陈纪周主编。家庭盆景爱好者必备教程，常见树种的造型与日常养护。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E7%9B%86%E6%99%AF%20%28%E5%BE%90%E6%99%93%E7%99%BD%E7%BC%96%E8%91%97%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 盆景</h3>
+        <p class="ebook-size">40MB · 盆景 · 徐晓白 · 基础</p>
+        <p>徐晓白编著。盆景艺术基础入门，涵盖盆景史、流派与技法。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E7%9B%86%E6%99%AF%E6%8A%80%E8%89%BA%E5%85%A5%E9%97%A8%20%28%E6%9D%8E%E7%9C%9F%EF%BC%8C%E9%AD%8F%E8%80%98%E7%BC%96%E8%91%97%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 盆景技艺入门</h3>
+        <p class="ebook-size">7MB · 盆景 · 技艺 · 入门</p>
+        <p>李真、魏耘编著。盆景技艺入门教程，从工具到技法的完整指导。</p>
+      </div>
+    </div>
+  </div>
+  <div id="tab-design" class="tab-content">
+    <div class="card-grid">
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E4%B8%AD%E5%A4%96%E6%99%AF%E8%A7%82-%E5%B1%85%E4%BD%8F%E5%8C%BA%E6%99%AF%E8%A7%82%E8%AE%BE%E8%AE%A1%20%28administrator%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 中外景观-居住区景观设计</h3>
+        <p class="ebook-size">15MB · 景观设计 · 居住区 · 中外</p>
+        <p>中外居住区景观设计案例集，涵盖住宅区、公寓、别墅等类型。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E5%9B%AD%E6%9E%97%E6%99%AF%E8%A7%82%E8%AE%BE%E8%AE%A1%EF%BC%9A%E4%BB%8E%E6%A6%82%E5%BF%B5%E5%88%B0%E5%BD%A2%E5%BC%8F%20%28%5B%E7%BE%8E%5D%E6%A0%BC%E5%85%B0%E7%89%B9%C2%B7W.%E9%87%8C%E5%BE%B7%E7%BE%8E%E5%9B%BD%E9%A3%8E%E6%99%AF%E5%9B%AD%E6%9E%97%E8%AE%BE%E8%AE%A1%E5%B8%88%E5%8D%8F%E4%BC%9A%E9%99%88%E5%BB%BA%E4%B8%9A%E8%B5%B5%E5%AF%85%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 园林景观设计：从概念到形式</h3>
+        <p class="ebook-size">27MB · 景观设计 · 概念 · 形式 · 美国</p>
+        <p>美国风景园林设计师协会推荐。从设计概念到最终形式的完整过程。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E5%9B%BE%E8%A7%A3%E6%99%AF%E8%A7%82%E6%A4%8D%E7%89%A9%E8%AE%BE%E8%AE%A1-%E8%8A%B1%E5%8D%89%20%28Administrator%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 图解景观植物设计-花卉</h3>
+        <p class="ebook-size">25MB · 景观植物 · 花卉 · 设计 · 图解</p>
+        <p>以图解形式讲述景观设计中花卉的配置原则与应用。</p>
+      </div>
+      <div class="course-card" style="cursor:pointer" onclick="window.location.href='reader.html?file=%E7%8E%B0%E4%BB%A3%E6%99%AF%E8%A7%82%E8%AE%BE%E8%AE%A1%E7%90%86%E8%AE%BA%E4%B8%8E%E6%96%B9%E6%B3%95%20%28%E6%88%90%E7%8E%89%E5%AE%81%29%20%28z-library.sk%2C%201lib.sk%2C%20z-lib.sk%29.pdf'">
+        <h3>📖 现代景观设计理论与方法</h3>
+        <p class="ebook-size">171MB · 景观设计 · 理论 · 方法 · 成玉宁</p>
+        <p>成玉宁著。现代景观设计的系统理论与方法框架。</p>
+      </div>
     </div>
   </div>
 </div>
-<div class="site-footer">
-  <div class="container">电子书仅供学习研究 · 版权归原作者所有</div>
-</div>
-<div class="watermark"></div>
+<script src="../js/tabs.js"></script>
 </body>
 </html>

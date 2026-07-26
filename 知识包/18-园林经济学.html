@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>园林经济学 · 园林全景</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.tab-bar-course{display:flex;gap:8px;margin-bottom:16px;border-bottom:2px solid #e0e0e0;padding-bottom:8px}
+.tab-btn-course{padding:8px 20px;border:none;border-radius:8px 8px 0 0;background:transparent;color:#666;font-size:.95rem;cursor:pointer;transition:all .2s}
+.tab-btn-course:hover{background:#f0f7f0;color:#2e7d32}
+.tab-btn-course.active{background:#e8f5e9;color:#2e7d32;font-weight:600}
+.tab-panel{min-height:200px}
+.photo-grid a{transition:transform .2s,box-shadow .2s}
+.photo-grid a:hover{transform:scale(1.03);box-shadow:0 4px 16px rgba(0,0,0,.15)}
+.article h2{margin-top:28px;color:#2e7d32;border-left:4px solid #c9a959;padding-left:10px}
+.article h3{margin-top:20px;color:#444;font-size:1rem}
+.article h4{color:#666;font-size:.92rem;margin-top:14px}
+.article blockquote{background:#f8faf8;border-left:3px solid #c9a959;padding:8px 16px;margin:10px 0;color:#555;font-size:.88rem}
+.article .summary-box{background:linear-gradient(135deg,#e8f5e9,#f1f8f1);border-radius:8px;padding:16px;margin:20px 0;border-left:4px solid #2e7d32}
+.article ul{margin:6px 0 6px 18px}
+.article li{margin:4px 0}
+.article strong{color:#333}
+.page-header .subtitle{font-size:13px;color:var(--t2);line-height:1.6;position:relative;z-index:1;display:inline-block;background:linear-gradient(135deg,rgba(201,169,89,0.15),rgba(201,169,89,0.08));padding:4px 16px 4px 14px;border-radius:20px;border-left:3px solid var(--g)}
+</style>
+</head>
+<body>
+<div class="site-header" style="padding:20px 0">
+  <div class="container">
+    <h1 style="font-size:1.4rem">🌿 园林全景</h1>
+  </div>
+</div>
+<nav class="site-nav">
+  <div class="container">
+    <a href="../index.html">课程手册</a>
+    <a href="../电子书/index.html">电子书</a>
+    <a href="../论文/index.html">学术论文</a>
+  </div>
+</nav>
+<div class="container">
+  <div class="tab-bar-course">
+    <button class="tab-btn-course active" onclick="switchCourseTab('content')">📖 课程正文</button>
+    <button class="tab-btn-course" onclick="switchCourseTab('photos')">📸 照片图库</button>
+    <button class="tab-btn-course" onclick="switchCourseTab('refs')">📚 延伸参考</button>
+  </div>
+  <div id="tab-content" class="tab-panel">
+  <div class="article">
+    <h1 style="color:#2e7d32;margin-bottom:4px">💰 园林经济学</h1>
+    <p class="subtitle" style="margin-bottom:16px">钱、地、人、树——全生命周期的流转与博弈</p>
+
+    <blockquote>园林经济学的"详细"，不在于罗列更多条目，而在于揭示钱、地、人、树这四大要素在"规划—建设—运营"全生命周期中的流转和博弈逻辑。</blockquote>
+
+    <h2>第一层：微观账本（企业/项目视角）</h2>
+    <p>这是园林公司老板和项目经理每天都在算的账。</p>
+
+    <h3>1. 成本结构不只是"种树"</h3>
+    <p>一个园林项目的成本远不止苗木费，其完整结构是：</p>
+    <p><strong>直接成本</strong>：苗木费（占30%-50%）、种植土方费（地形塑造是大头）、硬景材料费（石材、木材）、人工费（技工工资近年飞涨）。</p>
+    <p><strong>间接成本</strong>：水电费、机械租赁费、临时设施费。</p>
+    <p><strong>期间费用</strong>：管理费（总部摊销）、财务费（垫资利息）、营销费（投标费用）。</p>
+    <p>这里有一个关键痛点：<strong>园林工程的"长周期"和"活体性"</strong>。苗木进场时只是"半成品"，要达到验收标准需要1-2年的养护期。这意味着资金占压时间极长，现金流管理是园林企业的生死线。很多公司倒闭不是因为没活干，而是因为垫资施工导致资金链断裂。</p>
+
+    <h3>2. 造价与计价模式（钱是怎么算的）</h3>
+    <p><strong>定额计价</strong>：套用政府发布的消耗量定额。缺点是死板，新技术、新工艺（如海绵城市的透水铺装）往往没有对应定额。</p>
+    <p><strong>清单计价（主流）</strong>：甲方给工程量清单，乙方报综合单价。竞争的核心在于<strong>不平衡报价</strong>——预测哪些工程量会增大，就把这些项目的单价报高，后期靠变更盈利。</p>
+    <p><strong>苗木价格的特殊性</strong>：苗木不是标准工业品，胸径、冠幅、土球大小、树形姿态都影响价格，且价格随季节、苗圃存量大起大落。这是造价控制中最难的一点。</p>
+
+    <h3>3. 养护经济的"二次曲线"</h3>
+    <p>园林行业的利润大头其实不在建设期，而在养护期（即"三分种，七分管"）。养护是长尾业务，现金流稳定。其核心经济指标是单位绿地养护定额（如每平方米每年多少钱），这包含修剪、施肥、病虫害防治、补植等费用。</p>
+    <p>现代趋势是<strong>"物业化管理"</strong>，即政府按养护质量（如草坪绿度、灌木修剪度）分级付费，不合格就扣款，变"养人"为"养事"。</p>
+
+    <h2>第二层：中观市场（行业/城市视角）</h2>
+    <p>跳出单个项目，看整个市场的资源配置。</p>
+
+    <h3>1. 行业产业链图谱</h3>
+    <p><strong>上游</strong>：苗木生产（农户/苗圃）。这是典型的<strong>"蛛网模型"</strong>——今年某种树好卖价高，明年大家都种，后年供过于求价格暴跌，农民砍树，再后年又短缺。市场调节严重滞后。</p>
+    <p><strong>中游</strong>：园林设计、施工、养护企业。竞争极度白热化，行业集中度低，"挂靠"现象普遍。</p>
+    <p><strong>下游</strong>：政府（市政）、地产商（售楼处/小区）、私人业主。</p>
+
+    <h3>2. 甲方经济学：政府的"投入产出博弈"</h3>
+    <p>政府投资建公园，表面没有经济回报，但园林经济学要算外部效益账：</p>
+    <p><strong>土地溢价</strong>：公园周边1公里范围内的地价和房价通常高于其他区域。政府虽然花了5亿建公园，但周边土地出让金可能因此多收了20亿。这叫"环境溢价捕获"。</p>
+    <p><strong>避灾效益</strong>：城市绿地是"海绵"，一场暴雨，有绿化的区域排水压力远小于硬化的区域，省下的城市管网改造费就是隐性收益。</p>
+
+    <h3>3. 地产园林的"去化逻辑"</h3>
+    <p>地产商投钱做景观，目的非常直接——提高售楼处的到访转化率和溢价率。示范区园林被称为"卖楼教科书"。在地产经济下行期，地产园林预算被大幅压缩，行业正从"名贵大树堆砌"转向"低成本高颜值"的观赏草和精致硬景。</p>
+
+    <h2>第三层：宏观账本（社会/生态视角）</h2>
+    <p>这是经济学家和政府部门关注的顶层设计。</p>
+
+    <h3>1. 核心难题：生态产品的价值实现机制</h3>
+    <p>绿水青山怎么变成金山银山？园林经济学引入了<strong>GEP（生态系统生产总值）</strong>核算体系。一个城市的森林、湿地、绿地每年释放多少氧气、吸收多少粉尘、涵养多少水源，都尝试用货币化表达。</p>
+    <p>但这面临"测不准"和"难变现"的问题。现在的突破方向是<strong>"碳汇交易"</strong>——城市绿地固定的二氧化碳，如果能进入碳市场交易，就会产生真金白银的收入。</p>
+
+    <h3>2. 公共品供给的"奥斯特罗姆困境"</h3>
+    <p>公园免费开放，人人受益，但没人愿意出钱维护。政府包揽则财政压力大。园林经济学借鉴公共管理理论，探索<strong>PPP模式（政府和社会资本合作）</strong>和<strong>EOD模式（生态环境导向的开发）</strong>：</p>
+    <p><strong>EOD模式</strong>是最前沿的方向：把生态环境治理（如修复一个被污染的公园）和周边的商业开发（如建商场、住宅）打包。用未来商业开发的收益，覆盖现在修复环境的投入。让"种树"的人能从"卖房"里分到钱。</p>
+
+    <h2>第四层：前沿热点与实操痛点</h2>
+
+    <h3>"智慧园林"的经济账</h3>
+    <p>智能灌溉系统能节水30%-50%，但初期投入较大。经济分析需计算动态回收期，看每年省下的水费和人工费，几年能覆盖初始投资。</p>
+
+    <h3>"苗木去库存"</h3>
+    <p>前几年"大树进城"导致苗圃囤积大量超大规格苗木。现在市场不要了，这些树每天还在消耗土地租金和养护费。经济决策是：砍掉烧掉（沉没成本），还是继续养着等市场（机会成本）？后者往往更亏。</p>
+
+    <h3>"抢工期的代价"</h3>
+    <p>为了迎接领导视察或节日，要求冬季反季节施工。为了保证成活率，需加生根剂、搭保温棚、输营养液，成本可能是正常施工的2-3倍。经济学要计算"政治/社会效益"是否覆盖这笔额外支出。</p>
+
+    <div class="summary-box">
+      <h3 style="margin-top:0">总结：园林经济学的灵魂公式</h3>
+      <p>如果只记一句话：</p>
+      <p style="font-size:1.05rem;font-weight:600;color:#2e7d32;text-align:center;margin:12px 0">园林综合效益 = 直接经济产出 + 生态调节服务 + 社会文化价值 − 全生命周期成本</p>
+      <p>管理者的任务，就是通过制度设计和技术创新，最大化等式的前三项，最小化最后一项。这需要看懂图纸的美学，也算得清账本的流水，更得悟透城市发展的规律。</p>
+    </div>
+
+  </div>
+  </div>
+  <div id="tab-photos" class="tab-panel" style="display:none">
+  <h2 style="margin:24px 0 12px;color:#2e7d32">📸 园林经济学图片</h2>
+  <p style="color:#888;font-size:.85rem;margin-bottom:16px">相关项目案例与数据可视化</p>
+
+  <div class="photo-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px">
+
+    <a href="../图片/00-默认图库/placeholder-1.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;background:#f0f0f0;text-decoration:none">
+      <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#e8f5e9,#c8e6c9);display:flex;align-items:center;justify-content:center;color:#2e7d32;font-size:3rem">🌳</div>
+      <div style="padding:6px 10px;font-size:.82rem;color:#666">城市公园 · 环境溢价范例</div>
+    </a>
+
+    <a href="../图片/00-默认图库/placeholder-2.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;background:#f0f0f0;text-decoration:none">
+      <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#fff3e0,#ffe0b2);display:flex;align-items:center;justify-content:center;color:#e65100;font-size:3rem">💧</div>
+      <div style="padding:6px 10px;font-size:.82rem;color:#666">智慧灌溉系统示例</div>
+    </a>
+
+    <a href="../图片/00-默认图库/placeholder-3.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;background:#f0f0f0;text-decoration:none">
+      <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#e3f2fd,#bbdefb);display:flex;align-items:center;justify-content:center;color:#1565c0;font-size:3rem">🏗️</div>
+      <div style="padding:6px 10px;font-size:.82rem;color:#666">EOD模式项目示意</div>
+    </a>
+
+    <a href="../图片/00-默认图库/placeholder-4.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;background:#f0f0f0;text-decoration:none">
+      <div style="aspect-ratio:4/3;background:linear-gradient(135deg,#fce4ec,#f8bbd0);display:flex;align-items:center;justify-content:center;color:#c62828;font-size:3rem">📊</div>
+      <div style="padding:6px 10px;font-size:.82rem;color:#666">养护定额与成本分析</div>
+    </a>
+
+  </div>
+  <p style="margin-top:16px;color:#aaa;font-size:.82rem;text-align:center">📷 图片待补充实景案例</p>
+  </div>
+  <div id="tab-refs" class="tab-panel" style="display:none">
+  <h2 style="margin:24px 0 12px;color:#2e7d32">📚 延伸参考</h2>
+  <p style="color:#888;font-size:.85rem;margin-bottom:16px">推荐阅读与相关电子书</p>
+
+  <h3 style="margin:20px 0 8px;color:#333">通史文献</h3>
+  <ul style="margin:8px 0 8px 20px">
+    <li>《城市绿地系统规划》——住建部标准</li>
+    <li>Elinor Ostrom.《Governing the Commons》——公共品供给经典</li>
+  </ul>
+
+  <h3 style="margin:20px 0 8px;color:#333">专题文献</h3>
+  <ul style="margin:8px 0 8px 20px">
+    <li>仇保兴.《海绵城市（LID）的内涵、途径与展望》</li>
+    <li>俞孔坚.《大脚革命：走向生态美学》</li>
+  </ul>
+
+  <h3 style="margin:20px 0 8px;color:#333">关联阅读</h3>
+  <ul style="margin:8px 0 8px 20px">
+    <li><a href="06-风景园林规划.html" style="color:#2e7d32">风景园林规划</a></li>
+    <li><a href="07-园林设计通论.html" style="color:#2e7d32">园林设计通论</a></li>
+    <li><a href="../电子书/index.html" style="color:#2e7d32">电子书总目录</a></li>
+  </ul>
+
+  <p style="margin-top:20px;padding:12px;background:#f8faf8;border-radius:8px;font-size:.85rem;color:#888">📖 更多相关电子书，请访问 <a href="../电子书/index.html" style="color:#2e7d32">电子书栏目</a></p>
+  </div>
+</div>
+<div class="site-footer">
+  <div class="container">园林全景 · 知识共享 · 自由阅读</div>
+</div>
+<div class="watermark">45-园林全景 · 曹青原知识库</div>
+<div id="related-ebooks" data-keywords="园林经济"></div>
+<script>
+function switchCourseTab(id){
+  document.querySelectorAll('.tab-panel').forEach(t=>t.style.display='none');
+  document.querySelectorAll('.tab-btn-course').forEach(b=>b.classList.remove('active'));
+  document.getElementById('tab-'+id).style.display='block';
+  document.querySelector(`.tab-btn-course[onclick*="'"+id+"'"]`).classList.add('active');
+}
+</script>
+<script src="../电子书/related-ebooks.js"></script>
+</body>
+</html>

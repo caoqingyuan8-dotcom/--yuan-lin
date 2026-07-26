@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>风景园林规划·城市园林空间 · 园林全景</title>
 <link rel="stylesheet" href="../style.css">
+<style>
+.tab-bar-course{display:flex;gap:8px;margin-bottom:16px;border-bottom:2px solid #e0e0e0;padding-bottom:8px}
+.tab-btn-course{padding:8px 20px;border:none;border-radius:8px 8px 0 0;background:transparent;color:#666;font-size:.95rem;cursor:pointer;transition:all .2s}
+.tab-btn-course:hover{background:#f0f7f0;color:#2e7d32}
+.tab-btn-course.active{background:#e8f5e9;color:#2e7d32;font-weight:600}
+.tab-panel{min-height:200px}
+.photo-grid a{transition:transform .2s,box-shadow .2s}
+.photo-grid a:hover{transform:scale(1.03);box-shadow:0 4px 16px rgba(0,0,0,.15)}
+</style>
+
 </head>
 <body>
 <div class="site-header" style="padding:20px 0">
@@ -20,6 +30,12 @@
   </div>
 </nav>
 <div class="container">
+      <div class="tab-bar-course">
+    <button class="tab-btn-course active" onclick="switchCourseTab('content')">📖 课程正文</button>
+    <button class="tab-btn-course" onclick="switchCourseTab('photos')">📸 照片图库</button>
+    <button class="tab-btn-course" onclick="switchCourseTab('refs')">📚 延伸参考</button>
+  </div>
+  <div id="tab-content" class="tab-panel">
   <div class="article">
     <h1>风景园林规划·城市园林空间</h1>
 
@@ -154,9 +170,85 @@
   </div>
   <div style="text-align:center;margin:10px 0 30px;display:flex;gap:10px;justify-content:center"><a href="05-江南园林专题.html" style="padding:8px 20px;background:#2d4a2d;color:#fff;border-radius:8px;text-decoration:none;font-size:.85rem">← 上一科</a><a href="07-园林设计通论.html" style="padding:8px 20px;background:#2d4a2d;color:#fff;border-radius:8px;text-decoration:none;font-size:.85rem">下一科 →</a></div>
 </div>
+  </div>
+  <div id="tab-photos" class="tab-panel" style="display:none">
+  <h2 style="margin:24px 0 12px;color:#2e7d32">📸 风景园林规划照片图库</h2>
+  <p style="color:#888;font-size:.85rem;margin-bottom:16px">共 43 张 · 点击可查看大图</p>
+  <div class="photo-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:30px">
+    <a href="../图片/09-水景/014f88226b70bd5525b7dcbeb037fb50.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/014f88226b70bd5525b7dcbeb037fb50.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/01d00204edb7b898f8e68e6a120256ce.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/01d00204edb7b898f8e68e6a120256ce.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/075d5362394bab1729f6db237380f5ef.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/075d5362394bab1729f6db237380f5ef.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/12039356bb25d354094ccda982931320.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/12039356bb25d354094ccda982931320.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/1e53b2f453868f1f9cb60a676d00da8e.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/1e53b2f453868f1f9cb60a676d00da8e.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/2a6a7f4ff5f948ad4b39b151d0191116.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/2a6a7f4ff5f948ad4b39b151d0191116.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/2f113289b53fc7bbcb8fdfd444eb193b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/2f113289b53fc7bbcb8fdfd444eb193b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/52c574d5b52c91470c7788755fe6ac95.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/52c574d5b52c91470c7788755fe6ac95.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/5a90fce6fbe5c862ba1a25fbbcc7ec71.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/5a90fce6fbe5c862ba1a25fbbcc7ec71.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/7058ad6a4fe581e191cba0b42db7beaa.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/7058ad6a4fe581e191cba0b42db7beaa.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/773cce445881aee05e472fa50274245c.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/773cce445881aee05e472fa50274245c.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/8b103d556f7d72d21696f7d3fc145de3.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/8b103d556f7d72d21696f7d3fc145de3.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/a1b360776206e9d089ff97fc371e7ff4.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/a1b360776206e9d089ff97fc371e7ff4.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/ab4ebcf7659cff8bc24b5a5641bb3fcd.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/ab4ebcf7659cff8bc24b5a5641bb3fcd.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/bd9ee4f649c1d7624614bb1701b45f33.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/bd9ee4f649c1d7624614bb1701b45f33.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/c1cf5a94b3315e5b0bbff456d7581c4b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/c1cf5a94b3315e5b0bbff456d7581c4b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/c20183fc1e3a7bd16a07d9d75706b2e4.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/c20183fc1e3a7bd16a07d9d75706b2e4.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/c24482a69e4e4937f0ec76e7439501f1.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/c24482a69e4e4937f0ec76e7439501f1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/c370af50b75f0b02e4bdea90499c3c1d.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/c370af50b75f0b02e4bdea90499c3c1d.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/c4fdd5772b871e6ebe55d4d09a355596.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/c4fdd5772b871e6ebe55d4d09a355596.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/c73d9060d1d353c280ed743657637bfc.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/c73d9060d1d353c280ed743657637bfc.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/cd4d334151c3c6e6d0959744ac016ed7.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/cd4d334151c3c6e6d0959744ac016ed7.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/cdeae4a757423f753f2c007cfe1ef473.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/cdeae4a757423f753f2c007cfe1ef473.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/cec95bdbe4819265b8ae7e8a64e5e668.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/cec95bdbe4819265b8ae7e8a64e5e668.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/cfe8ef1f0d1f6c81147347cc7d4935c3.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/cfe8ef1f0d1f6c81147347cc7d4935c3.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/d003a8de39c5b07677c693ead0598120.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/d003a8de39c5b07677c693ead0598120.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/d0dc504e24306619bd86dec66f72c4ac.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/d0dc504e24306619bd86dec66f72c4ac.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/d38ef6f4e40bd4703618beb29dc0aaa6.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/d38ef6f4e40bd4703618beb29dc0aaa6.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/d96acfc17b370b06759f3e56404603c9.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/d96acfc17b370b06759f3e56404603c9.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/db1ddc7755dbec114716b14c342c9e02.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/db1ddc7755dbec114716b14c342c9e02.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/db442bd0014e178091cc34d6841c2671.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/db442bd0014e178091cc34d6841c2671.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/dc505166acc0c135d467cde6026fc713.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/dc505166acc0c135d467cde6026fc713.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/ded0d1398acd90adc65823f3c835d2f0.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/ded0d1398acd90adc65823f3c835d2f0.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/df6472b1790f6f39619eed81b3abf610.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/df6472b1790f6f39619eed81b3abf610.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/e02c224c922b7960bcf672dd2d2eb943.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/e02c224c922b7960bcf672dd2d2eb943.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/e387534058e2115d7d01348303552b28.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/e387534058e2115d7d01348303552b28.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/e4d34954b0368fce53a329e82e1e41a6.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/e4d34954b0368fce53a329e82e1e41a6.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/e85b2ec355f971f84823ce0557a774a6.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/e85b2ec355f971f84823ce0557a774a6.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/e8e43dbd6a10249dfde80a7bc6959b64.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/e8e43dbd6a10249dfde80a7bc6959b64.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/ee1d1839907fc72d21cda14fe06dea10.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/ee1d1839907fc72d21cda14fe06dea10.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/f445b9187bcbcbf595b5f042084d6369.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/f445b9187bcbcbf595b5f042084d6369.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/fd520664fa9859405db2fcce61e5606a.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/fd520664fa9859405db2fcce61e5606a.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/09-水景/ff628538affeacf65c5bb998bec1fe47.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/09-水景/ff628538affeacf65c5bb998bec1fe47.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+  </div>
+  </div>
+
+
+  <div id="tab-refs" class="tab-panel" style="display:none">
+  <h2 style="margin:24px 0 12px;color:#2e7d32">📚 延伸参考</h2>
+  <p style="color:#888;font-size:.85rem;margin-bottom:16px">推荐阅读与相关电子书</p>
+  <h3 style="margin:20px 0 8px;color:#333">关联阅读</h3>
+  <ul style="margin:8px 0 8px 20px">
+    <li><a href="07-园林设计通论.html" style="color:#2e7d32">园林设计通论</a></li>
+    <li><a href="16-园林工程学.html" style="color:#2e7d32">园林工程学</a></li>
+    <li><a href="../电子书/index.html" style="color:#2e7d32">电子书总目录</a></li>
+  </ul>
+  <p style="margin-top:20px;padding:12px;background:#f8faf8;border-radius:8px;font-size:.85rem;color:#888">📖 更多相关电子书，请访问 <a href="../电子书/index.html" style="color:#2e7d32">电子书栏目</a></p>
+  </div>
+</div>
 <div class="site-footer">
   <div class="container"><a href="../index.html">← 返回课程手册</a> · 园林全景 · 知识共享</div>
 </div>
 <div class="watermark"></div>
+<div id="related-ebooks" data-keywords="规划,西方园林,世界园林"></div>
+<script src="../电子书/related-ebooks.js"></script>
+
+<script>
+function switchCourseTab(tab) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.style.display = 'none');
+  document.querySelectorAll('.tab-btn-course').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + tab).style.display = 'block';
+  document.querySelector('.tab-btn-course[onclick*="' + tab + '"]').classList.add('active');
+}
+</script>
+
 </body>
 </html>

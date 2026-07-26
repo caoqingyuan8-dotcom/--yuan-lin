@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>园林设计通论 · 园林全景</title>
 <link rel="stylesheet" href="../style.css">
+<style>
+.tab-bar-course{display:flex;gap:8px;margin-bottom:16px;border-bottom:2px solid #e0e0e0;padding-bottom:8px}
+.tab-btn-course{padding:8px 20px;border:none;border-radius:8px 8px 0 0;background:transparent;color:#666;font-size:.95rem;cursor:pointer;transition:all .2s}
+.tab-btn-course:hover{background:#f0f7f0;color:#2e7d32}
+.tab-btn-course.active{background:#e8f5e9;color:#2e7d32;font-weight:600}
+.tab-panel{min-height:200px}
+.photo-grid a{transition:transform .2s,box-shadow .2s}
+.photo-grid a:hover{transform:scale(1.03);box-shadow:0 4px 16px rgba(0,0,0,.15)}
+</style>
+
 </head>
 <body>
 <div class="site-header" style="padding:20px 0">
@@ -20,6 +30,12 @@
   </div>
 </nav>
 <div class="container">
+      <div class="tab-bar-course">
+    <button class="tab-btn-course active" onclick="switchCourseTab('content')">📖 课程正文</button>
+    <button class="tab-btn-course" onclick="switchCourseTab('photos')">📸 照片图库</button>
+    <button class="tab-btn-course" onclick="switchCourseTab('refs')">📚 延伸参考</button>
+  </div>
+  <div id="tab-content" class="tab-panel">
   <div class="article">
     <h1>园林设计通论</h1>
 
@@ -204,9 +220,47 @@
   </div>
   <div style="text-align:center;margin:10px 0 30px;display:flex;gap:10px;justify-content:center"><a href="06-风景园林规划.html" style="padding:8px 20px;background:#2d4a2d;color:#fff;border-radius:8px;text-decoration:none;font-size:.85rem">← 上一科</a><a href="08-热带园林专题.html" style="padding:8px 20px;background:#2d4a2d;color:#fff;border-radius:8px;text-decoration:none;font-size:.85rem">下一科 →</a></div>
 </div>
+  </div>
+  <div id="tab-photos" class="tab-panel" style="display:none">
+  <h2 style="margin:24px 0 12px;color:#2e7d32">📸 园林设计通论照片图库</h2>
+  <p style="color:#888;font-size:.85rem;margin-bottom:16px">共 5 张 · 点击可查看大图</p>
+  <div class="photo-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:30px">
+    <a href="../图片/20-设计图纸/01-设计图/cf3b982c38332b9d4194158a6a922f4b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/20-设计图纸/01-设计图/cf3b982c38332b9d4194158a6a922f4b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/20-设计图纸/01-设计图/d115d6025cca4a392c8302b8d824d4c4.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/20-设计图纸/01-设计图/d115d6025cca4a392c8302b8d824d4c4.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/20-设计图纸/01-设计图_merged/39bc0a0ee8cc6239c2e75fb196dd77d0.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/20-设计图纸/01-设计图_merged/39bc0a0ee8cc6239c2e75fb196dd77d0.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/20-设计图纸/01-设计图_merged/915d3d0a59bf6035862c847c59aa20da.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/20-设计图纸/01-设计图_merged/915d3d0a59bf6035862c847c59aa20da.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/20-设计图纸/01-设计图_merged/d5cdfa1600228626c843d5840ab34988.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/20-设计图纸/01-设计图_merged/d5cdfa1600228626c843d5840ab34988.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+  </div>
+  </div>
+
+
+  <div id="tab-refs" class="tab-panel" style="display:none">
+  <h2 style="margin:24px 0 12px;color:#2e7d32">📚 延伸参考</h2>
+  <p style="color:#888;font-size:.85rem;margin-bottom:16px">推荐阅读与相关电子书</p>
+  <h3 style="margin:20px 0 8px;color:#333">关联阅读</h3>
+  <ul style="margin:8px 0 8px 20px">
+    <li><a href="06-风景园林规划.html" style="color:#2e7d32">风景园林规划</a></li>
+    <li><a href="16-园林工程学.html" style="color:#2e7d32">园林工程学</a></li>
+    <li><a href="../电子书/index.html" style="color:#2e7d32">电子书总目录</a></li>
+  </ul>
+  <p style="margin-top:20px;padding:12px;background:#f8faf8;border-radius:8px;font-size:.85rem;color:#888">📖 更多相关电子书，请访问 <a href="../电子书/index.html" style="color:#2e7d32">电子书栏目</a></p>
+  </div>
+</div>
 <div class="site-footer">
   <div class="container"><a href="../index.html">← 返回课程手册</a> · 园林全景 · 知识共享</div>
 </div>
 <div class="watermark"></div>
+<div id="related-ebooks" data-keywords="设计,造园理论,园冶"></div>
+<script src="../电子书/related-ebooks.js"></script>
+
+<script>
+function switchCourseTab(tab) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.style.display = 'none');
+  document.querySelectorAll('.tab-btn-course').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + tab).style.display = 'block';
+  document.querySelector('.tab-btn-course[onclick*="' + tab + '"]').classList.add('active');
+}
+</script>
+
 </body>
 </html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="zh-CN"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>夜景花园 · 图片素材</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.back-link{display:inline-flex;align-items:center;gap:6px;color:#2e7d32;text-decoration:none;font-size:.85rem;margin:12px 0;padding:6px 14px;border:1px solid #d4e8d4;border-radius:8px}
+.back-link:hover{background:#f0f8f4}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:16px}
+.grid img{width:100%;height:180px;object-fit:cover;border-radius:8px;cursor:pointer;transition:transform .15s}
+.grid img:hover{transform:scale(1.02);box-shadow:0 3px 12px rgba(0,0,0,.1)}
+.overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.85);z-index:9999}
+.overlay.on{display:flex;justify-content:center;align-items:center}
+.overlay img{max-width:90vw;max-height:90vh;border-radius:4px}
+.close{position:absolute;top:20px;right:30px;font-size:2rem;color:#fff;cursor:pointer;opacity:.7}
+.close:hover{opacity:1}
+</style></head><body>
+<div class="site-header"><div class="container"><h1>🌙 夜景花园</h1></div></div>
+<nav class="site-nav"><div class="container">
+<a href="../index.html">园林专业知识</a>
+<a href="../电子书/index.html">电子书</a>
+<a href="../论文/index.html">学术论文</a>
+<a href="../科普文章/index.html">科普及文章</a>
+<a href="index.html">图片素材</a>
+</div></nav><div class="container">
+<a href="index.html" class="back-link">← 返回图库</a>
+<p style="color:#888;font-size:.82rem">11 张图片</p>
+<div class="grid" id="g">
+  <img src="17-夜景花园/01-夜景/27ce4b9d2fdd03c052c6275827796ee8.jpg" loading="lazy" onclick="openViewer(this.src)">
+  <img src="17-夜景花园/01-夜景/3022d00e40f60a8c8cb1074ecd74a128.jpg" loading="lazy" onclick="openViewer(this.src)">
+  <img src="17-夜景花园/01-夜景/3347ac7113a58b491bd87ad95bce5604.jpg" loading="lazy" onclick="openViewer(this.src)">
+  <img src="17-夜景花园/01-夜景/4efc2e7626b6571fee95519848a5a2f7.jpg" loading="lazy" onclick="openViewer(this.src)">
+  <img src="17-夜景花园/01-夜景/6d9cded5d1b2f02f7462fe9a1544d414.jpg" loading="lazy" onclick="openViewer(this.src)">
+  <img src="17-夜景花园/01-夜景/7eed65a6dc24d01caa6d9a5640e18666.jpg" loading="lazy" onclick="openViewer(this.src)">
+  <img src="17-夜景花园/01-夜景/a060d448dfa2ebfd2fcc0450d3dca0b0.jpg" loading="lazy" onclick="openViewer(this.src)">
+  <img src="17-夜景花园/01-夜景/cdb8aa460d5fc97dac0cdd41717bcd6e.jpg" loading="lazy" onclick="openViewer(this.src)">
+  <img src="17-夜景花园/01-夜景/e7b70b099a7a578e5e5c9cb2440bd791.jpg" loading="lazy" onclick="openViewer(this.src)">
+  <img src="17-夜景花园/01-夜景/f0a3b9297dc864c6a4150796c5d205a0.jpg" loading="lazy" onclick="openViewer(this.src)">
+  <img src="17-夜景花园/01-夜景/f37a227dfe5847a3c775fd09787c1bd7.jpg" loading="lazy" onclick="openViewer(this.src)">
+</div></div>
+<div class="overlay" id="v" onclick="this.classList.remove('on')">
+<span class="close">×</span>
+<img id="vi" src="" alt="">
+</div>
+<script src="../js/viewer.js"></script>
+</body></html>

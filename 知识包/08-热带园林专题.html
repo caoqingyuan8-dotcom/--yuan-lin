@@ -5,6 +5,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>热带园林专题 · 园林全景</title>
 <link rel="stylesheet" href="../style.css">
+<style>
+.tab-bar-course{display:flex;gap:8px;margin-bottom:16px;border-bottom:2px solid #e0e0e0;padding-bottom:8px}
+.tab-btn-course{padding:8px 20px;border:none;border-radius:8px 8px 0 0;background:transparent;color:#666;font-size:.95rem;cursor:pointer;transition:all .2s}
+.tab-btn-course:hover{background:#f0f7f0;color:#2e7d32}
+.tab-btn-course.active{background:#e8f5e9;color:#2e7d32;font-weight:600}
+.tab-panel{min-height:200px}
+.photo-grid a{transition:transform .2s,box-shadow .2s}
+.photo-grid a:hover{transform:scale(1.03);box-shadow:0 4px 16px rgba(0,0,0,.15)}
+</style>
+
 </head>
 <body>
 <div class="site-header" style="padding:20px 0">
@@ -20,6 +30,12 @@
   </div>
 </nav>
 <div class="container">
+      <div class="tab-bar-course">
+    <button class="tab-btn-course active" onclick="switchCourseTab('content')">📖 课程正文</button>
+    <button class="tab-btn-course" onclick="switchCourseTab('photos')">📸 照片图库</button>
+    <button class="tab-btn-course" onclick="switchCourseTab('refs')">📚 延伸参考</button>
+  </div>
+  <div id="tab-content" class="tab-panel">
   <div class="article">
     <h1>热带园林专题</h1>
 
@@ -158,10 +174,82 @@
 
   </div>
   <div style="text-align:center;margin:10px 0 30px;display:flex;gap:10px;justify-content:center"><a href="07-园林设计通论.html" style="padding:8px 20px;background:#2d4a2d;color:#fff;border-radius:8px;text-decoration:none;font-size:.85rem">← 上一科</a><a href="09-沙漠园林专题.html" style="padding:8px 20px;background:#2d4a2d;color:#fff;border-radius:8px;text-decoration:none;font-size:.85rem">下一科 →</a></div>
+  </div>
+  <div id="tab-photos" class="tab-panel" style="display:none">
+  <h2 style="margin:24px 0 12px;color:#2e7d32">📸 热带园林专题照片图库</h2>
+  <p style="color:#888;font-size:.85rem;margin-bottom:16px">共 40 张 · 点击可查看大图</p>
+  <div class="photo-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:30px">
+    <a href="../图片/06-热带园林专题/0f1ec64da54668dbfc9b3fd9f8805e52.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/0f1ec64da54668dbfc9b3fd9f8805e52.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/27fdab8b3192fd0fd63ddab8229bd386.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/27fdab8b3192fd0fd63ddab8229bd386.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/3c4ff81639e05ce6fe4ac152c92e707c.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/3c4ff81639e05ce6fe4ac152c92e707c.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/43b9bcb7e05d719afde86e07aef315fa.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/43b9bcb7e05d719afde86e07aef315fa.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/465b11159a5a4daebe7186806f3d4585.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/465b11159a5a4daebe7186806f3d4585.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/5e06ffd4aae30a10229bf902f78af5e3.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/5e06ffd4aae30a10229bf902f78af5e3.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/7918e267de5799a8f72f5c2e9c556ee1.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/7918e267de5799a8f72f5c2e9c556ee1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/891698b4914251354ffc1581749c1921.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/891698b4914251354ffc1581749c1921.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/99f57ea5e02191d0c601d18c7d88df98.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/99f57ea5e02191d0c601d18c7d88df98.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/QQ图片20200508083901.png" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/QQ图片20200508083901.png" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/b17fa5c91d36d7688844817472380262.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/b17fa5c91d36d7688844817472380262.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/eb19fa4b2e15bd5b5e640b5826d44f7b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/eb19fa4b2e15bd5b5e640b5826d44f7b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/f98da470fab595be952117e754d6c905.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/f98da470fab595be952117e754d6c905.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/fbdedfea250251ed69425ffc4a1b38ac.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/fbdedfea250251ed69425ffc4a1b38ac.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/1-modern-tropical-garden-design-MJ-960x640.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/1-modern-tropical-garden-design-MJ-960x640.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/112c606379b11f8dc51da3e0d4fa0d64.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/112c606379b11f8dc51da3e0d4fa0d64.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/2-modern-tropical-garden-design-MJ-960x640.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/2-modern-tropical-garden-design-MJ-960x640.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/2f6b97236b54801eb34da5b73bf4a9b8.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/2f6b97236b54801eb34da5b73bf4a9b8.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/3-modern-tropical-garden-design-MJ-960x640.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/3-modern-tropical-garden-design-MJ-960x640.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/35623080548e1b56056ebf785b93c00a.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/35623080548e1b56056ebf785b93c00a.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/3b8843f5b1b853ade9bdaf5f59ea7f94.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/3b8843f5b1b853ade9bdaf5f59ea7f94.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/3f077d4956acc303a0fb3549be2e8df3.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/3f077d4956acc303a0fb3549be2e8df3.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/4-modern-tropical-garden-design-MJ.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/4-modern-tropical-garden-design-MJ.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/4990d7a3da81480466b4596ca2d9e230.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/4990d7a3da81480466b4596ca2d9e230.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/4b588e8ede200088125ca18917c5ed8d.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/4b588e8ede200088125ca18917c5ed8d.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/5-modern-tropical-garden-design-MJ (1).webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/5-modern-tropical-garden-design-MJ (1).webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/5efad27be9b8490f9b9dfe7e697fc931.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/5efad27be9b8490f9b9dfe7e697fc931.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/6ebf81769f67e68bf265449059d33fec.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/6ebf81769f67e68bf265449059d33fec.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/738193d5be744e241d416b8f370e716e.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/738193d5be744e241d416b8f370e716e.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/75c8f0d0920ad87e84b4d49e4a277c90.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/75c8f0d0920ad87e84b4d49e4a277c90.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/7da364b0128361b84403c9aa1ee1613c.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/7da364b0128361b84403c9aa1ee1613c.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/8d6673e4e5f3c0e973168dfc574c22c0.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/8d6673e4e5f3c0e973168dfc574c22c0.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/8e466ae3ff4792cea1e83c871f712161.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/8e466ae3ff4792cea1e83c871f712161.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/b04d607fc56141c9e97f9a8a6c75af4d.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/b04d607fc56141c9e97f9a8a6c75af4d.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/ce7bc88df3aca76b0041d228d983d713.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/ce7bc88df3aca76b0041d228d983d713.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/cffa5fde7349ae3ba90db88296355b8d.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/cffa5fde7349ae3ba90db88296355b8d.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/d0be210d41cae8029db8aa40a96df164.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/d0be210d41cae8029db8aa40a96df164.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/d3ca1388cf631bcc3c3041c917f92103.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/d3ca1388cf631bcc3c3041c917f92103.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/e1ceed44ab35d759be345e34b8f64db1.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/e1ceed44ab35d759be345e34b8f64db1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/06-热带园林专题/02-热带景观/eba8aa1865aea369bc6754a0170c3e37.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/06-热带园林专题/02-热带景观/eba8aa1865aea369bc6754a0170c3e37.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+  </div>
+  </div>
+
+
+  <div id="tab-refs" class="tab-panel" style="display:none">
+  <h2 style="margin:24px 0 12px;color:#2e7d32">📚 延伸参考</h2>
+  <p style="color:#888;font-size:.85rem;margin-bottom:16px">推荐阅读与相关电子书</p>
+  <h3 style="margin:20px 0 8px;color:#333">关联阅读</h3>
+  <ul style="margin:8px 0 8px 20px">
+    <li><a href="09-沙漠园林专题.html" style="color:#2e7d32">沙漠园林专题</a></li>
+    <li><a href="17-现代庭院设计.html" style="color:#2e7d32">现代庭院设计</a></li>
+    <li><a href="../电子书/index.html" style="color:#2e7d32">电子书总目录</a></li>
+  </ul>
+  <p style="margin-top:20px;padding:12px;background:#f8faf8;border-radius:8px;font-size:.85rem;color:#888">📖 更多相关电子书，请访问 <a href="../电子书/index.html" style="color:#2e7d32">电子书栏目</a></p>
+  </div>
 </div>
 <div class="site-footer">
   <div class="container"><a href="../index.html">← 返回课程手册</a> · 园林全景 · 知识共享</div>
 </div>
 <div class="watermark"></div>
+<div id="related-ebooks"></div>
+<script src="../电子书/related-ebooks.js"></script>
+
+<script>
+function switchCourseTab(tab) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.style.display = 'none');
+  document.querySelectorAll('.tab-btn-course').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + tab).style.display = 'block';
+  document.querySelector('.tab-btn-course[onclick*="' + tab + '"]').classList.add('active');
+}
+</script>
+
 </body>
 </html>

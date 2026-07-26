@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>园林工程学 · 园林全景</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.93rem}
+th,td{border:1px solid #d4e8d4;padding:8px 12px;text-align:left}
+th{background:#e8f5e8;font-weight:600;color:#2e7d32}
+td{background:#fff}
+.article h2{margin-top:36px;padding-bottom:8px;border-bottom:2px solid #c9a959;color:#2e7d32}
+.article h3{margin-top:24px;color:#333}
+.article ul{margin:8px 0 8px 20px}
+.article li{margin:4px 0;line-height:1.7}
+.article p{line-height:1.8;margin:10px 0}
+.article blockquote{border-left:4px solid #c9a959;margin:16px 0;padding:10px 16px;background:#f9f6ee;color:#555;border-radius:0 6px 6px 0}
+.meta{color:#888;font-size:.85rem;margin-bottom:20px;padding:10px 14px;background:#f8faf8;border-radius:8px}
+</style>
+<style>
+.tab-bar-course{display:flex;gap:8px;margin-bottom:16px;border-bottom:2px solid #e0e0e0;padding-bottom:8px}
+.tab-btn-course{padding:8px 20px;border:none;border-radius:8px 8px 0 0;background:transparent;color:#666;font-size:.95rem;cursor:pointer;transition:all .2s}
+.tab-btn-course:hover{background:#f0f7f0;color:#2e7d32}
+.tab-btn-course.active{background:#e8f5e9;color:#2e7d32;font-weight:600}
+.tab-panel{min-height:200px}
+.photo-grid a{transition:transform .2s,box-shadow .2s}
+.photo-grid a:hover{transform:scale(1.03);box-shadow:0 4px 16px rgba(0,0,0,.15)}
+</style>
+
+</head>
+<body>
+<div class="site-header">
+  <div class="container">
+    <h1 style="font-size:1.4rem">🌿 园林全景</h1>
+    <p style="color:#666;font-size:.9rem">风景园林知识体系 · 免费全文阅读</p>
+  </div>
+</div>
+<nav class="site-nav">
+  <div class="container">
+    <a href="../index.html">园林专业知识</a>
+    <a href="../电子书/index.html">电子书</a>
+    <a href="../论文/index.html">学术论文</a>
+    <a href="../科普文章/index.html">科普及文章</a>
+  </div>
+</nav>
+<div class="container">
+      <div class="tab-bar-course">
+    <button class="tab-btn-course active" onclick="switchCourseTab('content')">📖 课程正文</button>
+    <button class="tab-btn-course" onclick="switchCourseTab('photos')">📸 照片图库</button>
+    <button class="tab-btn-course" onclick="switchCourseTab('refs')">📚 延伸参考</button>
+  </div>
+  <div id="tab-content" class="tab-panel">
+  <div class="article" style="margin-top:24px">
+<h1>园林工程学：从图纸到实地的技术转化</h1>
+
+<h2>课程定位</h2>
+
+<p><strong>课程 · 必修 · 工程</strong> | <strong>核心问题</strong>：设计方案如何变成真实可用的园子？</p>
+
+<p>园林工程学是风景园林专业中最具"转化"性质的一门课。它将造园美学（园林心理学、盆景学、插花艺术等课程所讨论的）翻译为可执行的施工技术语言。没有工程技术的支撑，再精妙的设计也只能停留在图纸上；没有美学意识的工程，做出来的园子能用，但不值得看。</p>
+
+<p>本课程不试图涵盖全部施工细节（那是《园林施工图设计》和施工现场的任务），而是建立一个工程认知框架——让你在设计时就知道"这个地形能不能堆""那个水面能不能做""这面石墙能不能立住"。换句话说：让你在画图的时候，就能预判工地上会发生什么。</p>
+
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
+
+<h2>第一部分：土方工程与地形塑造——园林的"骨架"</h2>
+
+<p>地形是所有园林空间的基础。没有地形，就没有视线引导、没有空间围合、没有微气候调节。你可以把地形理解为园林的"骨骼"——其他一切（植物、水景、路径、建筑）都附着在这副骨骼上。</p>
+
+<h3>1.1 地形的设计逻辑</h3>
+
+<p>中国园林最核心的地形手法是"挖湖堆山"——挖出来的土方堆成山丘，一举两得。这个看似简单的手法包含三层逻辑：</p>
+<ul>
+<li>**视觉**：山体提供制高点（俯瞰全园）和视线屏障（遮挡与发现）</li>
+<li>**空间**：山体和谷地划分不同的功能区域</li>
+<li>**微气候**：山体改变风向和日照分布，形成局部小气候</li>
+</ul>
+
+<h3>1.2 土方平衡：最基础的工程经济</h3>
+
+<p>土方工程最大的成本是土方的运输。工程设计的首要原则是：<strong>挖方量 ≈ 填方量</strong>——园区内挖出来的土尽量在园区内消化。土方平衡的计算基础是方格网法：将场地划分为若干方格（通常10m×10m或20m×20m），测量每个方格角点的自然标高与设计标高，计算每个方格的挖填体积。</p>
+
+<h3>1.3 排水坡度</h3>
+
+<table>
+<thead><tr><th>场地类型</th><th>最小坡度</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>草坪</td><td>≥0.5%</td><td>坡度太小排水不畅</td></tr>
+<tr><td>铺装广场</td><td>1%-3%</td><td>常规排水要求</td></tr>
+<tr><td>园路</td><td>0.5%-8%</td><td>超过8%需设台阶</td></tr>
+<tr><td>运动场地</td><td>0.5%-1%</td><td>平整且排水</td></tr>
+</tbody></table>
+
+<h3>1.4 微地形</h3>
+
+<p>现代园林中大量使用微地形——人为创造的1-3米高差的小起伏。它的价值在于：视觉层次（1米高差就能创造"前景—中景—远景"的深度）、视线引导、声屏障、空间分割。</p>
+
+<h3>1.5 土壤压实与沉降</h3>
+
+<p>地形塑造完成后，土壤需要压实——松填的土会在雨季自然沉降。施工中通常采用机械碾压结合灌水自然沉降，并预留5%-10%的沉降余量。</p>
+
+<h3>1.6 算好土方账——精准计量是预算和施工的基础</h3>
+
+<p>算不清土方量，后续的预算、施工调度和成本控制都会失去依据。土方量计算主要有三种方法：</p>
+
+<p><strong>方格网法</strong>：最常用的方法。在场地设计图上打上方格网，分别测量每个方格角点的原地形标高和设计标高，算出每个角点的"施工高度"（填挖值），再汇总计算出整个场地的填方量和挖方量。适合场地平整和地形改造。</p>
+
+<p><strong>断面法</strong>：用一组平行的截面将地形"切开"，分别计算每个截面的面积，再根据相邻截面的平均面积和间距计算体积并累加。适用于计算带状地形（如道路、沟渠、堤坝）的土方量。</p>
+
+<p><strong>体积法</strong>：将地形简化为标准的几何体（如棱柱、棱锥），用求体积的公式进行估算。精度较低，主要用于规划阶段的粗略估算。</p>
+
+<blockquote><strong>特别提醒：</strong>预算中一个常见的争议点是"松方"和"实方"的计量问题。比如回填种植土，清单工程量是按设计图示的压实体积（实方）计算的，而运输车辆上的是疏松的土方（松方）。两者之间的体积差异和压实损耗成本，需要计入综合单价来解决，这就是"量价分离"原则。</blockquote>
+
+<h3>1.7 从"算"到"做"的全流程管理</h3>
+
+<p>算好账之后，就是一步步把它做出来。整个过程环环相扣：</p>
+
+<h4>施工准备</h4>
+<p>进场第一步是勘察现场，摸清地下管线、障碍物等情况。然后进行场地清理（清除树木、建筑垃圾等），并做好场地排水工作。</p>
+
+<h4>定点放线</h4>
+<p>根据施工图纸，用灰线或木桩，在实地准确标出挖方区、填方区的范围、边线和标高控制点。这是确保土方造型与设计一致的关键。</p>
+
+<h4>土方开挖</h4>
+<p><strong>基本原则</strong>："由上而下，分层开挖"。预留保护层：机械开挖到接近设计标高时，需预留20-30cm的土层，改由人工开挖，以防止超挖、扰动地基土。</p>
+<p><strong>土方平衡</strong>：开挖时就要有意识做好"土方平衡"，即把挖出的好土（如种植土）就近用于填方，减少重复倒运和运输成本。</p>
+<p><strong>安全与环保</strong>：开挖过程中布置好排水沟，防止积水浸泡边坡导致坍塌。晴天施工需注意洒水防尘，车辆出场前必须冲洗干净，避免污染市政道路。</p>
+
+<h4>土方回填与压实</h4>
+<p>这是塑造地形的最后一步，直接关系到后期景观效果。</p>
+<p><strong>土质把关</strong>：严禁使用含草皮、生活垃圾、树根、腐殖质等的土作为回填土。</p>
+<p><strong>分层夯实</strong>：最核心的工艺要求。回填土必须分层摊铺、分层压实，确保密实度达标。蛙式打夯机每层铺土厚度约为20-25cm。大面积绿化区域，回填后还需进行灌水沉降，并及时补足下沉的土壤，才能保证最终地形饱满、不塌陷。</p>
+<p><strong>预留沉降量</strong>：绿化种植区域回填，需要预留一定的沉降量，具体数值可与建设方协商确定。</p>
+
+<blockquote><strong>值得一提：</strong>了解土方工程的施工工艺，对于精准编制预算也至关重要。比如，在套用预算定额时，你需要知道哪些项目已经包含了"筛土"、"夯实"等工作内容，哪些需要单独计价。关于预算定额在土方工程中的具体应用和子目划分，在许多《园林工程招投标与概预算》教材中都有详细讲解。</blockquote>
+
+<h4>预算与施工的"双向奔赴"</h4>
+<p>园林土方工程的管理，本质上是精确的土方量计算和严谨的施工工艺的结合。预算人员（算）和施工人员（做）必须协同工作：</p>
+<ul>
+<li>预算人员要深入理解"松方"与"实方"的计价逻辑，以及各项工艺在定额中的体现方式。</li>
+<li>施工人员要在现场严格执行分层回填、预留沉降、灌水夯实等工艺，确保地形质量。</li>
+</ul>
+
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
+
+<h2>第二部分：园路与铺装工程——园林的"脉络"</h2>
+
+<h3>2.1 园路的分级体系</h3>
+
+<table>
+<thead><tr><th>级别</th><th>宽度</th><th>功能</th></tr></thead>
+<tbody>
+<tr><td>主路</td><td>2-4m</td><td>通行养护车辆、主要游览动线</td></tr>
+<tr><td>支路</td><td>1.2-2m</td><td>主要游览路线</td></tr>
+<tr><td>小路</td><td>0.6-1.2m</td><td>深入景点、探索路径</td></tr>
+</tbody></table>
+
+<p>园路线形设计遵循<strong>"通而不畅"</strong>原则——既要到达目的地，又不能一眼望穿。</p>
+
+<h3>2.2 铺装材料的选择逻辑</h3>
+
+<table>
+<thead><tr><th>材料</th><th>特性</th><th>适用场景</th></tr></thead>
+<tbody>
+<tr><td>花岗岩</td><td>庄重、耐久</td><td>主入口、中心广场</td></tr>
+<tr><td>青石板</td><td>质朴、古典</td><td>中式园林、文化景观</td></tr>
+<tr><td>透水砖</td><td>生态、现代</td><td>海绵城市项目</td></tr>
+<tr><td>卵石</td><td>天然、装饰性强</td><td>苏州式园路、拼花地面</td></tr>
+<tr><td>木板</td><td>温暖、弹性好</td><td>亲水平台、栈道</td></tr>
+<tr><td>混凝土压模</td><td>经济</td><td>大面积次要道路</td></tr>
+</tbody></table>
+
+<h3>2.3 铺装的"图底关系"</h3>
+
+<p>苏州园林的铺装艺术——用各色卵石和碎瓷片在路面上拼出蝙蝠（福）、寿字、暗八仙等图案。经典案例：留园五峰仙馆前的"十字海棠"铺地。</p>
+
+<h3>2.4 园路的结构层</h3>
+
+<p>一条合格的园路，从下到上：素土夯实（压实度≥93%）→ 碎石垫层（150-200mm）→ 结合层（30-50mm）→ 面层（30-50mm）。</p>
+
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
+
+<h2>第三部分：水景工程——园林的"灵魂"</h2>
+
+<h3>3.1 水景的分类与工程要点</h3>
+
+<table>
+<thead><tr><th>类型</th><th>形式</th><th>工程核心</th></tr></thead>
+<tbody>
+<tr><td>静水</td><td>池、湖</td><td>防水结构+驳岸处理</td></tr>
+<tr><td>流水</td><td>溪涧</td><td>坡度设计（0.5%-3%）</td></tr>
+<tr><td>落水</td><td>瀑布、跌水</td><td>流量计算+水形控制</td></tr>
+<tr><td>喷水</td><td>喷泉</td><td>水泵选型+循环系统</td></tr>
+</tbody></table>
+
+<h3>3.2 驳岸与护岸</h3>
+
+<ul>
+<li>**自然驳岸**：卵石或自然石堆砌，生态性最好</li>
+<li>**硬质驳岸**：花岗岩或混凝土砌筑，规整现代</li>
+<li>**混合驳岸**：下部硬质+上部自然</li>
+</ul>
+
+<h3>3.3 防水与防渗</h3>
+
+<p>常用方案：硬质池底（C25以上混凝土+防水剂）、防水卷材（SBS/EPDM）、膨润土防水毯。北方地区水池深度一般不小于60cm。</p>
+
+<h3>3.4 水循环与水质维护</h3>
+
+<p>潜水泵选型（每小时循环水量≥水池总水量的2-3倍）+ 物理过滤（砂缸）+ 生态净化（水生植物）+ 紫外线杀菌（UV-C）。</p>
+
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
+
+<h2>第四部分：假山工程——中国园林最独特的技艺</h2>
+
+<h3>4.1 叠石的材料体系</h3>
+
+<table>
+<thead><tr><th>石材</th><th>特征</th><th>美学气质</th></tr></thead>
+<tbody>
+<tr><td>太湖石</td><td>透、漏、瘦、皱</td><td>奇诡、飘逸</td></tr>
+<tr><td>黄石</td><td>刚硬、方正</td><td>雄浑、稳重</td></tr>
+<tr><td>青石</td><td>介于两者之间</td><td>中庸、质朴</td></tr>
+<tr><td>英石</td><td>形态奇峭</td><td>孤高</td></tr>
+</tbody></table>
+
+<h3>4.2 叠石的基本工法</h3>
+
+<ul>
+<li>**挑**：长条石块出挑，模拟悬崖</li>
+<li>**飘**：顶石向外飘出</li>
+<li>**压**：上层石块压住下层缝隙（"压缝"）</li>
+<li>**刹**：小石片填缝稳固</li>
+<li>**钩**：上下石块互相勾连</li>
+</ul>
+
+<h3>4.3 叠石的力学逻辑</h3>
+
+<p>重心线必须落在下层石头的支撑面上；避免三种通缝（上下、左右、十字）；大型假山基础必须打到持力层。</p>
+
+<h3>4.4 美学高度："有真为假，作假成真"</h3>
+
+<p>明代计成《园冶》提出叠山的最高境界。经典案例：环秀山庄湖石假山——占地仅半亩，营造出"千岩万壑"的空间感受。</p>
+
+<h3>4.5 置石：更克制的表达</h3>
+
+<ul>
+<li>选石：独峰石或形态完整的湖石、英石</li>
+<li>朝向：必须"向心"——正面朝向主要观赏点</li>
+<li>埋深：石块根部需埋入土中至少20-30cm</li>
+</ul>
+
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
+
+<h2>第五部分：园林给排水与照明工程（水电工程）</h2>
+
+<p>园林水电工程，是园林从"骨架"到"有血有肉"的关键一步。如果说土方工程塑造了地形的骨架，那水电工程就是为这个空间注入生命力的"血管"和"神经"——它负责给植物供水，给水景供能，给夜景供光。</p>
+
+<h3>一、"水"工程的完整体系</h3>
+
+<h4>1. 给水系统：让植物"喝饱"，让景观"活起来"</h4>
+
+<h5>管材选择与施工要点</h5>
+<p>园林给水管材，需兼顾耐腐蚀、耐压和隐蔽性。工程中常用以下几类：</p>
+<ul>
+<li><strong>PE管</strong>：耐腐蚀、柔韧性好，适合埋地敷设，是目前园林灌溉的主流管材</li>
+<li><strong>镀锌钢管/不锈钢管</strong>：强度高，用于水景、泵房等承压部位</li>
+<li><strong>PVC管</strong>：成本低，适用于非承压的排水或小口径给水</li>
+</ul>
+<p>施工中，埋地管道需严格把控回填质量，每层回填土厚度控制在30cm以内，并分层夯实，防止管道沉降或位移。管道连接宜采用柔性连接（如卡箍、法兰），适应温度变化引起的管道伸缩。</p>
+
+<h5>绿化灌溉系统：从"大水漫灌"到"精准滴灌"</h5>
+<p>灌溉方式的选择直接影响植物长势和运维成本：</p>
+<ul>
+<li><strong>喷灌</strong>：适用于草坪、花坛等大面积规则绿地，覆盖面广、节水</li>
+<li><strong>滴灌</strong>：适用于花灌木、绿篱等，精准供水到根部，节水率可达50%以上</li>
+<li><strong>微灌/渗灌</strong>：适用于名贵树木和专类园，水分利用率最高</li>
+</ul>
+<p>现代园林灌溉的进阶方向是<strong>智能化控制</strong>：通过传感器实时监测土壤湿度，结合天气数据自动启停，实现"按需供水"。</p>
+
+<h5>给水附属设施：井体与阀门的造价构成</h5>
+<p>预算中，给水井体是容易被忽略的"隐形项"。以北京市政园林工程概算定额为例：</p>
+<table>
+<thead><tr><th>定额编号</th><th>项目</th><th>基价（元）</th><th>人工费占比</th><th>材料费主要构成</th></tr></thead>
+<tbody>
+<tr><td>4-78</td><td>绿地给水井（圆形）</td><td>793.42</td><td>23.5%</td><td>页岩砖485块、铸铁井盖、水泥砂浆</td></tr>
+<tr><td>4-79</td><td>绿地给水井（矩形）</td><td>507.18</td><td>16.6%</td><td>页岩砖268块、阀箱、水泥砂浆</td></tr>
+</tbody></table>
+<p>圆形井比矩形井贵了近300元，主要差异在于用砖量和井盖规格。同类设施不同规格，造价差异可能很大，必须严格按图纸选型套价。</p>
+
+<h4>2. 排水系统：让水"有路可走，有序排放"</h4>
+<p>园林排水设计正经历从"快排"到"渗、滞、蓄、净、用、排"的转型，这是海绵城市理念在园林工程中的落地。</p>
+
+<h5>传统排水技术要点</h5>
+<ul>
+<li><strong>管道坡度控制</strong>：排水管坡度一般不小于0.3%，确保水流畅通</li>
+<li><strong>检查井间距</strong>：每隔20-50米设置检查井，便于维护疏通</li>
+<li><strong>回填材料</strong>：优先选用级配良好的砂石料或中粗砂，严禁使用含有机质和腐殖质的土壤</li>
+</ul>
+
+<h5>海绵城市导向的排水优化</h5>
+<ul>
+<li><strong>雨水花园、下凹式绿地</strong>：在地势低洼处设置，通过植物和土壤过滤雨水，削减径流污染</li>
+<li><strong>雨水调蓄池</strong>：收集暴雨期间的径流雨水，待雨停后缓慢释放或用于绿地灌溉</li>
+<li><strong>透水铺装</strong>：让雨水就地入渗，补充地下水</li>
+</ul>
+
+<h5>排水与景观的结合设计</h5>
+<p>现代园林排水强调"因势利导"——利用地形自然形成排水通道，而非全靠管道。微地形设计是核心工具：通过营造高低错落的微地形，形成干湿过渡的水分梯度，高处长耐旱植物，低处长耐湿植物。</p>
+
+<h4>3. 景观水体工程</h4>
+<p>水池、喷泉、溪流是园林水景的灵魂：</p>
+<ul>
+<li><strong>防渗处理</strong>：池底和池壁需铺设土工膜或浇筑混凝土，防止渗漏</li>
+<li><strong>水体净化</strong>：综合运用生物净化（水生植物）、物理净化（过滤）、化学净化（投药）</li>
+<li><strong>水电配合</strong>：喷泉的水泵、照明、管道，必须统一规划、协调布置</li>
+</ul>
+
+<h3>二、"电"工程的完整体系</h3>
+
+<h4>1. 供电与照明：从"亮起来"到"会思考"</h4>
+<p>园林供电的核心是<strong>埋地敷设</strong>——所有电缆走地下，确保安全和观感。供电工程是一整套从市政接驳点到终端设备的完整配电系统。</p>
+
+<p>园林照明的价值不仅在于"照亮"，更在于"营造氛围"。"见光不见灯"——灯具隐蔽，白天不影响景观。三层逻辑：</p>
+<ul>
+<li><strong>功能照明</strong>：主路≥10 lux，保证夜间通行安全</li>
+<li><strong>景观照明</strong>：重点对象≥50 lux，突出建筑、雕塑、树木</li>
+<li><strong>氛围照明</strong>：暖色温2700K-3000K，营造温馨氛围</li>
+</ul>
+<p>现代园林照明已进入<strong>智能调控时代</strong>：通过人流密度、环境光强度、设备功率多源数据联动，动态调整各区域亮度，无人时段自动降耗，在保证体验的同时大幅降低电费开支。</p>
+
+<h4>2. 智能控制系统：智慧园林的"大脑"</h4>
+<p>智能控制系统不仅用于照明，还广泛用于灌溉、水景、安防等领域。通过在管网关键节点布设流量计、水位计、水质监测仪，实时采集数据，异常时自动预警。</p>
+
+<h3>三、水电工程的预算逻辑</h3>
+
+<h4>1. 水电工程在总预算中的占比</h4>
+<p>以一份综合性公园工程预算实例（占地约6.8万㎡，总造价约1226万元）来看：</p>
+<ul>
+<li>给排水及灌溉工程：约32.7万元，占比约2.7%</li>
+<li>供电及照明工程：约41.6万元，占比约3.4%</li>
+<li>喷泉工程：约31.5万元，占比约2.6%</li>
+</ul>
+<p>水电相关工程合计占比约8-9%，但管线埋设的土方开挖、回填、路面恢复等工程量，往往被计入土建或道路工程，实际总费用远高于这两个子项。</p>
+
+<h4>2. 水电预算的计算顺序</h4>
+<table>
+<thead><tr><th>序号</th><th>项目名称</th><th>计算公式</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>直接费</td><td>按定额计算</td><td>—</td></tr>
+<tr><td>2</td><td>其中：定额人工费</td><td>(1)项所含人工费</td><td>后续综合取费以人工费为基数</td></tr>
+<tr><td>3</td><td>其中：设备费</td><td>(1)项所含设备费</td><td>设备按市场价单独计价</td></tr>
+<tr><td>4</td><td>其他直接费</td><td>(2)×费率</td><td>以人工费为基数</td></tr>
+<tr><td>5</td><td>调价金额</td><td>[(1)+(4)-(3)]×调价系数</td><td>设备费不参与调价</td></tr>
+<tr><td>6</td><td>工程直接费</td><td>(1)+(4)+(5)</td><td>—</td></tr>
+<tr><td>7</td><td>综合费率</td><td>企业经营费+利润=(2)×a%+(2)×b%</td><td>以人工费为基数</td></tr>
+<tr><td>8</td><td>税金</td><td>[(6)+(7)]×税率</td><td>—</td></tr>
+<tr><td>9</td><td>工程造价</td><td>(6)+(7)+(8)</td><td>—</td></tr>
+</tbody></table>
+<p>两大关键点：设备费（水泵、配电箱、阀门等）按市场价单独计取，不参与定额调价；综合取费的基数是定额人工费，而非直接费。</p>
+
+<h4>3. 计价案例</h4>
+<p>以"某公园给排水及灌溉工程"为例：计算分部分项工程直接费（各段管道安装、井体砌筑等）合计约25.98万元。加上临时设施费（1.70%）和现场经费（2.08%），得到直接费合计约26.96万元。再按相应费率计算企业管理费（11.26%）、利润（6.0%）和税金（3.99%），最终工程造价约32.69万元。</p>
+<p>这个案例清晰展示了"从直接费到工程造价"的完整嵌套过程——水电工程的计价并非简单相加，而是多层费率叠加的结果。</p>
+
+<h3>四、小结：水电工程的三个层次</h3>
+<ul>
+<li><strong>底层</strong>：管线、电缆、井体等隐蔽工程，质量决定寿命，预算占比虽不高但不可压缩</li>
+<li><strong>中间层</strong>：水泵、配电箱、喷头等设备安装，按市场价单独计价，选型直接影响后期运维成本</li>
+<li><strong>上层</strong>：智能控制系统，通过自动化调度实现节能降耗，长期回报显著</li>
+</ul>
+
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
+
+<h2>第六部分：工程与设计的衔接</h2>
+
+<p>工程思维应该在设计阶段介入。最好的设计，是在画图时就已经在想"这块地形用哪种土方方案""这个驳岸用哪种结构"。</p>
+
+<p><strong>建议配合修读</strong>：</p>
+<ul>
+<li>《园林施工图设计》：将设计方案"翻译"为施工图纸</li>
+<li>《园林材料学》：不同材料的物理性能</li>
+<li>《园林预算与造价》：经济可行性分析</li>
+</ul>
+
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
+
+<h2>延伸参考</h2>
+
+<p><strong>核心文献</strong>：</p>
+<ul>
+<li>计成（明）.《园冶·掇山》——叠石技艺的古典文献</li>
+<li>中国风景园林学会.《园林工程技术规程》</li>
+<li>《海绵城市建设技术指南》</li>
+<li>陈从周.《说园》——工程与美学的融通</li>
+</ul>
+
+<p><strong>实操参考</strong>：</p>
+<ul>
+<li>苏州环秀山庄（假山工程经典）</li>
+<li>苏州留园（黄石假山与铺装艺术）</li>
+<li>上海辰山植物园（现代水景与地形工程）</li>
+</ul>
+
+<hr style="margin:32px 0;border:none;border-top:1px solid #d4e8d4">
+
+<p><em>必修 · 工程</em></p>
+
+  </div>
+</div>
+  </div>
+  <div id="tab-photos" class="tab-panel" style="display:none">
+  <h2 style="margin:24px 0 12px;color:#2e7d32">📸 园林工程学照片图库</h2>
+  <p style="color:#888;font-size:.85rem;margin-bottom:16px">共 29 张 · 点击可查看大图</p>
+  <div class="photo-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:30px">
+    <a href="../图片/18-铺装材料/12-DIY-Garden-Fence-Ideas-for-Easy-Weekend-Projects-1.-Recycled-Pallet-Fence-0.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/12-DIY-Garden-Fence-Ideas-for-Easy-Weekend-Projects-1.-Recycled-Pallet-Fence-0.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/12-DIY-Garden-Fence-Ideas-for-Easy-Weekend-Projects-2.-Bottle-Garden-Fence-0.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/12-DIY-Garden-Fence-Ideas-for-Easy-Weekend-Projects-2.-Bottle-Garden-Fence-0.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/12-DIY-Garden-Fence-Ideas-for-Easy-Weekend-Projects-3.-Woven-Branch-Fence-0.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/12-DIY-Garden-Fence-Ideas-for-Easy-Weekend-Projects-3.-Woven-Branch-Fence-0.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/2c1e23c3734d51848b2a7ce7ae5a343f.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/2c1e23c3734d51848b2a7ce7ae5a343f.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/3bbc809a6e2eaa8ef9a00f97104fcb36.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/3bbc809a6e2eaa8ef9a00f97104fcb36.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/Vertical-Living-Wall-Display.webp" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/Vertical-Living-Wall-Display.webp" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/01-石阶/13e90282f6d358bbb69cfa28a203ee3a.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/01-石阶/13e90282f6d358bbb69cfa28a203ee3a.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/01-石阶/16c79f901ba955d5ef58bb00e5cfa997.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/01-石阶/16c79f901ba955d5ef58bb00e5cfa997.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/01-石阶/17bd0217a7cc0f95157d9da0678c235c.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/01-石阶/17bd0217a7cc0f95157d9da0678c235c.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/01-石阶/20d787c538c6a977e5ebb47399ebba1f.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/01-石阶/20d787c538c6a977e5ebb47399ebba1f.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/01-石阶/3e7bd0c7ae5c94f54595680d55e9a701.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/01-石阶/3e7bd0c7ae5c94f54595680d55e9a701.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/01-石阶/3f9104a5de879d99c4c8f3342b781d74.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/01-石阶/3f9104a5de879d99c4c8f3342b781d74.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/01-石阶/4c1b72f0fe652bf2c3c33cccee41cbfa.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/01-石阶/4c1b72f0fe652bf2c3c33cccee41cbfa.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/01-石阶/9dec32dca5b6fe989e2d2062974534a4.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/01-石阶/9dec32dca5b6fe989e2d2062974534a4.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/01-石阶/eaf960bec80fd61c52a9d925522e30f9.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/01-石阶/eaf960bec80fd61c52a9d925522e30f9.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/园林设施/0c0f365401a1776e16db8b54fc1ed2e6.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/园林设施/0c0f365401a1776e16db8b54fc1ed2e6.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/园林设施/3972a7e8b964c8e6af05bf9207f542f1.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/园林设施/3972a7e8b964c8e6af05bf9207f542f1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/园林设施/5702efca2f2be03b77f2f6868878187a.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/园林设施/5702efca2f2be03b77f2f6868878187a.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/园林设施/612497979f8b6aeff437787266688f5b.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/园林设施/612497979f8b6aeff437787266688f5b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/园林设施/6dfce21cc00070c175b88bedbf17d8fb.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/园林设施/6dfce21cc00070c175b88bedbf17d8fb.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/园林设施/7230f1dc55b8af617016b87518bab1ce.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/园林设施/7230f1dc55b8af617016b87518bab1ce.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/园林设施/807f80c91260b1e7547e5634e73edc81.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/园林设施/807f80c91260b1e7547e5634e73edc81.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/园林设施/8b318fbfbd3874a75578e00912bce829.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/园林设施/8b318fbfbd3874a75578e00912bce829.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/园林设施/95d7be7fa4b8c0b38ab2714212f0baa7.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/园林设施/95d7be7fa4b8c0b38ab2714212f0baa7.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/园林设施/978b9311951c521a86e733f8bd848668.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/园林设施/978b9311951c521a86e733f8bd848668.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/园林设施/ae70deae73febe73537c0b6c0ab4f21f.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/园林设施/ae70deae73febe73537c0b6c0ab4f21f.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/园林设施/de2bc41690e099c0d72a6df163831528.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/园林设施/de2bc41690e099c0d72a6df163831528.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/园林设施/e428dbfb72676aa355c5eb842f81bea7.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/园林设施/e428dbfb72676aa355c5eb842f81bea7.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+    <a href="../图片/18-铺装材料/园林设施/e97e8c84e93b112159abef30c34e1e9e.jpg" target="_blank" class="photo-item" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0"><img src="../图片/18-铺装材料/园林设施/e97e8c84e93b112159abef30c34e1e9e.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+  </div>
+  </div>
+
+
+  <div id="tab-refs" class="tab-panel" style="display:none">
+  <h2 style="margin:24px 0 12px;color:#2e7d32">📚 延伸参考</h2>
+  <p style="color:#888;font-size:.85rem;margin-bottom:16px">推荐阅读与相关电子书</p>
+  <h3 style="margin:20px 0 8px;color:#333">关联阅读</h3>
+  <ul style="margin:8px 0 8px 20px">
+    <li><a href="06-风景园林规划.html" style="color:#2e7d32">风景园林规划</a></li>
+    <li><a href="07-园林设计通论.html" style="color:#2e7d32">园林设计通论</a></li>
+    <li><a href="13-园林建筑.html" style="color:#2e7d32">园林建筑</a></li>
+    <li><a href="../电子书/index.html" style="color:#2e7d32">电子书总目录</a></li>
+  </ul>
+  <p style="margin-top:20px;padding:12px;background:#f8faf8;border-radius:8px;font-size:.85rem;color:#888">📖 更多相关电子书，请访问 <a href="../电子书/index.html" style="color:#2e7d32">电子书栏目</a></p>
+  </div>
+</div>
+<div class="site-footer">
+  <div class="container">园林全景 · 知识共享 · 自由阅读</div>
+</div>
+<div class="watermark"></div>
+<div id="related-ebooks" data-keywords="造园理论,园冶,园林建筑"></div>
+<script src="../电子书/related-ebooks.js"></script>
+
+<script>
+function switchCourseTab(tab) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.style.display = 'none');
+  document.querySelectorAll('.tab-btn-course').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + tab).style.display = 'block';
+  document.querySelector('.tab-btn-course[onclick*="' + tab + '"]').classList.add('active');
+}
+</script>
+
+</body>
+</html>

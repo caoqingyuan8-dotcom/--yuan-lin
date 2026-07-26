@@ -2,251 +2,424 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>中国园林史 · 园林全景</title>
-<link rel="stylesheet" href="../style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国园林史：三千年山水理想的演变 - 园林专业知识</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+:root {
+  --primary: #1a7a6a;
+  --primary-light: #2e9a86;
+  --primary-bg: #f0f8f5;
+  --accent-gold: #c9a959;
+  --text-main: #1a3a32;
+  --text-secondary: #4a6a5a;
+  --border-light: #d8ede8;
+  --card-shadow: rgba(26,122,106,0.08);
+}
+
+.page-header {
+  position: relative;
+  padding: 32px 24px 24px;
+  margin: 16px 0 20px;
+  background: linear-gradient(135deg, #f0f8f5 0%, #fafff8 40%, #e8f5ee 100%);
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+}
+.page-header::before {
+  content: '';
+  position: absolute; top: -30px; right: -30px;
+  width: 160px; height: 160px;
+  background: radial-gradient(circle, rgba(201,169,89,0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.page-header h1 {
+  font-size: 22px; color: var(--primary); margin: 0 0 8px;
+  font-weight: 700; letter-spacing: 0.5px;
+  position: relative; z-index: 1;
+}
+.page-header .subtitle {
+  font-size: 13px; color: var(--text-secondary);
+  line-height: 1.6; position: relative; z-index: 1;
+}
+.page-header .subtitle strong { color: var(--primary); font-weight: 600; }
+
+/* 页签导航 */
+.tab-nav {
+  display: flex; flex-wrap: wrap; gap: 0;
+  margin: 0 0 20px 0; padding: 0;
+  border-bottom: 2px solid var(--border-light);
+  position: relative;
+}
+.tab-btn {
+  flex-shrink: 0;
+  padding: 10px 18px;
+  background: transparent;
+  color: var(--text-secondary);
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all .25s ease;
+  white-space: nowrap;
+  opacity: 0.6;
+  letter-spacing: 0.3px;
+}
+.tab-btn:hover {
+  opacity: 1;
+  color: var(--primary);
+  background: linear-gradient(to top, rgba(26,122,106,0.04), transparent);
+}
+.tab-btn.active {
+  opacity: 1;
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+  font-weight: 600;
+  background: linear-gradient(to top, rgba(26,122,106,0.06), transparent);
+}
+
+/* 内容面板 */
+.tab-panel {
+  display: none;
+  padding: 20px 16px;
+  background: #fafff8;
+  border-radius: 0 0 8px 8px;
+  line-height: 1.9;
+  font-size: 15px;
+  color: var(--text-main);
+}
+.tab-panel.active { display: block; }
+.tab-panel p { margin: 12px 0; }
+
+.tab-panel h3 {
+  font-size: 17px; color: var(--primary); margin: 28px 0 10px;
+  padding-bottom: 6px; border-bottom: 2px solid var(--accent-gold);
+  font-weight: 600; letter-spacing: 0.3px;
+}
+.tab-panel h4 {
+  font-size: 15px; color: var(--text-secondary); margin: 20px 0 8px; font-weight: 600;
+}
+
+.tab-panel table {
+  width: 100%; border-collapse: collapse; margin: 16px 0;
+  font-size: 14px; border-radius: 8px; overflow: hidden;
+  box-shadow: 0 1px 4px var(--card-shadow);
+}
+.tab-panel th {
+  background: var(--primary); color: #fff;
+  padding: 8px 14px; text-align: left; font-weight: 600; font-size: 13px; letter-spacing: 0.5px;
+}
+.tab-panel td {
+  padding: 8px 14px; border-bottom: 1px solid var(--border-light); color: var(--text-main);
+}
+.tab-panel tr:last-child td { border-bottom: none; }
+.tab-panel tr:nth-child(even) td { background: var(--primary-bg); }
+
+.tab-panel blockquote {
+  margin: 16px 0; padding: 12px 20px;
+  border-left: 3px solid var(--accent-gold);
+  background: #fdfcf6; color: var(--text-secondary);
+  font-style: italic; border-radius: 0 6px 6px 0; font-size: 14px;
+}
+
+.course-intro {
+  margin: 0 0 4px; padding: 16px 20px;
+  background: linear-gradient(135deg, #f0f8f5, #fafff8);
+  border-radius: 8px; border-left: 3px solid var(--accent-gold);
+  line-height: 1.8; font-size: 14px; color: var(--text-secondary);
+}
+.course-intro p { margin: 8px 0; }
+.course-intro strong { color: var(--primary); }
+
+.nav-bar { margin-bottom: 8px; }
+.nav-bar .nav-home {
+  font-size: 13px; color: #999; text-decoration: none;
+  display: inline-flex; align-items: center; gap: 4px;
+}
+.nav-bar .nav-home:hover { color: var(--primary); }
+h1 { font-size: 22px; color: var(--primary); margin: 0 0 12px; font-weight: 700; letter-spacing: 0.3px; }
+.footer { text-align: center; color: #ccc; font-size: 11px; padding: 30px 0 20px; }
+@media (max-width: 768px) {
+  .tab-btn { padding: 8px 12px; font-size: 12px; }
+  .page-header h1 { font-size: 18px; }
+  .page-header { padding: 20px 16px; }
+}
+</style>
+
+<style>
+.photo-grid a{transition:transform .2s,box-shadow .2s}
+.photo-grid a:hover{transform:scale(1.03);box-shadow:0 4px 16px rgba(0,0,0,.15)}
+</style>
 </head>
 <body>
-<div class="site-header" style="padding:20px 0">
-  <div class="container">
-    <h1 style="font-size:1.4rem">🌿 园林全景</h1>
-  </div>
-</div>
-<nav class="site-nav">
-  <div class="container">
-    <a href="../index.html">课程手册</a>
-    <a href="../电子书/index.html">电子书</a>
-    <a href="../论文/index.html">学术论文</a>
-  </div>
-</nav>
 <div class="container">
-  <div class="article">
-    <h1>中国园林史</h1>
-
-<p>知识类型：专业必修课 ｜ 覆盖时段：先秦→近现代 ｜ 核心框架：六大时代 + 四大要素</p>
-
-<h2>一、课程概述</h2>
-
-<p>中国园林史是理解东方造园传统的主线。三千年来，从帝王畋猎的囿、通天的台，发展到文人写意的咫尺山林，中国园林在"天人合一"哲学框架下，形成了世界上独一无二的山水园林体系。</p>
-
-<p>核心逻辑线：<strong>功能</strong>（围猎→游赏→隐居）→ <strong>审美</strong>（宏大→写实→写意）→ <strong>哲学</strong>（礼制→自然→禅道）</p>
-
-<h2>二、六大时代</h2>
-
-<h3>1. 先秦：囿台时代（约前1100-前221）</h3>
-
-<ul>
-<li><strong>标志</strong>：文王之囿（灵囿、灵台、灵沼）——已知最早的大型园林</li>
-<li><strong>功能</strong>：帝王狩猎、通神祭祀（台是沟通天地的建筑原型）</li>
-<li><strong>特征</strong>：朴素的自然形态，尚未形成人工造园</li>
-<li><strong>关联</strong>：井田制的沟洫体系为后世理水提供原型</li>
-<li><strong>案例</strong>：灵台遗址（今西安西南）</li>
-</ul>
-
-<h3>2. 秦汉：皇家园林兴起（前221-220）</h3>
-
-<ul>
-<li><strong>上林苑</strong>：汉武帝扩建，跨今西安、咸阳、蓝田五县，是中国历史上最大的皇家园林</li>
-<li><strong>建章宫·太液池</strong>：首创"一池三山"格局（蓬莱、方丈、瀛洲），成为后世皇家园林的母题</li>
-<li><strong>功能</strong>：从狩猎演变为游幸、朝会、求仙的综合体</li>
-<li><strong>特征</strong>：规模宏大、建筑密集、方士神仙思想主导</li>
-<li><strong>案例</strong>：上林苑（已毁）、建章宫遗址</li>
-</ul>
-
-<h3>3. 魏晋南北朝：自然山水园诞生（220-589）</h3>
-
-<ul>
-<li><strong>转折</strong>：社会动荡→士人归隐→私家园林兴起</li>
-<li><strong>文化背景</strong>：玄学盛行、佛教传入、文人参与造园</li>
-<li><strong>特征</strong>：从"大"转向"真"——模拟真山水，追求自然情趣</li>
-<li><strong>名园</strong>：石崇金谷园（洛阳）、陶渊明归园田居（庐山）</li>
-<li><strong>影响</strong>：奠定了中国园林"虽由人作，宛自天开"的核心美学</li>
-<li><strong>参考资料</strong>：道家思想与中国园林艺术精神.md</li>
-</ul>
-
-<h3>4. 隋唐：文人园成熟（581-907）</h3>
-
-<ul>
-<li><strong>皇家</strong>：隋西苑（人造山水大规模工程）、唐大明宫太液池</li>
-<li><strong>文人</strong>：王维辋川别业（诗画入园的开端）→ 白居易庐山草堂（"适意"理论的实践）</li>
-<li><strong>特征</strong>：诗画与园林融合、"壶中天地"的空间意识</li>
-<li><strong>名园</strong>：辋川别业（已毁，有《辋川图》传世）、庐山草堂</li>
-</ul>
-
-<h3>5. 宋元：写意园巅峰（960-1368）</h3>
-
-<ul>
-<li><strong>宋代</strong>：艮岳（宋徽宗——中国古典园林登峰造极之作，集叠山理水大成）</li>
-<li><strong>文人审美</strong>：从"师法自然"到"写意自然"——小空间做大文章</li>
-<li><strong>元代</strong>：延续宋风之余，出现文人画与园林的更深度融合</li>
-<li><strong>名园</strong>：艮岳（北宋灭亡后被毁）、苏州沧浪亭（现存最古老的苏州园林）</li>
-<li><strong>特征</strong>：空间尺度变小、意境密度增高、以少胜多</li>
-</ul>
-
-<h3>6. 明清：集大成与黄金期（1368-1912）</h3>
-
-<ul>
-<li><strong>江南</strong>：苏州园林黄金期——拙政园、留园、网师园、环秀山庄</li>
-<li><strong>皇家</strong>：颐和园（中国最后一座大型皇家园林）、圆明园（"万园之园"）</li>
-<li><strong>理论</strong>：计成《园冶》（中国第一部系统的造园理论著作，1631年出版）</li>
-<li><strong>名匠</strong>：张涟（张南垣）——叠山大师，主张"截溪断谷"的写意叠山法</li>
-<li><strong>特点</strong>：江南文人园追求精致雅致，皇家园林吸收江南手法后形成南北合流</li>
-</ul>
-
-<h2>三、园林四要素</h2>
-
-<table><thead><tr>
-<th>要素</th>
-<th>核心要求</th>
-<th>经典手法</th>
-</tr></thead><tbody>
-<tr>
-<td>**叠山**</td>
-<td>虽由人作，宛自天开</td>
-<td>套叠、勾连、飘、悬</td>
-</tr>
-<tr>
-<td>**理水**</td>
-<td>水随山转，山因水活</td>
-<td>聚散、曲直、动静</td>
-</tr>
-<tr>
-<td>**建筑**</td>
-<td>可居可游可赏</td>
-<td>亭台楼阁榭舫轩</td>
-</tr>
-<tr>
-<td>**花木**</td>
-<td>四时景异，意境生发</td>
-<td>梅兰竹菊松荷柳</td>
-</tr>
-
-<h2>四、核心造园手法（来自《园冶》）</h2>
-
-<tr>
-<td>手法</td>
-<td>定义</td>
-<td>经典案例</td>
-</tr>
-<tr>
-<td>借景</td>
-<td>将园外景观纳入视线</td>
-<td>拙政园借北寺塔</td>
-</tr>
-<tr>
-<td>障景</td>
-<td>遮掩视线，欲扬先抑</td>
-<td>留园入口序列</td>
-</tr>
-<tr>
-<td>对景</td>
-<td>视线通道两端的互望</td>
-<td>网师园月到风来亭</td>
-</tr>
-<tr>
-<td>框景</td>
-<td>门窗洞口取景成画</td>
-<td>苏州园林各园</td>
-</tr>
-<tr>
-<td>漏景</td>
-<td>花窗/漏窗若隐若现</td>
-<td>沧浪亭复廊</td>
-</tr>
-<tr>
-<td>曲径通幽</td>
-<td>路径曲折延长空间感</td>
-<td>拙政园西园</td>
-</tr>
-
-<h2>五、经典案例库</h2>
-
-<tr>
-<td>园林</td>
-<td>地点</td>
-<td>时代</td>
-<td>地位</td>
-<td>参考素材</td>
-</tr>
-<tr>
-<td>上林苑</td>
-<td>西安</td>
-<td>西汉</td>
-<td>最大皇家园林</td>
-<td>—</td>
-</tr>
-<tr>
-<td>辋川别业</td>
-<td>蓝田</td>
-<td>唐</td>
-<td>文人园鼻祖</td>
-<td>—</td>
-</tr>
-<tr>
-<td>艮岳</td>
-<td>开封</td>
-<td>北宋</td>
-<td>古典园林巅峰</td>
-<td>—</td>
-</tr>
-<tr>
-<td>拙政园</td>
-<td>苏州</td>
-<td>明</td>
-<td>四大名园之首</td>
-<td>参考资料/中国四大园林之首拙政园.docx</td>
-</tr>
-<tr>
-<td>留园</td>
-<td>苏州</td>
-<td>明</td>
-<td>建筑精巧</td>
-<td>参考资料/留园导游词.docx</td>
-</tr>
-<tr>
-<td>颐和园</td>
-<td>北京</td>
-<td>清</td>
-<td>皇家园林最后典范</td>
-<td>参考资料/北京四座经典园中园对比分析报告.docx</td>
-</tr>
-<tr>
-<td>避暑山庄</td>
-<td>承德</td>
-<td>清</td>
-<td>最大皇家园囿</td>
-<td>—</td>
-</tr>
-
-<h2>六、参考素材</h2>
-
-</tbody></table>
-<p>本知识包编写参考了知识库中以下资料：</p>
-<ul>
-<li>参考资料/中国古典园林_理论与案例.md</li>
-<li>参考资料/道家思想与中国园林艺术精神.md</li>
-<li>参考资料/苏州园林艺术特点深度解析_插图版.docx</li>
-<li>参考资料/留园导游词.docx</li>
-<li>13-园林学习/02-文档/江南园林/中国四大园林之首拙政园.docx</li>
-<li>13-园林学习/02-文档/皇家园林/北京四座经典园中园对比分析报告.docx</li>
-<li>图片：中国古典/（样本图）、水景/（样本图）</li>
-</ul>
-
-<h2>七、扩展方向</h2>
-
-<ul>
-<li>中国园林与文人画的关系（诗画一体）</li>
-<li>中国园林与日本园林的对比（参考资料/中日园林对比.docx）</li>
-<li>中国园林对英国自然风景园的影响（18世纪"英中式园林"风潮）</li>
-<li>中国园林在现代景观中的传承与转型</li>
-</ul>
-
+  <div class="nav-bar">
+    <a href="../index.html" class="nav-home">← 课程首页</a>
   </div>
-  <div style="text-align:center;margin:10px 0 30px;display:flex;gap:10px;justify-content:center"><a href="02-世界园林史.html" style="padding:8px 20px;background:#2d4a2d;color:#fff;border-radius:8px;text-decoration:none;font-size:.85rem">下一科 →</a></div>
+
+  <div class="page-header">
+    <h1>中国园林史</h1>
+    <div class="subtitle">
+      三千年山水理想的演变 · 从先秦灵囿到明清私家园林 · <strong>六大时代 × 四大要素 × 核心造园手法</strong>
+    </div>
+  </div>
+
+  <div class="course-tabs">
+    <div class="tab-nav">
+      <button class="tab-btn active" data-tab="dynasties">第一部分：六大时代——园林的演变脉络</button>
+      <button class="tab-btn" data-tab="elements">第二部分：园林四要素——造园的基本语言</button>
+      <button class="tab-btn" data-tab="methods">第三部分：核心造园手法——《园冶》的语法体系</button>
+      <button class="tab-btn" data-tab="cases">第四部分：经典案例库</button>
+      <button class="tab-btn" data-tab="extensions">第五部分：扩展方向——园林史的横向连接</button>
+      <button class="tab-btn" data-tab="reference">延伸参考</button>
+      <button class="tab-btn">📸 照片图库</button>
+    </div>
+
+        <div class="tab-panel active">
+      <h3>一、先秦：囿台时代（约前1100—前221）——文王之囿：中国园林的起点</h3>
+
+      <h4>“囿”：先秦园林的原型</h4>
+      <p>“囿”是先秦园林的原型——圈起一片山林水泽，放养禽兽，供帝王狩猎。这还不是“造园”，而是把自然的一部分圈起来使用。但“圈起来”这个动作本身就是关键：它标志着人对自然的态度从“完全被动利用”转向“主动划定领域”。</p>
+
+      <h4>“台”：另一种源头</h4>
+      <p>“台”是人工堆筑的高台，用于祭祀、观天、通神。台是中国人最早的“建筑”，也是最早的“竖向空间营造”。周文王的灵囿、灵台、灵沼，是已知最早的大型园林记载。</p>
+
+      <p><strong>深远影响：</strong></p>
+      <p>囿的围合观念→后世园林的“边界意识”</p>
+      <p>台的登高望远→后世“借景”意识的萌芽</p>
+      <p>井田制的沟洫体系→为理水提供技术原型</p>
+      <p>灵沼→中国园林理水的起点</p>
+
+      <h4>代表：文王之囿（灵囿、灵台、灵沼）</h4>
+      <p><strong>地理位置</strong>：位于今陕西省西安市长安区灵沼街道阿底村南，属西周丰京遗址核心区，沣河西岸，距西安市中心约20公里。</p>
+
+      <p><strong>营建背景</strong>：公元前11世纪，周文王姬昌灭崇国后在沣河西岸营建丰邑并迁都于此，随后建造了灵台、灵囿、灵沼等一系列集祭祀、狩猎、游赏于一体的礼制建筑群。</p>
+
+      <h4>“西周三灵”的具体形态</h4>
+
+      <p><strong>灵台</strong>——人工堆筑的夯土高台，高约二丈（约4.6米），周一百二十步。功能兼具天文观测（“观祲象，察氛祥”）与祭祀朝聘，是中国最早的天文观象台之一。台名“灵”字，《说文解字》释为“巫以玉事神”，揭示了其与祭祀神灵的紧密联系。唐宋时仅存夯土残迹，今地表已为农田，现台上建有明清风格的文王阁和平等寺。</p>
+
+      <p><strong>灵囿</strong>——“台下有囿”，灵台之下的广大苑囿区，方圆达七十里。林草繁茂，放养麋鹿、白鸟等禽兽，供帝王狩猎游观。《诗经·灵台》描写：“王在灵囿，麀鹿攸伏。麀鹿濯濯，白鸟翯翯”。</p>
+
+      <p><strong>灵沼</strong>——“囿中有沼”，灵囿内开挖的人工池沼。《诗经》描写：“王在灵沼，於牣鱼跃”，可见池中游鱼充盈。传说由建造灵台取土时挖成的大型人工湖，是文献可考的中国园林最早人工水体，也是后世理水传统的起点。</p>
+
+      <h4>历史文献依据</h4>
+      <p>《诗经·大雅·灵台》：“经始灵台，经之营之。庶民攻之，不日成之……王在灵囿……王在灵沼”</p>
+      <p>《孟子·梁惠王上》：“文王以民力为台为沼，而民欢乐之，谓其台曰灵台，谓其沼曰灵沼”</p>
+      <p>《左传·僖公十五年》：秦获晋侯后“乃舍诸灵台”，证明灵台至春秋时期仍存</p>
+      <p>《长安志》引《括地志》：唐宋时“灵台孤立，高二丈，周围一百二十步也”</p>
+
+      <h4>“三灵”的有机整体</h4>
+      <p>灵台、灵囿、灵沼并非各自孤立，而是一个功能互补的整体——高台以观天通神，囿以狩猎游观，沼以蓄水养鱼。这种山（台）、水（沼）、林（囿）的复合结构，奠定了后世园林“山水林池”的基本骨架。辟雍（学宫）亦设于灵沼之侧，四面环水，使灵沼一带兼具祭祀、游赏、教育多重功能。</p>
+
+      <p><strong>遗址现状</strong>：灵台遗址今为长安区县级文物保护单位，台上建有平等寺（始建于唐，现存为后世重修）及文王阁。“西周三灵”民间故事传说已于2017年被列入西安市非物质文化遗产名录。</p>
+
+      <h3>二、秦汉：皇家园林的宏大格局（前221—220）</h3>
+      <p>大一统帝国对“无限空间”的欲望。上林苑是汉代皇家园林的巅峰——汉武帝在秦旧苑基础上扩建，跨今西安、咸阳、蓝田五县县境，是中国历史上最大的皇家园林。</p>
+
+      <p>但秦汉园林最重要的贡献是<strong>一池三山</strong>——建章宫太液池中堆筑蓬莱、方丈、瀛洲三座仙山。这一模式源于秦汉帝王的方士神仙信仰，以人工巨池象征东海，以三岛象征海上仙山，寄托长生不老的渴望。此后凡皇家园林必有一池三山——北京颐和园的昆明湖中有南湖岛、治镜阁岛、藻鉴堂岛，正是这个母题的最后一轮回响。</p>
+
+      <p><strong>特征</strong>：规模宏大、方士神仙思想主导、建筑群密集、山水尚处于“背景”地位。</p>
+
+      <h4>代表：上林苑（已毁）</h4>
+      <p><strong>营建背景与规模</strong>：上林苑始于秦代，汉武帝建元三年（前138年）在秦旧苑基础上大规模扩建。其范围南达终南山，北跨渭河，东至蓝田，西至周至，地跨今西安、咸阳、周至、户县、蓝田五县境，周围筑苑垣四百余里，设苑门十二座。</p>
+
+      <p><strong>内部构成</strong>：苑内划分三十六处“苑中苑”，分布宫观七十余座，建筑形式各异，由甬道、复道连为整体。功能极为复合——既保留先秦囿的狩猎传统（“苑中养百兽，天子春秋射猎苑中”），又兼具朝会祭祀、军事训练、经济生产等多种用途。昆明池为其中最大人工湖，周长四十里，本为训练水军而凿，后兼具游赏功能。</p>
+
+      <p><strong>文化意义</strong>：上林苑是秦汉“建筑宫苑”的典型代表，宫室建筑群与自然山水并置，但山水尚未成为独立审美对象，更多充当宏大背景。司马相如《上林赋》、张衡《西京赋》均有详载。</p>
+
+      <h4>代表：建章宫太液池（遗址）</h4>
+      <p><strong>营建背景</strong>：建章宫为汉武帝太初元年（前104年）在长安城外建造的庞大宫城，“周二十余里，千门万户”。太液池位于建章宫西北部，引昆明池水形成的人工湖，占地约150亩，象征北海。</p>
+
+      <p><strong>一池三山格局</strong>：池中堆筑蓬莱、方丈、瀛洲三座仙山，池边筑有高二十余丈的渐台，是中国历史上第一个具有完整三仙山的仙苑式皇家园林。池北岸有石鲸雕刻（长1.5丈），西岸有石鳖三只，池中及岸边点缀各类珍禽异兽石雕，营造海上仙境的意象。</p>
+
+      <p><strong>遗址现状</strong>：位于今西安市未央区三桥镇五一村一带。遗址范围东西长约510米，南北宽约450米，残留两座大冢即为池中假山遗迹。1973年在太液池西北岸出土石鲸鱼雕，现藏陕西历史博物馆。2007年，社科院考古所对太液池西岸附属建筑进行了首次大规模发掘。现遗址大部分被太液池苗圃覆盖。</p>
+
+      <h3>三、魏晋南北朝：自然山水园的诞生（220—589）</h3>
+      <p>“归去来兮”——文人发现山水。这是中国园林史上最深刻的转折。政治动荡→士人避世归隐→亲近自然不再是帝王的特权。陶渊明“采菊东篱下”不是审美姿态，是生活方式本身。</p>
+
+      <p><strong>背景</strong>：玄学盛行、“空”与“寂”的审美意识、山水诗兴起（谢灵运）、文人直接参与造园。</p>
+
+      <p><strong>遗产</strong>：奠定了“虽由人作，宛自天开”的核心美学；自然山水从“背景”变成“主体”；园林与隐逸文化深度绑定。</p>
+
+      <h4>代表：石崇金谷园（洛阳，已毁）</h4>
+      <p><strong>营建背景</strong>：金谷园是西晋富豪石崇修建的私家别墅，位于洛阳老城东北的金谷洞一带，因地处金谷水畔而得名，别称梓泽。石崇是西晋权贵，以豪奢斗富闻名，金谷园正是其纵情享乐的产物。</p>
+
+      <p><strong>营造手法与景观格局</strong>：园林依邙山、临谷水而建，因借地势高低筑台凿池，形成清溪萦回、楼榭错落的景观。园周数十里内楼阁亭榭高下错落，金谷水穿流其间，鸟鸣幽村，鱼跃荷塘。园内遍植奇花异木，每当阳春三月，桃花灼灼、柳丝袅袅，“金谷春晴”被誉为洛阳八大景之一。</p>
+
+      <p><strong>文脉意义</strong>：金谷园是西晋文人“金谷二十四友”的雅集之地，石崇在此曾作《金谷诗序》，与王羲之的《兰亭集序》并称，有“南兰亭，北金谷”之誉。金谷园与后世园林的一大区别在于——它本质上是一座“豪贵园林”，以奢侈夸富为特征，与陶渊明代表的“隐逸园林”形成鲜明对照。唐代王勃《滕王阁序》中“兰亭已矣，梓泽丘墟”，即以金谷园（梓泽）的衰败感叹盛筵难再。</p>
+
+      <p><strong>传奇故事与毁灭</strong>：金谷园也是绿珠坠楼故事的发生地。石崇宠妾绿珠居于园中绿珠楼（一说崇绮楼），石崇政治失势后，权臣孙秀索要绿珠不得，诬陷石崇谋反，石崇被杀，家产充公，金谷园从此败落。</p>
+
+      <p><strong>遗址现状</strong>：遗址位于今洛阳市孟津区横水镇一带，具体位置尚无定论，地面无明显遗存。</p>
+
+      <h4>代表：陶渊明归园田居（庐山，已毁）</h4>
+      <p><strong>营建背景</strong>：东晋义熙元年（405年），41岁的陶渊明辞去彭泽县令，“不为五斗米折腰”，归隐庐山南麓故里，开始躬耕田园的生活。与石崇金谷园的豪奢不同，陶渊明的归园田居是“方宅十余亩，草屋八九间”的朴素居所，是文人归隐生活方式的直接体现。</p>
+
+      <p><strong>具体位置与迁移</strong>：陶渊明归隐后的居所有两处阶段。先居上京（玉京山麓，今庐山市城区以西），此地为曾祖父陶侃的封地田产，依山傍水，北倚匡庐，南临鄱阳湖。在此写下《归园田居》组诗。义熙四年（408年），老宅遭火灾焚毁，全家一度蛰居船上。义熙六年（410年），陶渊明移居栗里（今庐山市温泉镇栗里陶村一带）。</p>
+
+      <p><strong>生活场景与遗址遗迹</strong>：栗里位于庐山南麓虎爪崖下，村前有清风溪蜿蜒而过。现存陶渊明归田后荷锄来往经过的清风桥（又名柴桑桥），桥头绿柳拂溪。村旁有“濯缨池”，池间巨石镌有“醉仙濯缨之池”，相传为陶渊明涤锄洗帽处。溪涧中有一块“醉石”，石面平滑，刻有“归去来馆”四字，相传为陶渊明酒醉后高卧之处。陶墓与陶祠位于面阳山，墓周苍松环绕，墓碑横刻“清风高节”。</p>
+
+      <p><strong>园林史意义</strong>：陶渊明的归园田居，其价值不在于造园技艺的精巧，而在于它确立了一种全新的园林价值观——园林不再是帝王狩猎的囿、富豪炫富的园，而是文人安顿身心、寄情山水的生活空间。陶渊明诗中的“采菊东篱下，悠然见南山”“暧暧远人村，依依墟里烟”，将日常生活场景升华为诗意境界，直接启发了后世文人园林“诗画入园”的传统。南朝梁昭明太子萧统最早编纂《陶渊明集》，其传世文献中明确记载“栗里”地名，为后世追寻陶渊明归园田居提供了最早的文献依据。</p>
+
+      <p><strong>魏晋南北朝园林的整体转型</strong>：这一时期的园林，无论在皇家苑囿之外还是士人宅园之中，均开始形成“山（石）、水、花木、建筑”四大要素的造园共识。园林营造从“筑山穿池，列树竹木”逐步走向“有若自然”的写意追求。谢灵运在《山居赋》中全面记叙了卜居选址、叠山理水、分间布景的造园实践，将佛学“空”“寂”“幽”的审美观念注入园林营造，奠定了后世山水园的基本范式。</p>
+
+      <h3>四、隋唐：文人园林的成熟（581—907）</h3>
+      <p>诗画入园——园林成为可居的诗歌。王维的辋川别业是标志性事件——他画《辋川图》，每一处景致配一首诗。诗画入园从此成为中国园林的核心基因。白居易的庐山草堂提出“适意”理论：园林的价值在于是否“适合我的心意”。</p>
+
+      <p><strong>特征</strong>：诗、画、园深度融合；“壶中天地”的空间意识出现；文人参与造园成为常态。</p>
+
+      <h4>代表：王维辋川别业（已毁，有《辋川图》传世）</h4>
+      <p><strong>地理位置与营建背景</strong>：辋川别业位于今陕西省西安市蓝田县西南10余公里的辋川山谷（秦岭北麓终南山腹地）。该地原名“蓝田山庄”，为初唐诗人宋之问的别业。唐天宝初年，王维购得此山庄并更名为“辋川别业”。王维约40多岁时开始营建，三年后落成，此后在此过着半官半隐的生活直到晚年。</p>
+
+      <p><strong>景观格局与二十景</strong>：辋川山谷全长约11公里，因溪流环绕形如车轮“辋”而得名。王维依据山水形势植花木、堆奇石、筑造亭台阁榭，沿山谷、以欹湖为中心，建成了孟城坳、华子冈、文杏馆、竹里馆、鹿柴等二十处景观，将十余里山谷修造成兼具耕、牧、渔、樵的综合性园林胜地。</p>
+
+      <p><strong>诗画相融的创作</strong>：王维晚年与裴迪在此隐居，各作二十首五言绝句咏二十景，合为《辋川集》。王维还绘制了长卷《辋川图》，以水墨山水描绘园林全景。辋川别业、辋川诗、辋川图合称“辋川三绝”。其造园注重写意，创造了意境深远、简约朴素而留有余韵的园林形式，成为唐宋写意山水园的代表作品。</p>
+
+      <p><strong>遗址现状</strong>：王维去世后，其母亦葬于此，别业表为寺庙（鹿苑寺/清源寺），今已湮没。现存主要遗存为鹿苑寺旧址及一株传为王维手植的银杏树，树龄逾1200年。王维墓位于辋川乡白家坪村东，原墓前清代碑石在“文革”中被毁。蓝田县自2015年起对遗址进行系统考察，部分景点位置已初步确认。</p>
+
+      <h4>代表：白居易庐山草堂</h4>
+      <p><strong>地理位置与营建背景</strong>：庐山草堂位于今江西省九江市庐山风景区花径公园内，北依香炉峰，东邻遗爱寺。唐元和十年（815年），白居易因忠耿直言得罪权贵，被贬为江州司马；次年秋在此筑草堂隐居，并撰《庐山草堂记》。</p>
+
+      <p><strong>建筑形制与造园思想</strong>：原草堂为“三间两柱、二室四牖”的木结构草顶建筑，以石阶挂柱、竹编为墙，不加漆饰，追求原始自然美。造景上，堂前筑台、台南挖池种莲、池周植竹，引东面瀑布入石渠，水声如抚琴瑟。白居易在《庐山草堂记》中提出“适意”理论——园林的价值在于“是居也，前有乔松数十株，修竹千余竿……平生所好，尽在其中。不惟忘归，可以终老”，标志着文人园林从追求“形式之美”转向“心意之适”。</p>
+
+      <p><strong>遗址与重建</strong>：原草堂唐五代被毁，后虽两次再兴但均为移址而建。1987年庐山管理局在花径公园莲池畔重建草堂，按原貌恢复“五架三间草堂，石阶挂柱竹编墙”的形式。花径亭中的“花径”二字石刻传为白居易手书。</p>
+
+      <h4>代表：隋西苑</h4>
+      <p><strong>营建背景与规模</strong>：隋西苑始建于隋炀帝大业元年（605年），与营建东都洛阳同时进行，初名会通苑，唐代改称芳华苑/神都苑。其范围北起邙山，南至龙门，西至新安、宜阳境内，方圆约二百里，面积约400平方公里，是中国历史上规模最大的皇家园林之一。</p>
+
+      <p><strong>山水宫苑格局</strong>：西苑以巨大人工湖为中心，湖中堆筑蓬莱、方丈、瀛洲三座仙山（承袭“一池三山”母题），高出水面百余尺，山上建亭台月观，机关精巧，或升或降，时隐时现。苑北开凿蜿蜒十余里的龙鳞渠，依地形曲折流入湖中，沿渠建有风格各异的十六宫院，每院三面临水、自成一体。</p>
+
+      <p><strong>园林史地位</strong>：西苑开创了“苑中园”的宫苑形制，将庞大的人工山水体系与建筑群有机融合，标志着中国古典园林从“建筑宫苑”向“山水宫苑”的转折，被后世学者视为清代圆明园的滥觞。宋元以后随洛阳衰落而败落，西苑遗址现已被纳入隋唐洛阳城国家重点文物保护范围。现代西苑公园在其旧址东端重建，占地13.3公顷。</p>
+
+      <h4>代表：唐大明宫太液池</h4>
+      <p><strong>地理位置与营建</strong>：太液池又名蓬莱池，位于唐长安城大明宫内庭中心北部（今西安市大明宫国家遗址公园内）。始凿于唐贞观八年（634年），龙朔二年（662年）正式使用，至唐末废弃后被填埋为平地。</p>
+
+      <p><strong>池苑格局与考古发现</strong>：太液池分东西两池，西池为主池，呈椭圆形，东西长约500米、南北宽约320米，面积约14万平方米；东池略小，约3.3万平方米。池岸由黄土与淤泥混合夯筑，岸边发现大量柱洞，印证了《旧唐书》中太液池“周围廊庑四百间”的记载。池中曾有蓬莱等三座岛屿，考古已确定蓬莱岛位置。出土遗物丰富，包括莲花瓦当、印有工匠名的砖瓦、玻璃串珠等，现藏于相关文博机构。2001年起，社科院考古所与日本奈良文化财研究所组成联合考古队，对太液池进行了为期五年的科学发掘。</p>
+
+      <p><strong>营建思想</strong>：太液池作为大明宫后宫的园林中心，体现了唐代皇家园林将恢弘气势与精妙布局相结合的造园理念。池岸的水榭廊庑与南岸高地上的宫殿群（含元殿、紫宸殿等）形成自然过渡，以多种园林建筑手段点缀修饰坡地，成为唐代皇家池苑的最高典范。</p>
+
+      <h3>五、宋元：写意园林的巅峰（960—1368）</h3>
+      <p>以少胜多——小空间里的无限世界。从“师法自然”走向<strong>“写意自然”</strong>——用有限的物象唤起无限的想象。宋徽宗的艮岳是中国古典园林登峰造极之作——集叠山、理水、建筑、花木之大成。沧浪亭（苏州）是现存最古老的苏州园林，以“苍古”气质成为文人园林的精神源头。</p>
+
+      <p><strong>特征</strong>：空间尺度变小；意境密度增高；以少胜多的美学成熟；叠山技法走向极致。</p>
+
+      <h4>代表：艮岳（北宋开封，已毁）</h4>
+      <p><strong>营建背景与时间</strong>：艮岳始建于宋徽宗政和七年（1117年），历时六年，于宣和四年（1122年）竣工。初名“万岁山”，后因位于宫城东北隅——八卦方位中的“艮”位，故改名为艮岳，亦号华阳宫。其营建与宋徽宗崇奉道教、希望通过筑山增广子嗣有关，而更深层的原因则是这位多才多艺的皇帝希望以造园实现其理想的山水之境。</p>
+
+      <p><strong>规模与位置</strong>：艮岳位于北宋汴京（今河南开封）景龙门内以东、封丘门内以西、东华门内以北、景龙江以南，周长约6里，面积约750亩。</p>
+
+      <p><strong>山水格局：突破“一池三山”</strong>：艮岳突破秦汉以来宫苑“一池三山”的规范，开创了以典型概括的山水创作为主题的全新模式。园内山系以万岁山（主峰，高九十尺）为核心，左翼为来禽岭、梅岭，右翼为万松岭，南面为寿山，形成众山环列、脉络连贯的格局。园内水系包罗河、湖、沼、溪、涧、瀑、潭等多种形态，水源为景龙江，形成大方沼、雁池等水体，与山系配合构成“山中包平地，环以嘉木清流”的理想布局。</p>
+
+      <p><strong>叠山与理水：技艺与奇巧</strong>：艮岳的掇山叠石技艺达到了前所未有的高度。主峰及全园山体主要由产自太湖的奇石堆砌而成，这些太湖石以“皱、漏、瘦、透”之美深受宋徽宗喜爱。为搜罗各地奇花异石，朝廷专设“应奉局”，通过水陆运送进京，号称“花石纲”，成为北宋末年一项劳民伤财的沉重负担。造园者还在山腹洞中埋藏雄黄和卢甘石，前者驱赶蛇虫，后者遇阴天散发云雾；在山上设置木柜瀑布机关，通过蓄水泄水营造瀑布景观，创造出宛若仙境的缥缈效果。</p>
+
+      <p><strong>建筑与花木：集大成之作</strong>：全园建筑有七十余处，亭堂楼馆因势布列，几乎包罗了宋代全部建筑形式。园中花木漫山遍野，以植物命名的景观众多，如梅岭、杏岫、龙柏陂、斑竹麓、合欢径等，注意遵循生态习性，与园景主题相切合，饱含诗情画意。</p>
+
+      <p><strong>毁灭与影响</strong>：靖康元年（1126年），金兵攻陷汴京，这座仅存世四年的皇家名苑即毁于战火。战乱中，百姓涌入园内拆建筑取暖、捕鸟兽充饥，太湖石则被用作炮石抵御金兵。部分艮岳遗石后被运往北京，堆叠于北海琼华岛，至今仍可在白塔山南坡见到。艮岳作为中国古典园林写意风格的最高典范，其“源于自然、高于自然”的造园理念深刻影响了后世园林的发展。</p>
+
+      <h4>代表：沧浪亭（苏州，现存）</h4>
+      <p><strong>历史渊源与始建</strong>：沧浪亭位于苏州市城南，是苏州现存历史最久的园林。其前身为唐末五代吴越国中吴军节度使孙承祐的池馆。北宋庆历五年（1045年），诗人苏舜钦因遭贬谪流寓吴中，以四万贯钱购得这片“纵广合五六十寻，三向皆水”的弃地，傍水筑亭，取《楚辞·渔父》“沧浪之水清兮，可以濯吾缨；沧浪之水浊兮，可以濯吾足”之典故，命名为“沧浪亭”。欧阳修应邀作诗，以“清风明月本无价，可惜只卖四万钱”题咏此事，沧浪亭由此名声大振。</p>
+
+      <p><strong>沧桑沿革</strong>：苏舜钦去世后，沧浪亭屡易其主。南宋初年一度为抗金名将韩世忠的宅邸（时称“韩园”）。元代废为僧居，分别改建为妙隐庵和大云庵。明嘉靖二十五年（1546年），僧人文瑛复建沧浪亭。清康熙三十五年（1696年），江苏巡抚宋荦在寻访古迹后，将原临水之亭移建至土山之巅，奠定了今日沧浪亭的布局基础，并得文徵明隶书“沧浪亭”三字揭于亭楣。清道光七年（1827年），梁章钜重修时，集苏舜钦、欧阳修诗句而成楹联“清风明月本无价，近水远山皆有情”，并增建五百名贤祠，嵌有594幅与苏州历史有关的名人石刻像。此后历经咸丰兵火、同治重修，终成今日之貌。2000年，沧浪亭作为《苏州古典园林》扩展项目列入《世界遗产名录》。</p>
+
+      <p><strong>造园特色：巧于因借</strong>：沧浪亭占地仅1公顷余，布局开畅自然，以“巧于因借”著称。其最大特色在于未入园门先得景——园外一池葑溪绿水萦回，被巧妙纳入园景。临水处建复廊，廊墙上设漏窗，内外景物相互通透，使园内与园外山水融为一体，形成了苏州园林中独树一帜的“借景”手法。入园后，横亘东西的土丘土石相间，古木森郁，极富山林野趣，被园林专家誉为典型的“城市山林”。全园建筑简朴雅致，堂馆轩榭环山而筑，保持了建园时“草树郁然，崇阜广水”的特色。</p>
+
+      <p><strong>园林史地位</strong>：沧浪亭虽历经各代改建，已非宋代原貌，但其苍古的气质、朴雅的风格，以及将园外水面纳入园景的独特手法，使其成为宋代文人园林“简远、疏朗、雅致”美学理想的重要见证，被公认为文人园林的精神源头。</p>
+    </div>
+    <div class="tab-panel">
+      <h3>一、叠山</h3>
+      <blockquote>"虽由人作，宛自天开。"——《园冶》</blockquote>
+      <p>叠山是中国园林独有的艺术。汉代的山是"真山"→魏晋开始模拟真山→宋代开始"写意"山（太湖石取代真山石）→明清叠山成为独立艺术门类。</p>
+      <p><strong>核心原则</strong>："有真为假，做假成真"；太湖石：瘦、皱、漏、透；环秀山庄假山（戈裕良叠）被公认为"中国假山之冠"。</p>
+
+      <h3>二、理水</h3>
+      <blockquote>"水随山转，山因水活。"——陈从周《说园》</blockquote>
+      <p>先秦灵沼→汉代一池三山→魏晋注意水的自然形态→宋明在极小空间中创造丰富水面变化。</p>
+      <p><strong>核心原则</strong>：聚散（水面有聚有散）、曲直（岸线要曲折）、动静（静水为主）、"可望、可游、可居"。</p>
+
+      <h3>三、建筑</h3>
+      <blockquote>"凡园圃立基，定厅堂为主。"——《园冶》</blockquote>
+      <p>中国园林的建筑不是"盖在园子里的房子"，而是空间骨架和视点。类型：亭、台、楼、阁、轩、榭、舫、廊、桥、墙。</p>
+
+      <h3>四、花木</h3>
+      <blockquote>"春见山容，夏见山气，秋见山情，冬见山骨。"——陈从周《说园》</blockquote>
+      <p>花木是园林中唯一有生命的元素。先秦自然生长→汉代有意识种植→魏晋花木具有人格含义→明清"无竹不园"成为共识。</p>
+      <p><strong>经典人格植物</strong>：松（刚直）、竹（虚心）、梅（坚韧）、莲（清高）、柳（柔韧）、桂（高洁）。</p>
+    </div>
+
+    <div class="tab-panel">
+      <p><strong>借景</strong>（"园林之最要"）——破除物理边界。远借（拙政园借北寺塔）、邻借（沧浪亭借园外河景）、仰借、俯借、应时而借。</p>
+      <p><strong>障景</strong>——视线遮挡，制造期待。留园入口是教科书：窄甬道→墙体遮挡→古木交柯→涵碧山房前豁然开朗。</p>
+      <p><strong>对景</strong>——视线通道两端的互望关系。网师园月到风来亭和濯缨水阁隔水对望。</p>
+      <p><strong>框景</strong>——用窗洞、门洞作为"画框"。留园石林小院四周漏窗，每窗框一峰湖石。</p>
+      <p><strong>漏景</strong>——花窗使景物若隐若现。沧浪亭复廊漏窗，园内园外景观互相穿透。</p>
+      <p><strong>曲径通幽</strong>——"景不藏不深，路不曲不幽。"</p>
+    </div>
+
+    <div class="tab-panel">
+      <table>
+        <tr><th>园林</th><th>地点</th><th>时代</th><th>核心看点</th></tr>
+        <tr><td>上林苑</td><td>西安</td><td>西汉</td><td>帝国气派的尺度</td></tr>
+        <tr><td>辋川别业</td><td>蓝田</td><td>唐</td><td>诗画入园的开端</td></tr>
+        <tr><td>艮岳</td><td>开封</td><td>北宋</td><td>叠山理水的极限</td></tr>
+        <tr><td>沧浪亭</td><td>苏州</td><td>北宋（现存）</td><td>"苍古"气质的源头</td></tr>
+        <tr><td>拙政园</td><td>苏州</td><td>明</td><td>移步换影的极致</td></tr>
+        <tr><td>留园</td><td>苏州</td><td>明</td><td>入口序列+冠云峰</td></tr>
+        <tr><td>网师园</td><td>苏州</td><td>宋始建/清重建</td><td>"小园极则"</td></tr>
+        <tr><td>环秀山庄</td><td>苏州</td><td>清</td><td>戈裕良叠山</td></tr>
+        <tr><td>颐和园</td><td>北京</td><td>清</td><td>南北造园技艺融合</td></tr>
+        <tr><td>避暑山庄</td><td>承德</td><td>清</td><td>最大皇家园囿</td></tr>
+        <tr><td>圆明园</td><td>北京</td><td>清</td><td>"万园之园"（已毁）</td></tr>
+      </table>
+    </div>
+
+    <div class="tab-panel">
+      <p><strong>园林与文人画</strong>：从王维辋川别业开始，园林就成了文人画的"三维版本"。元四家、明四家的山水画构图，可以直接在苏州园林中找到对应的空间处理。</p>
+      <p><strong>中日园林对比</strong>：日本园林源自中国，但独立发展出了枯山水、茶庭、回游式庭园。禅宗在日本走向了极致抽象化，在中国则始终保持了"可居"的日常温度。</p>
+      <p><strong>中国园林对英国的影响</strong>：18世纪"英中式园林"风潮。钱伯斯将中国造园理念带回欧洲，推动了英国自然风景园对法国几何式园林的革命。</p>
+      <p><strong>现代传承</strong>：当代"海绵城市""口袋公园"的精神祖先，可在古典园林中找到。</p>
+    </div>
+
+    <div class="tab-panel">
+      <div id="related-ebooks" data-keywords="中国园林,苏州,江南,通史"></div>
+    </div>
+    <div class="tab-panel">
+<h2 style="margin:20px 0 12px;color:#2e7d32">📸 照片图库</h2>
+<p style="color:#888;font-size:.85rem;margin-bottom:16px">共 21 张 · 点击可查看大图</p>
+<div class="photo-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-bottom:30px">
+<a href="../图片/24-中国园林史/332e7dde262014352cd468da47d47d86.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/332e7dde262014352cd468da47d47d86.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/33ce71832e53b2f20dd10bc5703d4a74.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/33ce71832e53b2f20dd10bc5703d4a74.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/41a347e2dc15ed93dcaf6fedfc3060ac.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/41a347e2dc15ed93dcaf6fedfc3060ac.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/83564db4c5d295a5f7c8c231f82b6cb1.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/83564db4c5d295a5f7c8c231f82b6cb1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/84c452ffc2f89d9aef19f152b5a827b1.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/84c452ffc2f89d9aef19f152b5a827b1.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/a3c20636d76a9c96216edae6bc36bd05.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/a3c20636d76a9c96216edae6bc36bd05.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/a78f153bdf865130dc1cce2d2efc7e98.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/a78f153bdf865130dc1cce2d2efc7e98.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/a9ee6ae489caad4fc3e36c2a4a0c534d.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/a9ee6ae489caad4fc3e36c2a4a0c534d.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/af6f42d24185cae64c0be3d7cc8e74de.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/af6f42d24185cae64c0be3d7cc8e74de.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/b37cbdf1e3eb9db283076c851e88b6ea.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/b37cbdf1e3eb9db283076c851e88b6ea.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/b53bc6a075a91b607875e04b3e089808.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/b53bc6a075a91b607875e04b3e089808.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/b6ef1ebcccb9ba17c186ff36176f0e65.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/b6ef1ebcccb9ba17c186ff36176f0e65.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/c05f1337ca7a8e0a83d6573903f5afcd.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/c05f1337ca7a8e0a83d6573903f5afcd.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/c1ef4c4d23ecd0d47ac1e3d65ec88ae9.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/c1ef4c4d23ecd0d47ac1e3d65ec88ae9.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/c55b910878ea1289e74fb214caac39f7.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/c55b910878ea1289e74fb214caac39f7.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/ce2a80ca6b8afb666431ade0fae8acb6.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/ce2a80ca6b8afb666431ade0fae8acb6.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/d5a3470daa51ead8f1194ed136b6e19b.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/d5a3470daa51ead8f1194ed136b6e19b.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/da9b97e578f10fbf3fca2b97a887e78c.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/da9b97e578f10fbf3fca2b97a887e78c.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/e155f697ae58cf166adcca0926a02e4a.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/e155f697ae58cf166adcca0926a02e4a.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/e93c37c6a7de789bba8421944a19e48e.jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/e93c37c6a7de789bba8421944a19e48e.jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
+<a href="../图片/24-中国园林史/images%20(4).jpg" target="_blank" style="display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;background:#f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.06)"><img src="../图片/24-中国园林史/images%20(4).jpg" loading="lazy" style="width:100%;height:100%;object-fit:cover" alt=""></a>
 </div>
-<div class="site-footer">
-  <div class="container"><a href="../index.html">← 返回课程手册</a> · 园林全景 · 知识共享</div>
+    </div>
+  
+  </div>
+
+  <div class="footer">
+    <p>© 园林专业知识体系 · 45-园林全景</p>
+  </div>
 </div>
-<div class="watermark"></div>
+<script src="../js/tabs.js"></script>
+<script src="../电子书/related-ebooks.js"></script>
 </body>
 </html>

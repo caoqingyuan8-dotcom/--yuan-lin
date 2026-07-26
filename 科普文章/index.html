@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>科普及文章 · 园林全景</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.tab-bar{display:flex;gap:4px;margin:24px 0 0;border-bottom:2px solid #e0e8e4;padding-bottom:0;flex-wrap:wrap}
+.tab-btn{padding:8px 18px;border:none;background:transparent;font-size:.82rem;font-weight:600;color:#7aaa9a;cursor:pointer;border-radius:10px 10px 0 0;transition:.15s;position:relative;bottom:-2px;white-space:nowrap}
+.tab-btn:hover{color:#1a7a6a;background:#f0f8f4}
+.tab-btn.active{color:#1a7a6a;background:#fff;border:2px solid #e0e8e4;border-bottom-color:#fff}
+.tab-btn .count{font-size:.7rem;background:#e0f0ea;padding:1px 8px;border-radius:20px;margin-left:4px;font-weight:400}
+.tab-btn.active .count{background:#1a7a6a;color:#fff}
+.tab-content{display:none!important}
+.tab-content.active{display:block!important}
+.article-card{background:#fff;border-radius:14px;padding:24px;margin-top:20px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.article-card h3{font-size:1.1rem;color:#1a3a2a;margin-bottom:6px}
+.article-card .meta{font-size:.78rem;color:#999;margin-bottom:10px}
+.paper-list{list-style:none;padding:0}
+.paper-list li{padding:8px 0;border-bottom:1px solid #f0f0f0;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.paper-list li:last-child{border:none}
+.paper-list a{color:#1a6a5a;text-decoration:none;font-size:.85rem;padding:3px 0}
+.paper-list a:hover{color:#d4a84b}
+.paper-list .dl-link{font-size:.72rem;color:#aaa;margin-left:auto;white-space:nowrap}
+.paper-list .dl-link a{color:#999;padding:2px 8px;border:1px solid #e0e8e4;border-radius:4px;font-size:.72rem}
+.paper-list .dl-link a:hover{color:#2e7d32;border-color:#c9a959}
+.empty-tip{color:#bbb;font-size:.85rem;padding:20px;text-align:center;font-style:italic}
+</style>
+</head>
+<body>
+<div class="site-header">
+  <div class="container">
+    <h1>📝 科普及文章</h1>
+    <p>共 49 篇 · 16 个分类</p>
+  </div>
+</div>
+<nav class="site-nav">
+  <div class="container">
+    <a href="../index.html">园林专业知识</a>
+    <a href="../电子书/index.html">电子书</a>
+    <a href="../论文/index.html">学术论文</a>
+    <a href="index.html" class="active">科普及文章</a>
+    <a href="../图片/index.html">园林图片</a>
+    <a href="../视频/index.html" class="active">视频</a>
+  </div>
+</nav>
+<div class="container">
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab('design')">🌱 花园设计 <span class="count">22</span></button>
+    <button class="tab-btn" onclick="switchTab('tropical')">🌴 热带花园 <span class="count">5</span></button>
+    <button class="tab-btn" onclick="switchTab('jiangnan')">🏯 江南园林 <span class="count">5</span></button>
+    <button class="tab-btn" onclick="switchTab('imperial')">👑 皇家园林 <span class="count">4</span></button>
+    <button class="tab-btn" onclick="switchTab('bonsai')">🪴 盆景艺术 <span class="count">3</span></button>
+    <button class="tab-btn" onclick="switchTab('plants')">🌿 植物图鉴 <span class="count">1</span></button>
+    <button class="tab-btn" onclick="switchTab('aesthetics')">📖 园林美学 <span class="count">2</span></button>
+    <button class="tab-btn" onclick="switchTab('world')">🌍 世界园林 <span class="count">3</span></button>
+    <button class="tab-btn" onclick="switchTab('hotel')">🏨 酒店园林 <span class="count">1</span></button>
+    <button class="tab-btn" onclick="switchTab('china')">🇨🇳 中国园林 <span class="count">2</span></button>
+    <button class="tab-btn" onclick="switchTab('trends')">📐 花园趋势 <span class="count">1</span></button>
+    <button class="tab-btn" onclick="switchTab('temple')">🏛️ 寺庙园林 </button>
+    <button class="tab-btn" onclick="switchTab('scenic')">🏔️ 风景区 </button>
+    <button class="tab-btn" onclick="switchTab('botany')">🌸 园林植物学 </button>
+    <button class="tab-btn" onclick="switchTab('architecture')">🏗️ 园林建筑学 </button>
+  </div>
+  <div id="tab-design" class="tab-content active">
+    <div class="article-card" style="margin-top:20px">
+      <h3>🌱 花园设计</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">实用花园风格指南 · 22篇</p>
+      <ul class="paper-list">
+        <li><a href="园林设计/禅意碎石花园.html">📖 禅意碎石花园</a><span class="dl-link"><a href="园林设计/禅意碎石花园.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/西班牙风格前院景观设计.html">📖 西班牙风格前院景观设计</a><span class="dl-link"><a href="园林设计/西班牙风格前院景观设计.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/西南风格前院景观设计.html">📖 西南风格前院景观设计</a><span class="dl-link"><a href="园林设计/西南风格前院景观设计.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/干涸河床景观设计.html">📖 干涸河床景观设计</a><span class="dl-link"><a href="园林设计/干涸河床景观设计.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/岩石与覆盖物景观设计.html">📖 岩石与覆盖物景观设计</a><span class="dl-link"><a href="园林设计/岩石与覆盖物景观设计.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/前院小型树木选择指南.html">📖 前院小型树木选择指南</a><span class="dl-link"><a href="园林设计/前院小型树木选择指南.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/科罗拉多州景观设计.html">📖 科罗拉多州景观设计</a><span class="dl-link"><a href="园林设计/科罗拉多州景观设计.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/风化花岗岩景观设计.html">📖 风化花岗岩景观设计</a><span class="dl-link"><a href="园林设计/风化花岗岩景观设计.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/耐旱景观设计.html">📖 耐旱景观设计</a><span class="dl-link"><a href="园林设计/耐旱景观设计.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/春季岩石花园设计.html">📖 春季岩石花园设计</a><span class="dl-link"><a href="园林设计/春季岩石花园设计.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/紫藤花园应用.html">📖 紫藤花园应用</a><span class="dl-link"><a href="园林设计/紫藤花园应用.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/微型花园创意.html">📖 微型花园创意</a><span class="dl-link"><a href="园林设计/微型花园创意.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/夏日小屋花园设计.html">📖 夏日小屋花园设计</a><span class="dl-link"><a href="园林设计/夏日小屋花园设计.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/覆盖物选择指南.html">📖 覆盖物选择指南</a><span class="dl-link"><a href="园林设计/覆盖物选择指南.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/24 个打造明亮外观的白石镇景观设计理念.html">📖 24 个打造明亮外观的白石镇景观设计理念</a><span class="dl-link"><a href="园林设计/24 个打造明亮外观的白石镇景观设计理念.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/白色岩石景观设计.html">📖 白色岩石景观设计</a><span class="dl-link"><a href="园林设计/白色岩石景观设计.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/泳池花盆设计.html">📖 泳池花盆设计</a><span class="dl-link"><a href="园林设计/泳池花盆设计.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/荫凉花园设计.html">📖 荫凉花园设计</a><span class="dl-link"><a href="园林设计/荫凉花园设计.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/美国可持续风景园林设计案例与启示.html">📖 美国可持续风景园林设计案例与启示</a><span class="dl-link"><a href="园林设计/美国可持续风景园林设计案例与启示.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/英国皇家园艺学会小花园园艺指南.html">📖 英国皇家园艺学会小花园园艺指南</a><span class="dl-link"><a href="园林设计/英国皇家园艺学会小花园园艺指南.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/岩石花园设计_深度指南.html">📖 岩石花园设计_深度指南</a><span class="dl-link"><a href="园林设计/岩石花园设计_深度指南.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/景观设计 MOC 文档.html">📖 景观设计 MOC 文档</a><span class="dl-link"><a href="园林设计/景观设计 MOC 文档.docx" download>⬇ 下载</a></span></li>
+      </ul>
+    </div>
+  </div>
+  <div id="tab-tropical" class="tab-content">
+    <div class="article-card" style="margin-top:20px">
+      <h3>🌴 热带花园</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">热带风情设计 · 5篇</p>
+      <ul class="paper-list">
+        <li><a href="园林设计/热带园林设计/38款热带风情露台设计.html">📖 38款热带风情露台设计</a><span class="dl-link"><a href="园林设计/热带园林设计/38款热带风情露台设计.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/热带园林设计/海边热带花园的灵感设计理念.html">📖 海边热带花园的灵感设计理念</a><span class="dl-link"><a href="园林设计/热带园林设计/海边热带花园的灵感设计理念.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/热带园林设计/现代热带花园风格与现代建筑的和谐统一.html">📖 现代热带花园风格与现代建筑的和谐统一</a><span class="dl-link"><a href="园林设计/热带园林设计/现代热带花园风格与现代建筑的和谐统一.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/热带园林设计/用热带花园设计改造你的花园.html">📖 用热带花园设计改造你的花园</a><span class="dl-link"><a href="园林设计/热带园林设计/用热带花园设计改造你的花园.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/热带园林设计/设计小型热带花园.html">📖 设计小型热带花园</a><span class="dl-link"><a href="园林设计/热带园林设计/设计小型热带花园.docx" download>⬇ 下载</a></span></li>
+      </ul>
+    </div>
+  </div>
+  <div id="tab-jiangnan" class="tab-content">
+    <div class="article-card" style="margin-top:20px">
+      <h3>🏯 江南园林</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">苏州园林深度解读 · 5篇</p>
+      <ul class="paper-list">
+        <li><a href="江南园林/中国四大园林之首拙政园.html">📖 中国四大园林之首拙政园</a><span class="dl-link"><a href="江南园林/中国四大园林之首拙政园.docx" download>⬇ 下载</a></span></li>
+        <li><a href="江南园林/游苏州园林的看点是什么？.html">📖 游苏州园林的看点是什么？</a><span class="dl-link"><a href="江南园林/游苏州园林的看点是什么？.docx" download>⬇ 下载</a></span></li>
+        <li><a href="江南园林/留园导游词.html">📖 留园导游词</a><span class="dl-link"><a href="江南园林/留园导游词.docx" download>⬇ 下载</a></span></li>
+        <li><a href="江南园林/艺圃.html">📖 艺圃</a><span class="dl-link"><a href="江南园林/艺圃.docx" download>⬇ 下载</a></span></li>
+        <li><a href="江南园林/苏州园林艺术特点深度解析_插图版.html">📖 苏州园林艺术特点深度解析_插图版</a><span class="dl-link"><a href="江南园林/苏州园林艺术特点深度解析_插图版.docx" download>⬇ 下载</a></span></li>
+      </ul>
+    </div>
+  </div>
+  <div id="tab-imperial" class="tab-content">
+    <div class="article-card" style="margin-top:20px">
+      <h3>👑 皇家园林</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">北京皇家园林对比分析 · 4篇</p>
+      <ul class="paper-list">
+        <li><a href="皇家园林/北京四座经典园中园对比分析报告.html">📖 北京四座经典园中园对比分析报告</a><span class="dl-link"><a href="皇家园林/北京四座经典园中园对比分析报告.docx" download>⬇ 下载</a></span></li>
+        <li><a href="皇家园林/北京四座经典园中园的对比分析及实地调研研究 (1).html">📖 北京四座经典园中园的对比分析及实地调研研究 (1)</a><span class="dl-link"><a href="皇家园林/北京四座经典园中园的对比分析及实地调研研究 (1).docx" download>⬇ 下载</a></span></li>
+        <li><a href="皇家园林/北京四座经典园中园的对比分析及实地调研研究.html">📖 北京四座经典园中园的对比分析及实地调研研究</a><span class="dl-link"><a href="皇家园林/北京四座经典园中园的对比分析及实地调研研究.docx" download>⬇ 下载</a></span></li>
+        <li><a href="皇家园林/北京的园林艺术 文档.html">📖 北京的园林艺术 文档</a><span class="dl-link"><a href="皇家园林/北京的园林艺术 文档.docx" download>⬇ 下载</a></span></li>
+      </ul>
+    </div>
+  </div>
+  <div id="tab-bonsai" class="tab-content">
+    <div class="article-card" style="margin-top:20px">
+      <h3>🪴 盆景艺术</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">盆景技法与鉴赏 · 3篇</p>
+      <ul class="paper-list">
+        <li><a href="盆景/山野草——案头方寸间的野趣与禅意.html">📖 山野草——案头方寸间的野趣与禅意</a><span class="dl-link"><a href="盆景/山野草——案头方寸间的野趣与禅意.docx" download>⬇ 下载</a></span></li>
+        <li><a href="盆景/盆景艺术_入门与鉴赏.md">📝 盆景艺术_入门与鉴赏</a></li>
+        <li><a href="盆景/盆景造型_技法与美学.md">📝 盆景造型_技法与美学</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="tab-plants" class="tab-content">
+    <div class="article-card" style="margin-top:20px">
+      <h3>🌿 植物图鉴</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">单种植物介绍 · 1篇</p>
+      <ul class="paper-list">
+        <li><a href="植物/羽扇豆.html">📖 羽扇豆</a><span class="dl-link"><a href="植物/羽扇豆.docx" download>⬇ 下载</a></span></li>
+      </ul>
+    </div>
+  </div>
+  <div id="tab-aesthetics" class="tab-content">
+    <div class="article-card" style="margin-top:20px">
+      <h3>📖 园林美学</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">美学理论与分析 · 3篇</p>
+      <ul class="paper-list">
+        <li><a href="园林美学分析/园林造价.html">📖 园林造价</a><span class="dl-link"><a href="园林美学分析/园林造价.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林美学分析/园艺知识库（完整版·约6000字）.html">📖 园艺知识库（完整版·约6000字）</a><span class="dl-link"><a href="园林美学分析/园艺知识库（完整版·约6000字）.docx" download>⬇ 下载</a></span></li>
+      </ul>
+    </div>
+  </div>
+  <div id="tab-world" class="tab-content">
+    <div class="article-card" style="margin-top:20px">
+      <h3>🌍 世界园林</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">欧洲·中东·中日对比 · 3篇</p>
+      <ul class="paper-list">
+        <li><a href="园林美学分析/中东园林设计特色.html">📖 中东园林设计特色</a><span class="dl-link"><a href="园林美学分析/中东园林设计特色.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林美学分析/中日园林对比.html">📖 中日园林对比</a><span class="dl-link"><a href="园林美学分析/中日园林对比.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/欧洲园林三幕剧.html">📖 欧洲园林三幕剧</a><span class="dl-link"><a href="园林设计/欧洲园林三幕剧.docx" download>⬇ 下载</a></span></li>
+      </ul>
+    </div>
+  </div>
+  <div id="tab-hotel" class="tab-content">
+    <div class="article-card" style="margin-top:20px">
+      <h3>🏨 酒店园林</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">酒店与商业景观 · 1篇</p>
+      <ul class="paper-list">
+        <li><a href="园林设计/酒店园林设计/园藏雅韵，心归清欢——酒店园林设计中的心理学智慧.html">📖 园藏雅韵，心归清欢——酒店园林设计中的心理学智慧</a><span class="dl-link"><a href="园林设计/酒店园林设计/园藏雅韵，心归清欢——酒店园林设计中的心理学智慧.docx" download>⬇ 下载</a></span></li>
+      </ul>
+    </div>
+  </div>
+  <div id="tab-china" class="tab-content">
+    <div class="article-card" style="margin-top:20px">
+      <h3>🇨🇳 中国园林</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">中国园林专题 · 2篇</p>
+      <ul class="paper-list">
+        <li><a href="园林设计/中国园林_把山水搬进墙里.html">📖 中国园林_把山水搬进墙里</a><span class="dl-link"><a href="园林设计/中国园林_把山水搬进墙里.docx" download>⬇ 下载</a></span></li>
+        <li><a href="园林设计/中国典型外来入侵物种的生态危害与综合防治策略研究.html">📖 中国典型外来入侵物种的生态危害与综合防治策略研究</a><span class="dl-link"><a href="园林设计/中国典型外来入侵物种的生态危害与综合防治策略研究.docx" download>⬇ 下载</a></span></li>
+      </ul>
+    </div>
+  </div>
+  <div id="tab-trends" class="tab-content">
+    <div class="article-card" style="margin-top:20px">
+      <h3>📐 花园趋势</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">行业趋势与前沿 · 1篇</p>
+      <ul class="paper-list">
+        <li><a href="园林设计/2026 年国际花园设计趋势（专业配图版）.html">📖 2026 年国际花园设计趋势（专业配图版）</a><span class="dl-link"><a href="园林设计/2026 年国际花园设计趋势（专业配图版）.docx" download>⬇ 下载</a></span></li>
+      </ul>
+    </div>
+  </div>
+  <div id="tab-temple" class="tab-content">
+    <div class="article-card" style="margin-top:20px">
+      <h3>🏛️ 寺庙园林</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">寺庙园林专题 · 待补充</p>
+      <p class="empty-tip">📭 此分类暂无文章，期待你的贡献</p>
+    </div>
+  </div>
+  <div id="tab-scenic" class="tab-content">
+    <div class="article-card" style="margin-top:20px">
+      <h3>🏔️ 风景区</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">风景区专题 · 待补充</p>
+      <p class="empty-tip">📭 此分类暂无文章，期待你的贡献</p>
+    </div>
+  </div>
+  <div id="tab-botany" class="tab-content">
+    <div class="article-card" style="margin-top:20px">
+      <h3>🌸 园林植物学</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">植物分类与配置艺术 · 待补充</p>
+      <p class="empty-tip">📭 此分类暂无文章，期待你的贡献</p>
+    </div>
+  </div>
+  <div id="tab-architecture" class="tab-content">
+    <div class="article-card" style="margin-top:20px">
+      <h3>🏗️ 园林建筑学</h3>
+      <p style="color:#888;font-size:.82rem;margin:4px 0 8px">亭台楼阁与造园建筑 · 待补充</p>
+      <p class="empty-tip">📭 此分类暂无文章，期待你的贡献</p>
+    </div>
+  </div>
+</div>
+<div class="site-footer">
+  <div class="container">科普及文章 · 汇聚园林之美</div>
+</div>
+<div class="watermark"></div>
+<script>
+function switchTab(id){
+  document.querySelectorAll(".tab-content").forEach(t=>t.classList.remove("active"));
+  document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));
+  document.getElementById("tab-"+id).classList.add("active");
+  document.querySelector(`.tab-btn[onclick*="'"+id+"'"]`).classList.add("active");
+}
+document.querySelector(".tab-btn.active")?.click();
+</script>
+</body>
+</html>
