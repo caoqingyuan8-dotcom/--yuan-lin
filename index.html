@@ -25,159 +25,261 @@
   </div>
 </nav>
 <div class="container">
-  <h2 class="section-title">课程体系</h2>
-  <p style="color:#666;font-size:.9rem;margin:8px 0 4px">共 18 门科目 · 10 门必修 + 8 门选修 · 覆盖通史·专题·理论·规划·建筑·美学·文学·植物·工程·技艺·经济十一大维度</p>
+  <h2 class="section-title" style="text-align:center">课程体系</h2>
+  <p style="color:#666;font-size:.9rem;margin:8px 0 4px;text-align:center">共 22 门科目 · 覆盖通史·专题·地域·理论·工程·人文六大方向</p>
+  
+<style>
+.course-tab-nav{display:flex;gap:4px;margin:16px 0 20px;border-bottom:2px solid #e0e8e4;flex-wrap:wrap;justify-content:center}
+.course-tab-btn{padding:8px 18px;border:none;background:transparent;color:#7aaa9a;font-size:.82rem;font-weight:600;cursor:pointer;border-radius:10px 10px 0 0;transition:.15s;position:relative;bottom:-2px;white-space:nowrap}
+.course-tab-btn:hover{color:#1a7a6a;background:#f0f8f4}
+.course-tab-btn.active{color:#1a7a6a;background:#fff;border:2px solid #e0e8e4;border-bottom-color:#fff}
+.course-tab-btn .count{font-size:.7rem;background:#e0f0ea;padding:1px 8px;border-radius:20px;margin-left:4px;font-weight:400}
+.course-tab-btn.active .count{background:#1a7a6a;color:#fff}
+.course-tab-panel{display:none}
+.course-tab-panel.active{display:block}
+</style>
+
+<div class="course-tab-nav">
+  <button class="course-tab-btn active" onclick="switchCourseTab('cat0')">🌍 通史类 <span class="count">2</span></button>
+  <button class="course-tab-btn" onclick="switchCourseTab('cat1')">🏯 专题·地域 <span class="count">9</span></button>
+  <button class="course-tab-btn" onclick="switchCourseTab('cat2')">📐 设计理论 <span class="count">3</span></button>
+  <button class="course-tab-btn" onclick="switchCourseTab('cat3')">🛠️ 工程技术 <span class="count">5</span></button>
+  <button class="course-tab-btn" onclick="switchCourseTab('cat4')">📖 人文经济 <span class="count">3</span></button>
+</div>
+
+<div id="course-cat0" class="course-tab-panel active">
   <div class="card-grid">
-    <a href="知识包/01-中国园林史.html" style="text-decoration:none;color:inherit">
+  <a href="知识包/01-中国园林史.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">01 / 18</div>
+        <div class="num">01 / 22</div>
         <h3>中国园林史</h3>
         <p>从先秦灵囿到明清私家园林，三千年的造园传统。六大时代 × 四大造园要素，梳理中国山水园林的演变逻辑。</p>
         <div class="tags"><span>必修</span><span>通史</span></div>
       </div>
     </a>
-    <a href="知识包/02-世界园林史.html" style="text-decoration:none;color:inherit">
+  <a href="知识包/02-世界园林史.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">02 / 18</div>
+        <div class="num">02 / 22</div>
         <h3>世界园林史</h3>
         <p>从古埃及到当代，覆盖七大文明圈的造园传统。含古埃及、波斯、希腊罗马、意大利文艺复兴、法国勒诺特尔、现代主义、生态主义。</p>
         <div class="tags"><span>必修</span><span>通史</span></div>
       </div>
     </a>
-    <a href="知识包/03-日本园林.html" style="text-decoration:none;color:inherit">
+  </div>
+</div>
+<div id="course-cat1" class="course-tab-panel">
+  <div class="card-grid">
+  <a href="知识包/03-日本园林.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">03 / 18</div>
+        <div class="num">03 / 22</div>
         <h3>日本园林</h3>
         <p>枯山水、茶庭、回游式——日本园林从飞鸟时代到现代的演变。禅宗美学如何转化为极致的造园语言。</p>
         <div class="tags"><span>必修</span><span>专题</span></div>
       </div>
     </a>
-    <a href="知识包/04-英国园林.html" style="text-decoration:none;color:inherit">
+  <a href="知识包/04-英国园林.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">04 / 18</div>
+        <div class="num">04 / 22</div>
         <h3>英国园林</h3>
         <p>都铎时期到现代，聚焦18世纪自然风景园革命。布朗、钱伯斯、杰基尔——英国如何推翻欧洲规则式传统。</p>
         <div class="tags"><span>必修</span><span>专题</span></div>
       </div>
     </a>
-    <a href="知识包/05-江南园林专题.html" style="text-decoration:none;color:inherit">
+  <a href="知识包/05-江南园林专题.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">05 / 18</div>
+        <div class="num">05 / 22</div>
         <h3>江南园林专题</h3>
         <p>苏州、扬州、杭州、上海——江南园林集群的深度解读。拙政园、留园、环秀山庄等经典案例的造园理法。</p>
         <div class="tags"><span>必修</span><span>专题</span></div>
       </div>
     </a>
-    <a href="知识包/06-风景园林规划.html" style="text-decoration:none;color:inherit">
+  <a href="知识包/08-热带园林专题.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">06 / 18</div>
-        <h3>风景园林规划</h3>
-        <p>从城市公园运动到生态城市、海绵城市。奥姆斯特德、麦克哈格——城市尺度下的绿色空间规划方法。</p>
-        <div class="tags"><span>必修</span><span>规划</span></div>
-      </div>
-    </a>
-    <a href="知识包/07-园林设计通论.html" style="text-decoration:none;color:inherit">
-      <div class="course-card">
-        <div class="num">07 / 18</div>
-        <h3>园林设计通论</h3>
-        <p>超越文化边界的跨文化设计方法。借景、对景、框景——六大要素 × 九大原则，构建通用设计语言。</p>
-        <div class="tags"><span>必修</span><span>理论</span></div>
-      </div>
-    </a>
-    <a href="知识包/08-热带园林专题.html" style="text-decoration:none;color:inherit">
-      <div class="course-card">
-        <div class="num">08 / 18</div>
+        <div class="num">08 / 22</div>
         <h3>热带园林专题</h3>
         <p>巴厘岛、墨西哥、华南——热带气候下的造园法则。层叠郁闭、色彩爆炸、以叶胜花。</p>
         <div class="tags"><span>选修</span><span>地域</span></div>
       </div>
     </a>
-    <a href="知识包/09-沙漠园林专题.html" style="text-decoration:none;color:inherit">
+  <a href="知识包/09-沙漠园林专题.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">09 / 18</div>
+        <div class="num">09 / 22</div>
         <h3>沙漠园林专题</h3>
         <p>波斯四园、摩尔园林、Xeriscape旱景——在极限约束中寻找美的极致。从阿尔罕布拉宫到亚利桑那。</p>
         <div class="tags"><span>选修</span><span>地域</span></div>
       </div>
     </a>
-    <a href="知识包/10-园林心理学.html" style="text-decoration:none;color:inherit">
+  <a href="知识包/19-伊斯兰园林.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">10 / 18</div>
+        <div class="num">19 / 22</div>
+        <h3>伊斯兰园林</h3>
+        <p>从波斯天园到阿尔罕布拉宫，十字水渠中的天堂复刻。三大体系 × 水景哲学 × 几何秩序——在干旱中造一个绿洲天堂。</p>
+        <div class="tags"><span>选修</span><span>地域</span></div>
+      </div>
+    </a>
+  <a href="知识包/22-寒地园林.html" style="text-decoration:none;color:inherit">
+      <div class="course-card">
+        <div class="num">21 / 22</div>
+        <h3>寒地园林</h3>
+        <p>严寒中的造园智慧——北欧雪原到北美冻土。耐寒植物、冰雪景观、冬季结构与热带园林的气候两极对话。</p>
+        <div class="tags"><span>选修</span><span>地域</span></div>
+      </div>
+    </a>
+  <a href="知识包/23-岩石花园.html" style="text-decoration:none;color:inherit">
+      <div class="course-card">
+        <div class="num">23 / 22</div>
+        <h3>岩石花园</h3>
+        <p>以石为骨、以旱为境——从英国岩生园到日本枯山水，东西方岩石造园传统的系统梳理。</p>
+        <div class="tags"><span>选修</span><span>地域</span></div>
+      </div>
+    </a>
+  <a href="知识包/24-美式园林.html" style="text-decoration:none;color:inherit">
+      <div class="course-card">
+        <div class="num">24 / 22</div>
+        <h3>美式园林</h3>
+        <p>从中央公园到高线公园，美国园林150年的独立道路——民主精神下的公园系统与自然主义传统。</p>
+        <div class="tags"><span>必修</span><span>专题</span></div>
+      </div>
+    </a>
+  <a href="知识包/25-主题游乐园.html" style="text-decoration:none;color:inherit">
+      <div class="course-card">
+        <div class="num">25 / 25</div>
+        <h3>主题游乐园</h3>
+        <p>从迪士尼到万岁山，从IP叙事到运营指标——主题游乐园的设计哲学、商业逻辑与本土化浪潮完全解析。</p>
+        <div class="tags"><span>选修</span><span>专题</span></div>
+      </div>
+    </a>
+  <a href="知识包/26-中医草药园.html" style="text-decoration:none;color:inherit">
+      <div class="course-card">
+        <div class="num">26 / 28</div>
+        <h3>中医草药园</h3>
+        <p>五行铺陈、药性分区、沉浸式实景——用现代景观语言重新翻译东方医学典籍。从种药到育人，从看药到悟药。</p>
+        <div class="tags"><span>选修</span><span>专题</span></div>
+      </div>
+    </a>
+  <a href="知识包/27-岭南园林.html" style="text-decoration:none;color:inherit">
+      <div class="course-card">
+        <div class="num">27 / 28</div>
+        <h3>岭南园林</h3>
+        <p>疏朗通透、兼蓄秀茂——三大流派之一。四大名园拆解造园密码，从古典私园到当代公共庭园的演变。</p>
+        <div class="tags"><span>必修</span><span>专题</span></div>
+      </div>
+    </a>
+  <a href="知识包/28-寺观园林.html" style="text-decoration:none;color:inherit">
+      <div class="course-card">
+        <div class="num">28 / 28</div>
+        <h3>寺观园林</h3>
+        <p>清净幽寂，佛道相映——三大分支之一。从山林古刹到城市道观，佛家禅境与道家仙境的山水营造哲学。</p>
+        <div class="tags"><span>必修</span><span>理论</span></div>
+      </div>
+    </a>
+  </div>
+</div>
+<div id="course-cat2" class="course-tab-panel">
+  <div class="card-grid">
+  <a href="知识包/07-园林设计通论.html" style="text-decoration:none;color:inherit">
+      <div class="course-card">
+        <div class="num">07 / 22</div>
+        <h3>园林设计通论</h3>
+        <p>超越文化边界的跨文化设计方法。借景、对景、框景——六大要素 × 九大原则，构建通用设计语言。</p>
+        <div class="tags"><span>必修</span><span>理论</span></div>
+      </div>
+    </a>
+  <a href="知识包/10-园林心理学.html" style="text-decoration:none;color:inherit">
+      <div class="course-card">
+        <div class="num">10 / 22</div>
         <h3>园林心理学</h3>
         <p>环境心理学、注意力恢复理论、减压理论、亲生物假说。园林如何影响人的情绪与健康。</p>
         <div class="tags"><span>选修</span><span>理论</span></div>
       </div>
     </a>
-    <a href="知识包/11-中国园林美学.html" style="text-decoration:none;color:inherit">
+  <a href="知识包/11-中国园林美学.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">11 / 18</div>
+        <div class="num">11 / 22</div>
         <h3>中国园林美学</h3>
         <p>以《园冶》《说园》为核心文献，解读中国园林的意境美学。虚实、曲直、藏露——中国园林的审美密码。</p>
         <div class="tags"><span>必修</span><span>美学</span></div>
       </div>
     </a>
-    <a href="知识包/12-园林楹联鉴赏.html" style="text-decoration:none;color:inherit">
+  </div>
+</div>
+<div id="course-cat3" class="course-tab-panel">
+  <div class="card-grid">
+  <a href="知识包/06-风景园林规划.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">12 / 18</div>
-        <h3>园林楹联鉴赏</h3>
-        <p>苏州园林匾额楹联的系统鉴赏。以《苏州园林匾额楹联鉴赏》为基础，涵盖沧浪亭、网师园等十余座名园的联语与题刻。</p>
-        <div class="tags"><span>必修</span><span>文学</span></div>
+        <div class="num">06 / 22</div>
+        <h3>风景园林规划</h3>
+        <p>从城市公园运动到生态城市、海绵城市。奥姆斯特德、麦克哈格——城市尺度下的绿色空间规划方法。</p>
+        <div class="tags"><span>必修</span><span>规划</span></div>
       </div>
     </a>
-    <a href="知识包/13-园林建筑.html" style="text-decoration:none;color:inherit">
+  <a href="知识包/13-园林建筑.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">13 / 18</div>
+        <div class="num">13 / 22</div>
         <h3>园林建筑学</h3>
         <p>亭台楼阁、轩榭舫廊——江南园林建筑的设计原理与经典案例。从拙政园远香堂到留园石林小院，十一种建筑类型完全拆解。</p>
         <div class="tags"><span>必修</span><span>建筑</span></div>
       </div>
     </a>
-    <a href="知识包/14-园林植物学.html" style="text-decoration:none;color:inherit">
+  <a href="知识包/14-园林植物学.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">14 / 18</div>
+        <div class="num">14 / 22</div>
         <h3>园林植物学</h3>
         <p>植物的生态习性、观赏特性与配置艺术。从乔木到地被、从色叶到芳香——植物是造园最灵动的素材。</p>
         <div class="tags"><span>必修</span><span>植物</span></div>
       </div>
     </a>
-    <a href="知识包/15-盆景学.html" style="text-decoration:none;color:inherit">
+  <a href="知识包/16-园林工程学.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">15 / 18</div>
-        <h3>盆景学</h3>
-        <p>"缩龙成寸"的极致造景艺术。中国五大流派的风格演变与制作技法，从扬派云片到岭南蓄枝截干，探索盆中的山水宇宙。</p>
-        <div class="tags"><span>选修</span><span>技艺</span></div>
-      </div>
-    </a>
-    <a href="知识包/16-园林工程学.html" style="text-decoration:none;color:inherit">
-      <div class="course-card">
-        <div class="num">16 / 18</div>
+        <div class="num">16 / 22</div>
         <h3>园林工程学</h3>
         <p>从蓝图到落地——园林土方、园路铺装、水景营造、假山叠石、照明给排水等设计与施工技术。造园的技术支撑体系。</p>
         <div class="tags"><span>必修</span><span>工程</span></div>
       </div>
     </a>
-    <a href="知识包/17-现代庭院设计.html" style="text-decoration:none;color:inherit">
+  <a href="知识包/17-现代庭院设计.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">17 / 18</div>
+        <div class="num">17 / 22</div>
         <h3>现代庭院设计</h3>
         <p>现代主义风格下的庭院设计语言。从极简庭院到当代景观建筑，从材料创新到空间构成——在传统造园之外开辟全新的审美维度。</p>
         <div class="tags"><span>必修</span><span>设计</span></div>
       </div>
     </a>
-    <a href="知识包/18-园林经济学.html" style="text-decoration:none;color:inherit">
+  </div>
+</div>
+<div id="course-cat4" class="course-tab-panel">
+  <div class="card-grid">
+  <a href="知识包/12-园林楹联鉴赏.html" style="text-decoration:none;color:inherit">
       <div class="course-card">
-        <div class="num">18 / 18</div>
+        <div class="num">12 / 22</div>
+        <h3>园林楹联鉴赏</h3>
+        <p>苏州园林匾额楹联的系统鉴赏。以《苏州园林匾额楹联鉴赏》为基础，涵盖沧浪亭、网师园等十余座名园的联语与题刻。</p>
+        <div class="tags"><span>必修</span><span>文学</span></div>
+      </div>
+    </a>
+  <a href="知识包/15-盆景学.html" style="text-decoration:none;color:inherit">
+      <div class="course-card">
+        <div class="num">15 / 22</div>
+        <h3>盆景学</h3>
+        <p>"缩龙成寸"的极致造景艺术。中国五大流派的风格演变与制作技法，从扬派云片到岭南蓄枝截干，探索盆中的山水宇宙。</p>
+        <div class="tags"><span>选修</span><span>技艺</span></div>
+      </div>
+    </a>
+  <a href="知识包/18-园林经济学.html" style="text-decoration:none;color:inherit">
+      <div class="course-card">
+        <div class="num">18 / 22</div>
         <h3>园林经济学</h3>
         <p>钱·地·人·树——全生命周期的流转与博弈。园林不是免费的，从苗木市场到养护成本，从地产溢价到生态补偿，算清每一笔绿色账。</p>
         <div class="tags"><span>选修</span><span>经济</span></div>
       </div>
     </a>
   </div>
+  </div>
 
-  <h2 class="section-title">资源库</h2>
-  <div class="card-grid">
-    <a href="电子书/index.html" style="text-decoration:none;color:inherit">
-      <div class="course-card" style="border-left-color:#2d4a2d">
+  <h2 class="section-title" style="text-align:center">资源库</h2>
+  <div class="card-grid" style="justify-items:center">
+  <a href="电子书/index.html" style="text-decoration:none;color:inherit">
+    <div class="course-card" style="border-left-color:#2d4a2d">
         <h3>📖 园林电子书</h3>
         <p>29本专业电子书·中国园林/园林文化/西方园林分类在线阅读</p>
       </div>
@@ -217,7 +319,7 @@
   <h2 class="section-title">关于本站</h2>
   <div class="article" style="margin:20px 0">
     <p>本站是园林风景知识体系的系统性整理。所有内容免费开放，点击即可全文阅读。</p>
-    <p>以"风景园林专业科目制"为组织逻辑，将知识体系拆解为 18 门课程科目，每门科目一篇独立文章，可逐门浏览或跨科目跳转。电子书和论文均可在站内直接阅读，无需下载。</p>
+    <p>以"风景园林专业科目制"为组织逻辑，将知识体系拆解为 22 门课程科目，每门科目一篇独立文章，可逐门浏览或跨科目跳转。电子书和论文均可在站内直接阅读，无需下载。</p>
   </div>
 </div>
 <div class="site-footer">
@@ -226,5 +328,17 @@
 <div class="watermark"></div>
 <link rel="stylesheet" href="css/chat-widget.css">
 <script src="js/chat-widget.js"></script>
+
+<script>
+function switchCourseTab(tabId) {
+  document.querySelectorAll('.course-tab-btn').forEach(function(b) { b.classList.remove('active'); });
+  document.querySelectorAll('.course-tab-panel').forEach(function(p) { p.classList.remove('active'); });
+  var btn = document.querySelector('.course-tab-btn[onclick*="' + tabId + '"]');
+  if (btn) btn.classList.add('active');
+  var panel = document.getElementById('course-' + tabId);
+  if (panel) panel.classList.add('active');
+}
+</script>
+
 </body>
 </html>
